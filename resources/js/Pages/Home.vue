@@ -7,6 +7,13 @@ import Heading from "../Components/Heading.vue";
 import CheckBubble from "../Components/CheckBubble.vue";
 import Process from "../Blocks/Process.vue";
 import CTA from "../Blocks/CTA.vue";
+import PositionCarousel from '../Blocks/PositionCarousel.vue';
+
+const props = defineProps({
+    roles: Array
+});
+
+
 </script>
 
 <template>
@@ -52,6 +59,9 @@ import CTA from "../Blocks/CTA.vue";
         </Row>
         <Row name="process">
             <Process />
+        </Row>
+        <Row background="light">
+            <PositionCarousel :roles="roles" />
         </Row>
         <Row>
             <Fifty>

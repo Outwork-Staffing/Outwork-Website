@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Contentful\Delivery\Client as DeliveryClient;
+use Contentful\Delivery\Query;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +16,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return Inertia('Home');
+    $client = new DeliveryClient(env('CONTENTFUL_DELIVERY_TOKEN'), env('CONTENTFUL_SPACE_ID'), env('CONTENTFUL_ENVIRONMENT_ID'));
+    $query = new Query();
+    $query->setContentType('examplePositions')
+        ->orderBy('fields.title', true);
+    $posts = $client->getEntries($query);
+
+    $formattedPosts = [];
+    foreach ($posts as $post) {
+        $formattedPosts[] = [
+            'title' => $post->getTitle(),
+            'img' => $post->image->getFile()->getUrl(),
+        ];
+    }
+
+
+
+    return Inertia('Home', ['roles' => $formattedPosts]);
 });
 
 Route::get('/why-outsource', function () {
