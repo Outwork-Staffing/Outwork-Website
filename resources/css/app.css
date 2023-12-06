@@ -15,6 +15,7 @@
 .btn {
     @apply px-4 py-2 font-semibold rounded-lg text-lg;
     transition: all .2s ease-in-out;
+    cursor: pointer;
 }
 
 .btn:hover {}
@@ -41,6 +42,30 @@
 
 .btn-white:hover {
     @apply bg-dark text-white;
+}
+
+.btn-text {
+    @apply text-primary flex;
+    padding-left: 0px !important;
+    align-items: center;
+    position: relative;
+}
+
+.btn-text:hover {
+    @apply underline;
+}
+
+.btn-text svg {
+    transition: all .2s ease-in-out;
+}
+
+.btn-text:hover svg {
+    transform: translateX(2px);
+    scale: 105%;
+}
+
+.text-link-arrow {
+    @apply h-4 w-4;
 }
 
 .card {

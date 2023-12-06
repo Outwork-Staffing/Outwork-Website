@@ -30,7 +30,7 @@ Route::get('/about', function () {
 });
 
 Route::get('/start-hiring', function () {
-    return Inertia('Home');
+    return Inertia('StartHiring');
 });
 
 Route::get('/meeting-booked', function () {

@@ -19,7 +19,8 @@
                     class="text-md font-semibold leading-6 text-heading hover:underline hover:decoration-solid decoration-primary transition-custom decoration-2">{{
                         item.name
                     }}</a>
-                <Button class="text-md font-semibold leading-6">Start Hiring</Button>
+
+                <Button InertiaLink="/start-hiring" class="text-md font-semibold leading-6">Start Hiring</Button>
 
             </div>
         </nav>
@@ -45,7 +46,8 @@
                                     item.name }}</a>
                         </div>
                         <div class="py-6">
-                            <Button class="text-md font-semibold leading-6">Start Hiring</Button>
+                            <Button InertiaLink="/start-hiring" class="text-md font-semibold leading-6">Start
+                                Hiring</Button>
                         </div>
                     </div>
                 </div>
@@ -59,6 +61,7 @@ import { ref } from 'vue'
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 import Button from '../Components/Button.vue';
+import { Link } from '@inertiajs/vue3'
 
 const navigation = [
     { name: 'Why Outsource?', href: '#' },
