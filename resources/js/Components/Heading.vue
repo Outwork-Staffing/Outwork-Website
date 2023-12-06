@@ -1,5 +1,6 @@
 <template>
-    <component :is="tag" v-bind="$attrs" :class="[sizeClass] + ' mb-6'">
+    <component :is="tag" v-bind="$attrs" :class="[sizeClass] + ' mb-6'" v-motion :initial="{ opacity: 0, y: 100 }"
+        :enter="{ opacity: 1, y: 0, scale: 1 }" :variants="{ custom: { scale: 2 } }" :delay="200">
         <slot />
     </component>
 </template>
@@ -17,23 +18,23 @@ export default {
             type: String,
             default: 'h1',
             validator: function (value) {
-                return ['h1', 'h2', 'h3'].includes(value);
+                return ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].includes(value);
             },
         },
     },
     computed: {
         sizeClass: function () {
             switch (this.size) {
-                case 's':
-                    return 'text-md';
+                case 'span':
+                    return 'text-lg font-bold uppercase text-primary';
                 case 'm':
-                    return 'text-xl'
+                    return 'text-xl text-heading'
                 case 'lg':
-                    return 'text-2xl';
+                    return 'text-2xl text-heading';
                 case 'xl':
-                    return 'text-5xl font-bold';
+                    return 'text-5xl text-heading font-bold';
                 case '2xl':
-                    return 'text-6xl font-bold'
+                    return 'text-4xl text-heading md:text-6xl font-bold'
                 default:
                     return 'text-xl';
             }

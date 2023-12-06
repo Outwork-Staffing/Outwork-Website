@@ -1,11 +1,9 @@
 <template>
     <div :class="bgClass">
-        <TransitionRoot appear :show="isShowing" enter="transition-opacity duration-75" enter-from="opacity-0"
-            enter-to="opacity-100" leave="transition-opacity duration-150" leave-from="opacity-100" leave-to="opacity-0">
-            <div class=" w-full  max-w-7xl mx-auto py-24 sm:py-32 px-6 lg:px-8">
-                <slot />
-            </div>
-        </TransitionRoot>
+        <div
+            :class="{ 'w-full  max-w-7xl mx-auto py-12 sm:py-24 px-6 lg:px-8': !header, 'w-full  max-w-7xl mx-auto py-24 sm:pt-36 px-6 lg:px-8': header }">
+            <slot />
+        </div>
     </div>
 </template>
 
@@ -22,17 +20,23 @@ export default {
             type: String,
             default: 'default',
             validator: function (value) {
-                return ['default', 'option1', 'option2'].includes(value);
+                return ['default', 'green', 'light', 'dark'].includes(value);
             },
+        },
+        header: {
+            type: Boolean,
+            default: false,
         },
     },
     computed: {
         bgClass: function () {
             switch (this.background) {
-                case 'dark':
-                    return 'bg-secondary';
+                case 'green':
+                    return 'bg-primary';
                 case 'light':
-                    return 'bg-primary'
+                    return 'bg-secondary'
+                case 'dark':
+                    return 'bg-dark'
                 default:
                     return 'bg-white';
             }

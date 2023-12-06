@@ -4,7 +4,51 @@
 @tailwind components;
 @tailwind utilities;
 
+.transition-custom {
+    transition: all .2s ease-in-out;
+}
 
-* {
-    transition: all .15s ease-in-out;
+.body-paragraph {
+    @apply mb-6 text-lg text-body;
+}
+
+.btn {
+    @apply px-4 py-2 font-semibold rounded-lg text-lg;
+    transition: all .2s ease-in-out;
+}
+
+.btn:hover {}
+
+.btn-primary {
+    @apply bg-primary text-white;
+}
+
+.btn-primary:hover {
+    @apply bg-primaryHover shadow;
+}
+
+.btn-secondary {
+    @apply bg-secondary;
+}
+
+.btn-secondary:hover {
+    @apply bg-primary;
+}
+
+.btn-white {
+    @apply bg-white text-heading;
+}
+
+.btn-white:hover {
+    @apply bg-dark text-white;
+}
+
+.card {
+    @apply border shadow-sm shadow-secondary rounded-lg border-[#f3f4f6];
+    place-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+    padding: 40px;
 }

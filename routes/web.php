@@ -16,3 +16,23 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return Inertia('Home');
 });
+
+Route::get('/why-outsource', function () {
+    return Inertia('Home');
+});
+
+Route::get('/services', function () {
+    return Inertia('Home');
+});
+
+Route::get('/about', function () {
+    return Inertia('Home');
+});
+
+Route::get('/start-hiring', function () {
+    return Inertia('Home');
+});
+
+Route::get('/meeting-booked', function () {
+    return Inertia('MeetingBooked');
+});
