@@ -6,6 +6,7 @@ import Fifty from "../Blocks/Fifty.vue";
 import Heading from "../Components/Heading.vue";
 import CheckBubble from "../Components/CheckBubble.vue";
 import Process from "../Blocks/Process.vue";
+import CTA from "../Blocks/CTA.vue";
 </script>
 
 <template>
@@ -69,6 +70,7 @@ import Process from "../Blocks/Process.vue";
                 </template>
             </Fifty>
         </Row>
+        <CTA />
     </Main>
 </template>
 

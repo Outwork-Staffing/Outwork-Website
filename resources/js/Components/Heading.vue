@@ -28,11 +28,11 @@ export default {
                 case 'span':
                     return 'text-lg font-bold uppercase text-primary';
                 case 'm':
-                    return 'text-xl text-heading'
+                    return 'text-xl text-heading font-bold'
                 case 'lg':
-                    return 'text-2xl text-heading';
+                    return 'text-2xl text-heading font-bold';
                 case 'xl':
-                    return 'text-5xl text-heading font-bold';
+                    return 'text-3xl md:text-5xl text-heading font-bold';
                 case '2xl':
                     return 'text-4xl text-heading md:text-6xl font-bold'
                 default:
