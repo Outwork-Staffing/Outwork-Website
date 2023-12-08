@@ -15,10 +15,11 @@
                 </button>
             </div>
             <div class="hidden lg:flex lg:gap-x-12 items-center">
-                <a v-for="item in navigation" :key="item.name" :href="item.href"
-                    class="text-md font-semibold leading-6 text-heading hover:underline hover:decoration-solid decoration-primary transition-custom decoration-2">{{
-                        item.name
-                    }}</a>
+                <Link v-for="item in navigation" :key="item.name" :href="item.href"
+                    class="text-md font-semibold leading-6 text-heading hover:underline hover:decoration-solid decoration-primary transition-custom decoration-2">
+                {{
+                    item.name
+                }}</Link>
 
                 <Button InertiaLink="/start-hiring" class="text-md font-semibold leading-6">Start Hiring</Button>
 
@@ -41,9 +42,10 @@
                 <div class="mt-6 flow-root">
                     <div class="-my-6 divide-y divide-gray-500/10">
                         <div class="space-y-2 py-6">
-                            <a v-for="item in navigation" :key="item.name" :href="item.href"
-                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">{{
-                                    item.name }}</a>
+                            <Link v-for="item in navigation" :key="item.name" :href="item.href"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                            {{
+                                item.name }}</Link>
                         </div>
                         <div class="py-6">
                             <Button InertiaLink="/start-hiring" class="text-md font-semibold leading-6">Start
@@ -64,9 +66,9 @@ import Button from '../Components/Button.vue';
 import { Link } from '@inertiajs/vue3'
 
 const navigation = [
-    { name: 'Why Outsource?', href: '#' },
+    { name: 'Why Outsource?', href: '/why-outsource' },
     { name: 'Services', href: '#' },
-    { name: 'About Us', href: '#' },
+    { name: 'About Us', href: '/about' },
 ]
 
 const mobileMenuOpen = ref(false)

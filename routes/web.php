@@ -36,7 +36,7 @@ Route::get('/', function () {
 });
 
 Route::get('/why-outsource', function () {
-    return Inertia('Home');
+    return Inertia('Why');
 });
 
 Route::get('/services', function () {
@@ -44,7 +44,7 @@ Route::get('/services', function () {
 });
 
 Route::get('/about', function () {
-    return Inertia('Home');
+    return Inertia('About');
 });
 
 Route::get('/start-hiring', function () {

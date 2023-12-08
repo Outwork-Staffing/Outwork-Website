@@ -13,7 +13,7 @@
 }
 
 .btn {
-    @apply px-4 py-2 font-semibold rounded-lg text-lg;
+    @apply px-4 py-2 font-semibold rounded-lg text-lg border;
     transition: all .2s ease-in-out;
     cursor: pointer;
 }
@@ -21,27 +21,27 @@
 .btn:hover {}
 
 .btn-primary {
-    @apply bg-primary text-white;
+    @apply bg-primary text-white border-primary;
 }
 
 .btn-primary:hover {
-    @apply bg-primaryHover shadow;
+    @apply bg-primaryHover shadow border-primaryHover;
 }
 
 .btn-secondary {
-    @apply bg-secondary;
+    @apply bg-secondary border-primary;
 }
 
 .btn-secondary:hover {
-    @apply bg-primary;
+    @apply bg-primary text-white;
 }
 
 .btn-white {
-    @apply bg-white text-heading;
+    @apply bg-white text-heading border-white;
 }
 
 .btn-white:hover {
-    @apply bg-dark text-white;
+    @apply bg-dark border-dark text-white;
 }
 
 .btn-text {
@@ -49,6 +49,7 @@
     padding-left: 0px !important;
     align-items: center;
     position: relative;
+    border: none !important;
 }
 
 .btn-text:hover {

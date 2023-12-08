@@ -3,21 +3,21 @@ import Heading from "../Components/Heading.vue";
 </script>
 <template>
     <Heading size="2xl" tag="h2" class="text-center">
-        Ready to get started hiring?
+        Recruit skilled people for any task.
     </Heading>
-    <p class="body-paragraph max-w-4xl text-center mx-auto">Say goodbye to the stress of hiring global
-        talent. Use the form below to
-        schedule a
-        call with our team and learn how we can help you hire the best talent. Our email is also below if you would
-        prefer that.</p>
-    <div class="positions">
+    <p class="body-paragraph max-w-xl text-center mx-auto ">Save time and money by growing your team outside of the
+        United
+        States and find skilled professionals for any project or business.</p>
+    <div class="positions pt-8">
         <div class="positions-slide">
-            <div v-for="position in roles" :key="position.name" class="relative inline-block h-[150px] w-[150px] mr-6 mb-4">
-                <div class="h-full w-full bg-cover bg-center" :style="{ backgroundImage: `url(${position.img})` }">
-                    <div class="absolute inset-0 bg-dark opacity-80"></div>
-                    <p
-                        class="absolute w-full bottom-0 left-0 right-0 text-white text-center p-2 font-bold text-xl overflow-hidden break-words">
-                        {{ position.title }}</p>
+            <div v-for="position in roles" :key="position.name"
+                class="relative inline-block h-[175px] w-[175px] mr-6 mb-4 rounded-3xl overflow-hidden">
+                <div class="h-full w-full bg-cover bg-center rounded" :style="{ backgroundImage: `url(${position.img})` }">
+                    <div class="absolute inset-0 bg-dark opacity-80 z-10 "></div>
+                    <p class="position-title font-bold text-xl mb-2">
+                        {{ position.title }}
+                    </p>
+
                 </div>
             </div>
         </div>
@@ -112,10 +112,18 @@ export default {
 .positions:after {
     position: absolute;
     top: 0;
-    width: 250px;
     height: 100%;
+    width: 100px;
     content: "";
     z-index: 2;
+}
+
+@media (max-width: 768px) {
+
+    .positions:before,
+    .positions:after {
+        width: 33px;
+    }
 }
 
 .positions:before {
@@ -132,7 +140,7 @@ export default {
 
 .positions-slide {
     display: inline-block;
-    animation: 35s slide infinite linear;
+    animation: 60s slide infinite linear;
 }
 
 .positions:before {
@@ -143,5 +151,25 @@ export default {
 .positions:after {
     right: 0;
     background: linear-gradient(to right, rgba(238, 248, 242, 0), rgb(238, 248, 242, 100));
+}
+
+.position-title {
+    position: absolute;
+    bottom: 0;
+    /* Aligns text to the bottom */
+    width: 100%;
+    /* Ensures text is within the container */
+    text-align: center;
+    color: white;
+    padding: 8px;
+    /* Adjust padding as needed */
+    z-index: 20;
+    word-wrap: break-word;
+    /* Wraps long text */
+    text-overflow: ellipsis;
+    /* Adds ellipsis for overflowed text */
+    white-space: normal;
+    /* Allows text wrapping */
+
 }
 </style>

@@ -63,6 +63,31 @@ const props = defineProps({
         <Row background="light">
             <PositionCarousel :roles="roles" />
         </Row>
+        <Row background="light">
+            <div class="grid grid-cols-1 lg:gap-x-16 gap-y-6 md:gap-y-12 lg:grid-cols-2 lg:items-center">
+                <div :class="['hidden lg:block relative sm:py-16 lg:py-0']">
+                    <div class="hidden lg:block flex justify-center">
+                        <img class="h-64"
+                            src="https://images.ctfassets.net/g7bwetg052e6/3jfEQv5IouKC9WpjXtrrLA/5ac466efc1475348c1917e98a455adad/shield.webp">
+                    </div>
+
+                </div>
+                <div :class="['block relative sm:py-16 lg:py-0']">
+                    <Heading size="xl" tag="h3">
+                        Our Recruitment Guarantee
+                    </Heading>
+                    <p class="body-paragraph">Finding the right staff for your business can be a challenging task, but we
+                        are here to help. Our company offers a 90-day recruitment guarantee. If the first candidate we place
+                        with you doesn't work out, we will replace them free of charge within the first 90 days of their
+                        employment.
+                        <br><br>
+                        Trust us to find the right fit for your company.
+                    </p>
+                </div>
+            </div>
+
+
+        </Row>
         <Row>
             <Fifty>
                 <template #left>
