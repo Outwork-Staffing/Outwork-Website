@@ -20,7 +20,7 @@ export default {
             type: String,
             default: 'default',
             validator: function (value) {
-                return ['default', 'green', 'light', 'dark'].includes(value);
+                return ['default', 'green', 'light', 'dark', 'gradient'].includes(value);
             },
         },
         header: {
@@ -37,6 +37,8 @@ export default {
                     return 'bg-secondary'
                 case 'dark':
                     return 'bg-dark'
+                case 'gradient':
+                    return 'gradient'
                 default:
                     return 'bg-white';
             }
@@ -44,3 +46,9 @@ export default {
     },
 }
 </script>
+
+<style scoped>
+.gradient {
+    @apply bg-gradient-to-t from-secondary to-white;
+}
+</style>

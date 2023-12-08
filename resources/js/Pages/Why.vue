@@ -7,10 +7,15 @@ import Fifty from '../Blocks/Fifty.vue';
 import Button from '../Components/Button.vue';
 import CTA from '../Blocks/CTA.vue';
 import FAQ from '../Blocks/FAQ.vue';
+import PositionCarousel from '../Blocks/PositionCarousel.vue';
+import BentoGrid from '../Blocks/BentoGrid.vue';
+const props = defineProps({
+    roles: Array
+});
 </script>  
 <template>
     <Main>
-        <Row background="white" header="true">
+        <Row background="gradient" header="true">
             <div class="max-w-4xl mx-auto text-center">
                 <Heading size="2xl" class="text-center text-heading">Why Outsource?
                 </Heading>
@@ -20,7 +25,12 @@ import FAQ from '../Blocks/FAQ.vue';
                 <Button class="w-full sm:w-auto">Start Hiring</Button>
 
             </div>
+            <div class="mt-16">
+                <BentoGrid />
+            </div>
+
         </Row>
+
         <Row background="light">
             <Fifty imageLocation="left" imageMobile="false"
                 imageUrl="https://ik.imagekit.io/outwork/office.webp?updatedAt=1701878778749&tr=w-1200%2Ch-675%2Cfo-auto">
@@ -54,6 +64,22 @@ import FAQ from '../Blocks/FAQ.vue';
                         :items="['Extremely high quality english', 'Deeply integrated into your systems', 'Relevant experience & culture fit']" />
                 </template>
             </Fifty>
+        </Row>
+        <Row>
+            <div class="text-center pb-8">
+                <Heading size="2xl" tag="h2" class="text-center">
+
+                    Recruit skilled people for any task.
+                </Heading>
+                <p class="body-paragraph max-w-xl text-center mx-auto ">Save time and money by growing your team outside of
+                    the
+                    United
+                    States and find skilled professionals for any project or business.</p>
+                <Button link="/start-hiring" class="text-center mx-auto">Start Hiring</Button>
+
+            </div>
+
+            <PositionCarousel fadeToWhite="true" :roles="roles" />
         </Row>
         <Row background="light">
             <Heading size="xl" tag="h2" class="text-center">

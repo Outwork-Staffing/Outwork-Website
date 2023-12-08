@@ -67,7 +67,7 @@ import { Link } from '@inertiajs/vue3'
 
 const navigation = [
     { name: 'Why Outsource?', href: '/why-outsource' },
-    { name: 'Services', href: '#' },
+    { name: 'Services', href: '/services' },
     { name: 'About Us', href: '/about' },
 ]
 

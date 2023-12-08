@@ -61,6 +61,12 @@ const props = defineProps({
             <Process />
         </Row>
         <Row background="light">
+            <Heading size="2xl" tag="h2" class="text-center">
+                Recruit skilled people for any task.
+            </Heading>
+            <p class="body-paragraph max-w-xl text-center mx-auto ">Save time and money by growing your team outside of the
+                United
+                States and find skilled professionals for any project or business.</p>
             <PositionCarousel :roles="roles" />
         </Row>
         <Row background="light">

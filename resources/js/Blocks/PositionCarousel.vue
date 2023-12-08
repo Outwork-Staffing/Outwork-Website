@@ -2,13 +2,7 @@
 import Heading from "../Components/Heading.vue";
 </script>
 <template>
-    <Heading size="2xl" tag="h2" class="text-center">
-        Recruit skilled people for any task.
-    </Heading>
-    <p class="body-paragraph max-w-xl text-center mx-auto ">Save time and money by growing your team outside of the
-        United
-        States and find skilled professionals for any project or business.</p>
-    <div class="positions pt-8">
+    <div class="positions pt-8" :class="{ 'white-fade': fadeToWhite }">
         <div class="positions-slide">
             <div v-for="position in roles" :key="position.name"
                 class="relative inline-block h-[175px] w-[175px] mr-6 mb-4 rounded-3xl overflow-hidden">
@@ -77,7 +71,12 @@ const positions = [
 ];
 export default {
     props: {
-        roles: Array
+        roles: Array,
+        fadeToWhite: {
+            type: Boolean,
+            default: false
+        }
+
     },
     data() {
         return {
@@ -171,5 +170,16 @@ export default {
     white-space: normal;
     /* Allows text wrapping */
 
+}
+
+
+.white-fade:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255, 50)) !important;
+}
+
+.white-fade:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255, 50)) !important;
 }
 </style>

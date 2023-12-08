@@ -28,21 +28,22 @@ const faqs = [
 </script>
 <template>
     <dl class="mt-10 space-y-6 max-w-2xl mx-auto">
-        <Disclosure as="div" v-for="faq in faqs" :key="faq.question" class="p-6 rounded-xl bg-white group"
+        <Disclosure as="div" v-for="faq in faqs" :key="faq.question"
+            :class="`p-6 rounded-xl hover:scale-105 hover:bg-white transition-all group ${open ? 'bg-white' : 'bg-white'}`"
             v-slot="{ open }">
-            <dt>
-                <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-900">
-                    <span class="text-headings font-bold text-xl">{{ faq.question }}</span>
-                    <span class="ml-6 flex h-7 items-center">
-                        <PlusSmallIcon v-if="!open"
-                            class="h-6 w-6 group-hover:scale-125 group-hover:rotate-12 transition-all" aria-hidden="true" />
-                        <MinusSmallIcon v-else class="h-6 w-6" aria-hidden="true" />
-                    </span>
-                </DisclosureButton>
-            </dt>
-            <DisclosurePanel as="dd" class="mt-2 pr-12 bg-white">
+
+            <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-900">
+                <span class="text-headings font-bold text-xl">{{ faq.question }}</span>
+                <span class="ml-6 flex h-7 items-center">
+                    <PlusSmallIcon v-if="!open" class="h-6 w-6 group-hover:scale-125 group-hover:rotate-12 transition-all"
+                        aria-hidden="true" />
+                    <MinusSmallIcon v-else class="h-6 w-6" aria-hidden="true" />
+                </span>
+            </DisclosureButton>
+            <DisclosurePanel as="dd" class="mt-2 pr-12 bg-white" v-show="open">
                 <p class="text-base leading-7 text-gray-600">{{ faq.answer }}</p>
             </DisclosurePanel>
         </Disclosure>
+
     </dl>
 </template>
