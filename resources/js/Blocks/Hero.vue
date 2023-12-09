@@ -18,8 +18,7 @@ import Button from '../Components/Button.vue';
                 $900-$1500
                 a month.</p>
             <div class="flex flex-col sm:flex-row gap-4 items-center justify-center sm:items-start">
-                <Button class="w-full sm:w-auto">Learn More</Button>
-                <Button class="w-full sm:w-auto" type="secondary">Book a Meeting</Button>
+                <Button class="w-full sm:w-auto" link="/start-hiring">Book an Inquiry Meeting</Button>
             </div>
         </div>
     </Row>

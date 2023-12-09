@@ -22,7 +22,7 @@ const props = defineProps({
                 <p class="text-xl max-w-2xl mx-auto text-center mx-12 text-body mb-6">Quickly assemble teams from around
                     the
                     globe meeting your needs and save thousands in monthly payroll. </p>
-                <Button class="w-full sm:w-auto">Start Hiring</Button>
+                <Button class="w-full sm:w-auto" link="/start-hiring">Start Hiring</Button>
 
             </div>
             <div class="mt-16">
