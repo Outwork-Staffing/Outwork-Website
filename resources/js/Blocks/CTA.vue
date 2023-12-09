@@ -7,7 +7,7 @@ import Button from '../Components/Button.vue';
 <template>
     <Row background="green">
         <Fifty imageLocation="right"
-            imageUrl="https://ik.imagekit.io/outwork/default-image.jpg?updatedAt=1701878672671&tr=w-1080%2Ch-566%2Cfo-auto">
+            imageUrl="https://images.ctfassets.net/g7bwetg052e6/6v2WViHfnBWtbwGECJURXK/1c4efc3223a95c67b075f9b40b3a67c8/CTA.jpeg">
             <template #left>
                 <Heading tag="h3" size="xl" class="text-white">Book a call to learn more or get started.</Heading>
                 <p class="mb-6 text-lg text-white">We are eager to work with you. Book a call with our team and discover

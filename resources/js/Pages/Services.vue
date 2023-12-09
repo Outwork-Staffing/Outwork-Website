@@ -7,12 +7,17 @@ import Fifty from '../Blocks/Fifty.vue';
 import Button from '../Components/Button.vue';
 import CTA from '../Blocks/CTA.vue';
 import FAQ from '../Blocks/FAQ.vue';
+import BentoGrid from '../Blocks/BentoGrid.vue';
+import PositionCarousel from '../Blocks/PositionCarousel.vue';
+const props = defineProps({
+    roles: Array
+});
 </script>   
 <template>
     <Main>
-        <Row background="white" header="true">
-            <div class="max-w-4xl mx-auto text-center">
-                <Heading size="span" tag="h6">
+        <Row background="gradient" header="true">
+            <div class="max-w-4xl mx-auto">
+                <Heading size="span" tag="h6" class="text-center">
                     Save Time & Money
                 </Heading>
                 <Heading size="2xl" class="text-center text-heading">Hire high-quality employees at a fraction of the cost
@@ -23,8 +28,27 @@ import FAQ from '../Blocks/FAQ.vue';
 
 
                 </p>
+                <div class="mt-16">
+                    <BentoGrid />
+                </div>
 
             </div>
+        </Row>
+        <Row>
+            <div class="text-center pb-8">
+                <Heading size="2xl" tag="h2" class="text-center">
+
+                    Recruit skilled people for any task.
+                </Heading>
+                <p class="body-paragraph max-w-xl text-center mx-auto ">Save time and money by growing your team outside of
+                    the
+                    United
+                    States and find skilled professionals for any project or business.</p>
+                <Button link="/start-hiring" class="text-center mx-auto">Start Hiring</Button>
+
+            </div>
+
+            <PositionCarousel fadeToWhite="true" :roles="roles" />
         </Row>
         <Row>
 
@@ -42,29 +66,6 @@ import FAQ from '../Blocks/FAQ.vue';
                         staffing needs by leveraging the expertise of our global team of professionals.
                     </p>
                     <CheckBubble :items="['Fixed Hiring Fee', '$0 retainer']" />
-                </template>
-
-            </Fifty>
-        </Row>
-        <Row>
-            <Fifty imageLocation="right"
-                imageUrl="https://images.ctfassets.net/g7bwetg052e6/1QHGRS519pdeSnWGIX9tA4/081a6d1d816016d0357a8720bfab1be4/people.jpeg">
-                <template #left>
-                    <Heading size="span" tag="h6">
-                        join us!
-                    </Heading>
-                    <Heading tag="h2" size="xl">
-                        Interested in joining our team? 🎉
-                    </Heading>
-                    <p class="body-paragraph">
-                        If you are passionate about helping companies hire internationally, we want to hear from you!
-                        <br><br>
-                        Please send us a message telling us why you would be a great fit for our team. We are always looking
-                        for talented and motivated individuals who are committed to helping companies succeed in a global
-                        market.
-                    </p>
-                    <Button type="text" link="mailto:operations@outworkstaffing.com">Contact Us</Button>
-
                 </template>
 
             </Fifty>

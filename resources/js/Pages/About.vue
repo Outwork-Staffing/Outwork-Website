@@ -41,7 +41,7 @@ import CTA from '../Blocks/CTA.vue';
         </Row>
         <Row>
             <Fifty imageLocation="right"
-                imageUrl="https://images.ctfassets.net/g7bwetg052e6/1QHGRS519pdeSnWGIX9tA4/081a6d1d816016d0357a8720bfab1be4/people.jpeg">
+                imageUrl="https://images.ctfassets.net/g7bwetg052e6/6v2WViHfnBWtbwGECJURXK/1c4efc3223a95c67b075f9b40b3a67c8/CTA.jpeg">
                 <template #left>
                     <Heading size="span" tag="h6">
                         join us!

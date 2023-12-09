@@ -9,13 +9,11 @@ import CTA from '../Blocks/CTA.vue';
 import FAQ from '../Blocks/FAQ.vue';
 import PositionCarousel from '../Blocks/PositionCarousel.vue';
 import BentoGrid from '../Blocks/BentoGrid.vue';
-const props = defineProps({
-    roles: Array
-});
+
 </script>  
 <template>
     <Main>
-        <Row background="gradient" header="true">
+        <Row background="white" header="true">
             <div class="max-w-4xl mx-auto text-center">
                 <Heading size="2xl" class="text-center text-heading">Why Outsource?
                 </Heading>
@@ -25,10 +23,6 @@ const props = defineProps({
                 <Button class="w-full sm:w-auto" link="/start-hiring">Start Hiring</Button>
 
             </div>
-            <div class="mt-16">
-                <BentoGrid />
-            </div>
-
         </Row>
 
         <Row background="light">
@@ -65,22 +59,7 @@ const props = defineProps({
                 </template>
             </Fifty>
         </Row>
-        <Row>
-            <div class="text-center pb-8">
-                <Heading size="2xl" tag="h2" class="text-center">
 
-                    Recruit skilled people for any task.
-                </Heading>
-                <p class="body-paragraph max-w-xl text-center mx-auto ">Save time and money by growing your team outside of
-                    the
-                    United
-                    States and find skilled professionals for any project or business.</p>
-                <Button link="/start-hiring" class="text-center mx-auto">Start Hiring</Button>
-
-            </div>
-
-            <PositionCarousel fadeToWhite="true" :roles="roles" />
-        </Row>
         <Row background="light">
             <Heading size="xl" tag="h2" class="text-center">
                 Frequently Asked Questions</Heading>
