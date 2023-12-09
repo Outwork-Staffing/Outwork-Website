@@ -1,16 +1,3 @@
-<script setup>
-import Main from '../Layouts/Main.vue';
-import Row from '../Components/Row.vue';
-import Heading from '../Components/Heading.vue';
-import CheckBubble from '../Components/CheckBubble.vue';
-import Fifty from '../Blocks/Fifty.vue';
-import Button from '../Components/Button.vue';
-import CTA from '../Blocks/CTA.vue';
-import FAQ from '../Blocks/FAQ.vue';
-import PositionCarousel from '../Blocks/PositionCarousel.vue';
-import BentoGrid from '../Blocks/BentoGrid.vue';
-
-</script>  
 <template>
     <Main>
         <Row background="white" header="true">

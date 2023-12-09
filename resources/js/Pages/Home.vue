@@ -1,19 +1,7 @@
 <script setup>
-import Hero from "../Blocks/Hero.vue";
-import Main from "../Layouts/Main.vue";
-import Row from "../Components/Row.vue";
-import Fifty from "../Blocks/Fifty.vue";
-import Heading from "../Components/Heading.vue";
-import CheckBubble from "../Components/CheckBubble.vue";
-import Process from "../Blocks/Process.vue";
-import CTA from "../Blocks/CTA.vue";
-import PositionCarousel from '../Blocks/PositionCarousel.vue';
-
 const props = defineProps({
     roles: Array
 });
-
-
 </script>
 
 <template>

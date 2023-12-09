@@ -1,10 +1,3 @@
-<script setup>
-import Main from "../Layouts/Main.vue";
-import Row from "../Components/Row.vue";
-import Heading from "../Components/Heading.vue";
-import Button from "../Components/Button.vue";
-</script>
-
 <template>
     <Main>
         <Row class="pt-12 ">

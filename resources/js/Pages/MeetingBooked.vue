@@ -1,9 +1,3 @@
-<script setup>
-import Main from "../Layouts/Main.vue";
-import Row from "../Components/Row.vue";
-import Heading from "../Components/Heading.vue";
-</script>
-
 <template>
     <Main>
         <Row class="pt-40 text-center min-h-screen">
