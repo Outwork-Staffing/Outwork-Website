@@ -4,7 +4,8 @@
             <div :class="['block relative sm:py-16 lg:py-0',
                 imageMobile === 'false' && imageLocation === 'left' ? 'hidden lg:block' : 'block']">
                 <div v-if="imageLocation === 'left' && imageUrl" :class="['block relative lg:py-0']">
-                    <FiftyImage :imageUrl="imageUrl" style="width: 100%; height: auto;" />
+                    <FiftyImage :imageUrl="imageUrl" style="width: 100%; height: auto;" :lazyLoad="lazyLoad"
+                        :altText="altText" />
                 </div>
                 <template v-else>
                     <slot name="left">
@@ -16,7 +17,8 @@
             <div :class="['block relative sm:py-16 lg:py-0',
                 imageMobile === 'false' && imageLocation === 'right' ? 'hidden lg:block' : 'block']">
                 <div v-if="imageLocation === 'right' && imageUrl" :class="['block relative lg:py-0']">
-                    <FiftyImage :imageUrl="imageUrl" style="width: 100%; height: auto;" />
+                    <FiftyImage :imageUrl="imageUrl" style="width: 100%; height: auto;" :lazyLoad="lazyLoad"
+                        :altText="altText" />
                 </div>
                 <template v-else>
                     <slot name="right"></slot>
@@ -48,6 +50,14 @@ export default {
                 return ['top', 'bottom'].includes(value);
             },
         },
+        lazyLoad: {
+            type: Boolean,
+            default: true
+        },
+        altText: {
+            type: String,
+            default: null
+        }
     },
     components: {
         FiftyImage

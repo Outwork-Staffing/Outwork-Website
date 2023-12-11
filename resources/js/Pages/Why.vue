@@ -14,7 +14,8 @@
 
         <Row background="light">
             <Fifty imageLocation="left" imageMobile="false"
-                imageUrl="https://ik.imagekit.io/outwork/office.webp?updatedAt=1701878778749&tr=w-1200%2Ch-675%2Cfo-auto">
+                imageUrl="https://ik.imagekit.io/outwork/office.webp?updatedAt=1701878778749&tr=w-1200%2Ch-675%2Cfo-auto"
+                altText="Team working">
                 <template #right>
                     <Heading size="span" tag="h6">
                         DON'T COMPROMISE ON YOUR TEAM

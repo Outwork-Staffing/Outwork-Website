@@ -43,7 +43,8 @@ const props = defineProps({
         <Row>
 
             <Fifty imageLocation="left"
-                imageUrl="https://images.ctfassets.net/g7bwetg052e6/1QHGRS519pdeSnWGIX9tA4/081a6d1d816016d0357a8720bfab1be4/people.jpeg">
+                imageUrl="https://images.ctfassets.net/g7bwetg052e6/1QHGRS519pdeSnWGIX9tA4/081a6d1d816016d0357a8720bfab1be4/people.jpeg"
+                altText="Team putting hands in">
                 <template #right>
                     <Heading size="span" tag="h6">
                         our mission

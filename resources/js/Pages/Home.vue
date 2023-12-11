@@ -8,7 +8,8 @@ const props = defineProps({
     <Main>
         <Hero />
         <Row name="relate" background="light">
-            <Fifty imageMobile="false" imageUrl="https://ik.imagekit.io/outwork/handsinface.webp?updatedAt=1701878781199">
+            <Fifty imageMobile="false" imageUrl="https://ik.imagekit.io/outwork/handsinface.webp?updatedAt=1701878781199"
+                :lazyLoad="false" altText="Man upset with his job">
                 <template #right>
                     <Heading size="span" tag="h6">
                         Get the help you Know you need
@@ -29,7 +30,8 @@ const props = defineProps({
         </Row>
         <Row name="quality" background="light">
             <Fifty imageLocation="right" imageMobile="false"
-                imageUrl="https://ik.imagekit.io/outwork/office.webp?updatedAt=1701878778749&tr=w-1200%2Ch-675%2Cfo-auto">
+                imageUrl="https://ik.imagekit.io/outwork/office.webp?updatedAt=1701878778749&tr=w-1200%2Ch-675%2Cfo-auto"
+                altText="Team working">
                 <template #left>
                     <Heading size="span" tag="h6">
                         building a team doesn't have to cost tons
@@ -62,7 +64,8 @@ const props = defineProps({
                 <div :class="['hidden lg:block relative sm:py-16 lg:py-0']">
                     <div class="hidden lg:block flex justify-center">
                         <img class="h-64"
-                            src="https://images.ctfassets.net/g7bwetg052e6/3jfEQv5IouKC9WpjXtrrLA/5ac466efc1475348c1917e98a455adad/shield.webp">
+                            src="https://images.ctfassets.net/g7bwetg052e6/3jfEQv5IouKC9WpjXtrrLA/5ac466efc1475348c1917e98a455adad/shield.webp"
+                            alt="Shield showing Outwork Gurantee">
                     </div>
 
                 </div>

@@ -7,6 +7,9 @@
   <meta property="og:type" content="website" />
   <link rel="icon" type="image/svg+xml" href="/fav.svg">
 
+  <meta property="og:image" content="/social_share.png" />
+  <meta name="twitter:image" content="/social_share.png">
+
   @vite('resources/js/app.js')
   @vite('resources/css/app.css')
   @inertiaHead
@@ -40,5 +43,22 @@
 <body>
   @inertia
 </body>
+<script>
+  window.SavvyCal = window.SavvyCal || function() {
+    (SavvyCal.q = SavvyCal.q || []).push(arguments)
+  };
+</script>
+<script async src="https://embed.savvycal.com/v1/embed.js"></script>
+<script>
+  SavvyCal('init', {
+    widget: {
+      enabled: true,
+      link: 'bryan-outwork-staffing/inquiry',
+      prompt: 'Book an inquiry call',
+      backgroundColor: '#152a29',
+      textColor: '#ffffff'
+    }
+  });
+</script>
 
 </html>

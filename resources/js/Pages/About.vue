@@ -22,7 +22,8 @@ import CTA from '../Blocks/CTA.vue';
         <Row>
 
             <Fifty imageLocation="left"
-                imageUrl="https://images.ctfassets.net/g7bwetg052e6/1QHGRS519pdeSnWGIX9tA4/081a6d1d816016d0357a8720bfab1be4/people.jpeg">
+                imageUrl="https://images.ctfassets.net/g7bwetg052e6/1QHGRS519pdeSnWGIX9tA4/081a6d1d816016d0357a8720bfab1be4/people.jpeg"
+                altText="Team putting hands in">
                 <template #right>
                     <Heading size="span" tag="h6">
                         our mission
@@ -41,7 +42,8 @@ import CTA from '../Blocks/CTA.vue';
         </Row>
         <Row>
             <Fifty imageLocation="right"
-                imageUrl="https://images.ctfassets.net/g7bwetg052e6/6v2WViHfnBWtbwGECJURXK/1c4efc3223a95c67b075f9b40b3a67c8/CTA.jpeg">
+                imageUrl="https://images.ctfassets.net/g7bwetg052e6/evi8IOy7eH7B3deVUBC7i/66dba1b271bdddf28b8233dac1c3b20f/linkedin-sales-solutions-Be5aVKFv9ho-unsplash.jpg"
+                altText="Showcased Team">
                 <template #left>
                     <Heading size="span" tag="h6">
                         join us!
