@@ -27,11 +27,7 @@ export default {
         }
 
     },
-    data() {
-        return {
-            positions: positions
-        };
-    },
+
     mounted() {
         console.log('info mounted');
         var copy = document.querySelector(".positions-slide").cloneNode(true);
