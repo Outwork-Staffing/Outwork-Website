@@ -7,7 +7,7 @@
                         item.name }}</a>
             </div>
         </nav>
-        <p class="text-md font-semibold leading-6 text-white text-left lg:text-center mt-10">&copy; {{ new
+        <p class="text-md font-semibold leading-6 text-white text-left md:text-center mt-10">&copy; {{ new
             Date().getFullYear() }}
             Outwork Staffing. <br>All rights
 

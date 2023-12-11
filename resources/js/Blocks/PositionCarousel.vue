@@ -46,6 +46,7 @@ export default {
     }
 }
 
+
 .positions {
     overflow: hidden;
     white-space: nowrap;
@@ -85,6 +86,13 @@ export default {
 .positions-slide {
     display: inline-block;
     animation: 60s slide infinite linear;
+}
+
+
+@media (max-width: 768px) {
+    .positions-slide {
+        animation: 30s slide infinite linear;
+    }
 }
 
 .positions:before {

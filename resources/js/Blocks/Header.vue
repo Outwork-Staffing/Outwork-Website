@@ -8,7 +8,7 @@
                     alt="" />
             </a>
             <div class="flex lg:hidden">
-                <Button class="text-md font-semibold leading-6 mr-6">Start Hiring</Button>
+                <Button link="/start-hiring" class="text-md font-semibold leading-6 mr-6">Start Hiring</Button>
 
                 <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
                     @click="mobileMenuOpen = true">

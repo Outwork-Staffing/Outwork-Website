@@ -61,8 +61,8 @@ const props = defineProps({
         </Row>
         <Row background="light">
             <div class="grid grid-cols-1 lg:gap-x-16 gap-y-6 md:gap-y-12 lg:grid-cols-2 lg:items-center">
-                <div :class="['hidden lg:block relative sm:py-16 lg:py-0']">
-                    <div class="hidden lg:block flex justify-center">
+                <div :class="['block relative sm:py-16 lg:py-0']">
+                    <div class="block flex justify-center">
                         <img class="h-64"
                             src="https://images.ctfassets.net/g7bwetg052e6/3jfEQv5IouKC9WpjXtrrLA/5ac466efc1475348c1917e98a455adad/shield.webp"
                             alt="Shield showing Outwork Gurantee">
