@@ -18,57 +18,6 @@ import Heading from "../Components/Heading.vue";
     </div>
 </template >
 <script>
-const positions = [
-    {
-        'name': 'Software Beta',
-        'img': 'https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/07/the-structure-of-a-url.webp'
-    }, {
-        'name': 'Software Engineer',
-        'img': 'https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/07/the-structure-of-a-url.webp'
-    }, {
-        'name': 'Software Alpha',
-        'img': 'https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/07/the-structure-of-a-url.webp'
-    }, {
-        'name': 'Software Male',
-        'img': 'https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/07/the-structure-of-a-url.webp'
-    }, {
-        'name': 'Software Beta',
-        'img': 'https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/07/the-structure-of-a-url.webp'
-    }, {
-        'name': 'Software Engineer',
-        'img': 'https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/07/the-structure-of-a-url.webp'
-    }, {
-        'name': 'Software Alpha',
-        'img': 'https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/07/the-structure-of-a-url.webp'
-    }, {
-        'name': 'Software Male',
-        'img': 'https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/07/the-structure-of-a-url.webp'
-    }, {
-        'name': 'Software Beta',
-        'img': 'https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/07/the-structure-of-a-url.webp'
-    }, {
-        'name': 'Software Engineer',
-        'img': 'https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/07/the-structure-of-a-url.webp'
-    }, {
-        'name': 'Software Alpha',
-        'img': 'https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/07/the-structure-of-a-url.webp'
-    }, {
-        'name': 'Software Male',
-        'img': 'https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/07/the-structure-of-a-url.webp'
-    }, {
-        'name': 'Software Beta',
-        'img': 'https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/07/the-structure-of-a-url.webp'
-    }, {
-        'name': 'Software Engineer',
-        'img': 'https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/07/the-structure-of-a-url.webp'
-    }, {
-        'name': 'Software Alpha',
-        'img': 'https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/07/the-structure-of-a-url.webp'
-    }, {
-        'name': 'Software Male',
-        'img': 'https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/07/the-structure-of-a-url.webp'
-    },
-];
 export default {
     props: {
         roles: Array,
