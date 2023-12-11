@@ -27,7 +27,7 @@ Route::get('/', function () {
     $formattedPosts = [];
     foreach ($posts as $post) {
         $imageUrl = $post->image->getFile()->getUrl();
-        $resizedImageUrl = $imageUrl . '?w=500&h=500&fit=fill';
+        $resizedImageUrl = $imageUrl . '?w=500&h=500&fit=fill&fm=webp';
 
         $formattedPosts[] = [
             'title' => $post->getTitle(),
