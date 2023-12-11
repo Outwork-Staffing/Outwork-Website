@@ -4,7 +4,7 @@ import { CurrencyDollarIcon, CheckBadgeIcon, DocumentCheckIcon, HeartIcon } from
 </script>
 
 <template>
-    <div class="bento-grid w-full">
+    <div class="grid-cols-1 md:grid-cols-5 bento-grid w-full max-w-full">
 
 
         <BentoCard headline="Find Skilled Global Talent" class="col-span-3">
@@ -60,11 +60,12 @@ import { CurrencyDollarIcon, CheckBadgeIcon, DocumentCheckIcon, HeartIcon } from
     flex: 0 0 auto;
     gap: 20px;
     grid-auto-rows: min-content;
-    grid-template-columns: repeat(5, minmax(200px, 1fr));
     grid-template-rows: repeat(2, min-content);
     height: min-content;
     justify-content: center;
 }
+
+
 
 .card {
     gap: 15px;

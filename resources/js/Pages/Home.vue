@@ -8,7 +8,7 @@ const props = defineProps({
     <Main>
         <Hero />
         <Row name="relate" background="light">
-            <Fifty imageMobile="false" imageUrl="https://ik.imagekit.io/outwork/handsinface.webp?updatedAt=1701878781199"
+            <Fifty imageMobile="true" imageUrl="https://ik.imagekit.io/outwork/handsinface.webp?updatedAt=1701878781199"
                 :lazyLoad="false" altText="Man upset with his job">
                 <template #right>
                     <Heading size="span" tag="h6">

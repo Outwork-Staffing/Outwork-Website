@@ -18,11 +18,12 @@ const props = defineProps({
 
 
                 </p>
-                <div class="mt-16">
-                    <BentoGrid />
-                </div>
-
             </div>
+            <div class="mt-16">
+                <BentoGrid />
+            </div>
+
+
         </Row>
         <Row>
             <div class="text-center pb-8">

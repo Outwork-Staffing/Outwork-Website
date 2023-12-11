@@ -6,7 +6,7 @@ import Button from '../Components/Button.vue';
 </script>
 <template>
     <Row background="green">
-        <Fifty imageLocation="right"
+        <Fifty imageLocation="right" imageMobile="false"
             imageUrl="https://images.ctfassets.net/g7bwetg052e6/6v2WViHfnBWtbwGECJURXK/1c4efc3223a95c67b075f9b40b3a67c8/CTA.jpeg"
             altText="Men sitting around computer">
             <template #left>

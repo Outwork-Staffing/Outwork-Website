@@ -1,6 +1,6 @@
 <template>
     <div class="mx-auto max-w-7xl ">
-        <div class="grid grid-cols-1 gap-x-16 gap-y-6 md:gap-y-12 lg:grid-cols-2 lg:items-center">
+        <div class="grid grid-cols-1 gap-x-16 gap-y-6 lg:gap-y-12 lg:grid-cols-2 lg:items-center">
             <div :class="['block relative sm:py-16 lg:py-0',
                 imageMobile === 'false' && imageLocation === 'left' ? 'hidden lg:block' : 'block']">
                 <div v-if="imageLocation === 'left' && imageUrl" :class="['block relative lg:py-0']">

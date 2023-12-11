@@ -3,7 +3,7 @@
         <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 w-full" aria-label="Global">
             <a href="/" class="-m-1.5 p-1.5">
                 <span class="sr-only">Outwork Staffing</span>
-                <img class="h-12 w-auto"
+                <img class="h-8 md:h-12 w-auto"
                     src="https://images.ctfassets.net/g7bwetg052e6/5qzjrlo1XTICWYpB1LXbQ5/4f90461cf694cb017b30e15be5a8f287/logo.svg"
                     alt="" />
             </a>
