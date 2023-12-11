@@ -23,7 +23,7 @@
                     item.name
                 }}</Link>
 
-                <Button InertiaLink="/start-hiring" class="text-md font-semibold leading-6">Start Hiring</Button>
+                <Button link="/start-hiring" class="text-md font-semibold leading-6">Start Hiring</Button>
 
             </div>
         </nav>
@@ -52,7 +52,7 @@
                                 item.name }}</Link>
                         </div>
                         <div class="py-6">
-                            <Button InertiaLink="/start-hiring" class="text-md font-semibold leading-6">Start
+                            <Button link="/start-hiring" class="text-md font-semibold leading-6">Start
                                 Hiring</Button>
                         </div>
                     </div>
