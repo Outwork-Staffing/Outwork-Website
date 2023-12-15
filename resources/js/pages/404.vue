@@ -12,3 +12,6 @@
         </Row>
     </Main>
 </template>
+
+<script setup>
+</script>

@@ -95,5 +95,5 @@ Route::get('/meeting-booked', function () {
 Route::get('/404', function () {
     Meta::addMeta('title', '404 - Outwork Staffing');
 
-    return Inertia('404.vue');
+    return Inertia('404');
 });
