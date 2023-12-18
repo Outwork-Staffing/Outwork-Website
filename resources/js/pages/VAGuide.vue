@@ -3,7 +3,6 @@ import Main from '@/Layouts/Main.vue';
 import Row from '@/Components/Row.vue';
 import Heading from '@/Components/Heading.vue';
 import CTA from '@/Blocks/CTA.vue';
-import VAGuideContent from '../../md/VAGuideContent.md';
 </script>
 
 <template>
@@ -18,7 +17,6 @@ import VAGuideContent from '../../md/VAGuideContent.md';
                 </Heading>
 
                 <article class="my-12 max-w-5xl max-h-[96] mx-auto prose xl:prose-lg">
-                    <VAGuideContent />
                 </article>
             </div>
         </Row>
