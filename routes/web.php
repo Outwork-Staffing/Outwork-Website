@@ -97,3 +97,8 @@ Route::get('/404', function () {
 
     return Inertia('404');
 });
+
+Route::get('/virtual-assistant-guide', function () {
+    Meta::addMeta('title', 'Virtual Assistant Guide - Outwork Staffing');
+    return Inertia('VAGuide');
+});

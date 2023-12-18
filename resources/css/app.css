@@ -78,3 +78,7 @@
     gap: 30px;
     padding: 40px;
 }
+
+.markdown-body a {
+    text-decoration: none !important;
+}
