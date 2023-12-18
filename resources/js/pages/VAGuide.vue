@@ -1,8 +1,8 @@
 <script setup>
-import Main from '@/layouts/Main.vue';
-import Row from '@/components/Row.vue';
-import Heading from '@/components/Heading.vue';
-import CTA from '@/blocks/CTA.vue';
+import Main from '@/Layouts/Main.vue';
+import Row from '@/Components/Row.vue';
+import Heading from '@/Components/Heading.vue';
+import CTA from '@/Blocks/CTA.vue';
 import VAGuideContent from '../../md/VAGuideContent.md';
 </script>
 
