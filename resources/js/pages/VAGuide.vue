@@ -17,9 +17,8 @@ import VAGuideContent from '../../md/VAGuideContent.md';
                     cost-effective recruiting solutions as you grow your staff overseas.
 
                 </Heading>
-                <img class="w-full rounded-xl max-w-3xl mt-6 mb-12 mx-auto"
-                    src="https://ik.imagekit.io/outwork/office.webp?updatedAt=1701878778749&tr=w-1200%2Ch-675%2Cfo-auto" />
-                <article class="my-12 max-w-5xl max-h-[96] mx-auto prose lg:prose-xl">
+
+                <article class="my-12 max-w-5xl max-h-[96] mx-auto prose xl:prose-lg">
                     <VAGuideContent />
                 </article>
             </div>
