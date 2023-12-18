@@ -14,7 +14,6 @@
             </div>
         </Row>
         <CTA />
-
     </Main>
 </template>
 
