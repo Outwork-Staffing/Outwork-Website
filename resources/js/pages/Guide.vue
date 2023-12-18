@@ -6,9 +6,11 @@ import VAGuideContent from '../../md/VAGuideContent.md';
         <Row background="white" header="true">
             <div class="mx-auto">
                 <Heading size="2xl" class="text-center text-heading">The Ultimate Guide to Virtual Assistants</Heading>
-                <Heading size="span" class="max-w-2xl mx-auto text-center">Expertise,
-                    efficiency, and
-                    cost-effective recruiting solutions as you grow your staff overseas.
+                <Heading size="span" class="mx-auto text-center max-w-md md:max-w-7xl"
+                    style="text-transform: none !important;">We’ll
+                    help you find elite talent overseas—so you
+
+                    can grow your business faster and sustainably.
 
                 </Heading>
 
