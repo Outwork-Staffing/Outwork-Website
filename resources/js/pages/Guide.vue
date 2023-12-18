@@ -1,3 +1,6 @@
+<script setup>
+import VAGuideContent from '../../md/VAGuideContent.md';
+</script>
 <template>
     <Main>
         <Row background="white" header="true">
@@ -10,6 +13,7 @@
                 </Heading>
 
                 <article class="my-12 max-w-5xl max-h-[96] mx-auto prose xl:prose-lg">
+                    <VAGuideContent />
                 </article>
             </div>
         </Row>
