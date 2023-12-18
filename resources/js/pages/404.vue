@@ -1,3 +1,9 @@
+<script setup>
+import Main from '../layouts/Main.vue';
+import Row from '../components/Row.vue';
+import Heading from '../components/Heading.vue';
+import Button from '../components/Button.vue';
+</script>
 <template>
     <Main>
         <Row class="pt-40 text-center min-h-screen">
@@ -13,5 +19,3 @@
     </Main>
 </template>
 
-<script setup>
-</script>
