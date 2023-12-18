@@ -1,10 +1,3 @@
-<script setup>
-import Main from '@/layouts/Main.vue';
-import Row from '@/components/Row.vue';
-import Heading from '@/components/Heading.vue';
-import CTA from '@/blocks/CTA.vue';
-</script>
-
 <template>
     <Main>
         <Row background="white" header="true">
