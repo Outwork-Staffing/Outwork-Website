@@ -3,7 +3,7 @@ import Main from '../Layouts/Main.vue';
 import Row from '../Components/Row.vue';
 import Heading from '../Components/Heading.vue';
 import Button from '../Components/Button.vue';
-
+import CTA from '../Blocks/CTA.vue';
 import VAGuideContent from '../../md/VAGuideContent.md';
 </script>
 
@@ -24,6 +24,7 @@ import VAGuideContent from '../../md/VAGuideContent.md';
                 </article>
             </div>
         </Row>
+        <CTA />
 
     </Main>
 </template>
