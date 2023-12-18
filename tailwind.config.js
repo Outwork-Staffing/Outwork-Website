@@ -20,6 +20,8 @@ export default {
       dark: '#152a29'
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
 
