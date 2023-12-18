@@ -92,13 +92,14 @@ Route::get('/meeting-booked', function () {
     return Inertia('MeetingBooked');
 });
 
-Route::get('/404', function () {
-    Meta::addMeta('title', '404 - Outwork Staffing');
-
-    return Inertia('404');
-});
 
 Route::get('/virtual-assistant-guide', function () {
     Meta::addMeta('title', 'Virtual Assistant Guide - Outwork Staffing');
     return Inertia('Guide');
+});
+
+Route::get('/404', function () {
+    Meta::addMeta('title', '404 - Outwork Staffing');
+
+    return Inertia('404');
 });
