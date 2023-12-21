@@ -1,5 +1,5 @@
 <script setup>
-import VAGuideContent from '../../md/VAGuideContent.md';
+import VAGuideContent from '../../md/VAGuideContentNewOrder.md';
 import BryanAuthor from '../blocks/BryanAuthor.vue';
 </script>
 <template>

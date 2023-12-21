@@ -98,6 +98,13 @@ Route::get('/virtual-assistant-guide', function () {
     return Inertia('Guide');
 });
 
+Route::get('/virtual-assistant-resource', function () {
+    //This is part of a split test. 
+    //This variant includes the same resource; but it includes 1) my (Bryan) face 2) different order of data
+    Meta::addMeta('title', 'Virtual Assistant Guide - Outwork Staffing');
+    return Inertia('Guide2');
+});
+
 Route::get('/404', function () {
     Meta::addMeta('title', '404 - Outwork Staffing');
 
