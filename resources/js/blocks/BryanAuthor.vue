@@ -1,6 +1,6 @@
 <template>
     <div class="relative flex items-center gap-x-4 mx-auto">
-        <img src="https://ik.imagekit.io/jcj/IMG_0928_EYt97DxK8.JPG?updatedAt=1703175612544" alt=""
+        <img src="https://ik.imagekit.io/jcj/bryan_headshots/IMG_0928_EYt97DxK8.JPG?updatedAt=1703176803509" alt=""
             class="h-10 w-10 rounded-full bg-gray-50">
         <div class="text-sm leading-6">
             <p class="font-semibold text-gray-900">
