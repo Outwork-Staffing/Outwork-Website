@@ -86,6 +86,12 @@ Route::get('/start-hiring', function () {
     return Inertia('StartHiring');
 });
 
+Route::get('/start-hiring/email', function () {
+    Meta::addMeta('title', 'Start Hiring - Outwork Staffing');
+
+    return Inertia('StartHiring');
+});
+
 Route::get('/meeting-booked', function () {
     Meta::addMeta('title', 'Meeting Booked - Outwork Staffing');
 
