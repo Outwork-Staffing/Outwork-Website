@@ -23,6 +23,7 @@
         "@vitejs/plugin-vue": "^4.5.0",
         "@vueuse/motion": "^2.0.0",
         "heroicons": "^2.0.18",
-        "unplugin-vue-markdown": "^0.25.2"
+        "unplugin-vue-markdown": "^0.25.2",
+        "vue3-infinite-slide-bar": "^1.0.4"
     }
 }
