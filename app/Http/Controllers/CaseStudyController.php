@@ -16,7 +16,7 @@ class CaseStudyController extends Controller
         $client = new DeliveryClient(env('CONTENTFUL_DELIVERY_TOKEN'), env('CONTENTFUL_SPACE_ID'), env('CONTENTFUL_ENVIRONMENT_ID'));
         $query = new Query();
         $query->setContentType('caseStudies')
-            ->orderBy('fields.title', true);
+            ->orderBy('fields.date', true);
         $posts = $client->getEntries($query);
 
         $formattedPosts = [];
@@ -29,10 +29,11 @@ class CaseStudyController extends Controller
                 'img' => $resizedImageUrl,
                 'slug' => $post->getSlug(),
                 'type' => $post->getjobType(),
+                'date' =>
+                $post->getdate()->format('F jS, Y'),
                 'industry' => $post->getIndustry(),
             ];
         }
-
         return Inertia('SuccessStories', ['stories' => $formattedPosts]);
     }
 
@@ -47,17 +48,25 @@ class CaseStudyController extends Controller
         $formattedPost = [];
         foreach ($post as $p) {
             $imageUrl = $p->featuredImage->getFile()->getUrl();
-            $resizedImageUrl = $imageUrl . '?w=500&h=500&fit=fill&fm=webp';
+            $resizedImageUrl = $imageUrl . '?w=800&h=800&fit=fill&fm=webp';
             $formattedPost[] = [
                 'title' => $p->getTitle(),
+                'desc' => $p->getminiBlurb(),
                 'img' => $resizedImageUrl,
                 'slug' => $p->getSlug(),
                 'content' => $p->getBody(),
                 'type' => $p->getjobType(),
                 'industry' => $p->getIndustry(),
+                'image' => 'https:' . $resizedImageUrl,
+                'date' =>
+                $p->getdate()->format('F jS, Y'),
             ];
+            $salary = [];
+            $salary['hiredSalary'] = $p->getmonthlySalaryHiredRate();
+            $salary['usSalary'] = $p->getmonthlySalaryUsaRate();
         }
 
-        return Inertia('SuccessStory', ['story' => $formattedPost]);
+
+        return Inertia('SuccessStory', ['story' => $formattedPost, 'salary' => $salary]);
     }
 }
