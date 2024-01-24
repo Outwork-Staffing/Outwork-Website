@@ -1,5 +1,5 @@
 <template>
-    <header class="w-full bg-white fixed z-[20]">
+    <header class="w-full bg-white fixed z-[120]">
         <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 w-full" aria-label="Global">
             <a href="/" class="-m-1.5 p-1.5">
                 <span class="sr-only">Outwork Staffing</span>

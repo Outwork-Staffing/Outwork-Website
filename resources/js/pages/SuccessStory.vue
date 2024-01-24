@@ -22,7 +22,12 @@ let story = props.story[0];
                 </template>
             </Fifty>
         </Row>
-        <SavingsRow :hiredSalary="salary.hiredSalary" :usSalary="salary.usSalary" />
+        <Row>
+            <Heading size="lg" class="text-4xl text-heading leading-snug mb-0 ">Summary:
+            </Heading>
+        </Row>
+        <SavingsRow :hiredSalary="salary.hiredSalary" :usSalary="salary.usSalary" :title="story.jobTitle" />
+
         <CTA />
     </Main>
 </template>

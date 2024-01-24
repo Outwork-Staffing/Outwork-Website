@@ -58,6 +58,7 @@ class CaseStudyController extends Controller
                 'type' => $p->getjobType(),
                 'industry' => $p->getIndustry(),
                 'image' => 'https:' . $resizedImageUrl,
+                'jobTitle' => $p->getjobTitle(),
                 'date' =>
                 $p->getdate()->format('F jS, Y'),
             ];
@@ -65,7 +66,6 @@ class CaseStudyController extends Controller
             $salary['hiredSalary'] = $p->getmonthlySalaryHiredRate();
             $salary['usSalary'] = $p->getmonthlySalaryUsaRate();
         }
-
 
         return Inertia('SuccessStory', ['story' => $formattedPost, 'salary' => $salary]);
     }
