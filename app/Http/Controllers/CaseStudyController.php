@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Contentful\Delivery\Client as DeliveryClient;
 use Contentful\Delivery\Query;
+use App\Meta;
 
 class CaseStudyController extends Controller
 {
@@ -66,7 +67,8 @@ class CaseStudyController extends Controller
             $salary['hiredSalary'] = $p->getmonthlySalaryHiredRate();
             $salary['usSalary'] = $p->getmonthlySalaryUsaRate();
         }
-
+        Meta::addMeta('title', $formattedPost[0]['title'] . ' - Outwork Staffing');
+        Meta::addMeta('description', $formattedPost[0]['desc']);
         return Inertia('SuccessStory', ['story' => $formattedPost, 'salary' => $salary]);
     }
 }

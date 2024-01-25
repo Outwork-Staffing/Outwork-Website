@@ -1,4 +1,6 @@
 <script setup>
+import RichTextRenderer from 'contentful-rich-text-vue-renderer';
+
 const props = defineProps({
     story: Array,
     salary: Array,
@@ -23,11 +25,16 @@ let story = props.story[0];
             </Fifty>
         </Row>
         <Row>
-            <Heading size="lg" class="text-4xl text-heading leading-snug mb-0 ">Summary:
-            </Heading>
+            <div class="prose max-w-4xl mx-auto">
+                introduction
+            </div>
         </Row>
         <SavingsRow :hiredSalary="salary.hiredSalary" :usSalary="salary.usSalary" :title="story.jobTitle" />
-
+        <Row>
+            <div class="prose max-w-4xl mx-auto">
+                <RichTextRenderer :document="story.content" />
+            </div>
+        </Row>
         <CTA />
     </Main>
 </template>
