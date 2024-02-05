@@ -16,12 +16,12 @@ let formattedAnnualSavings = '$' + annualSavings.toLocaleString();
 
 </script>
 <template>
-    <Row background="light">
+    <Row background="light" v-if="hiredSalary != null">
         <Heading size="lg" class="text-4xl max-w-5xl mx-auto text-headings leading-snug mb-0 text-center">Outwork
             saved
             this
             company {{
-                formattedAnnualSavings }} on salaries!
+                formattedAnnualSavings }} on salary annually!
         </Heading>
         <Fifty>
             <template #left>

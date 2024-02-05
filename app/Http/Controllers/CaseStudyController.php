@@ -62,6 +62,7 @@ class CaseStudyController extends Controller
                 'jobTitle' => $p->getjobTitle(),
                 'date' =>
                 $p->getdate()->format('F jS, Y'),
+                'intro' => $p->getIntro(),
             ];
             $salary = [];
             $salary['hiredSalary'] = $p->getmonthlySalaryHiredRate();
