@@ -10,16 +10,16 @@ let story = props.story[0];
 
 <template>
     <Main>
-        <Row background="dark" header="false" class="py-12">
+        <Row background="light" header="false" class="py-12">
             <Fifty imageLocation="right" :imageUrl="story.image">
                 <template #left>
                     <div class="grid gap-4">
                         <div>
                             <span class="bg-white rounded-xl p-2 text-primary font-bold">Success Story</span>
                         </div>
-                        <Heading size="lg" class="text-4xl text-white leading-snug mb-0"
+                        <Heading size="lg" class="text-4xl text-headings leading-snug mb-0"
                             style="margin-bottom: 0px !important;"> {{ story.title }}</Heading>
-                        <p class="text-xl text-white">{{ story.desc }}</p>
+                        <p class="text-xl text-headings">{{ story.desc }}</p>
                     </div>
                 </template>
             </Fifty>
