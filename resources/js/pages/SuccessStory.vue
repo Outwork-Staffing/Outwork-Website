@@ -1,5 +1,6 @@
 <script setup>
 import RichTextRenderer from 'contentful-rich-text-vue-renderer';
+import SavingsRow from '../blocks/SavingsRow.vue';
 
 const props = defineProps({
     story: Array,
