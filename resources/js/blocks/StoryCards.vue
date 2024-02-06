@@ -4,7 +4,6 @@ const props = defineProps({
 });
 
 function computeSubTitle($type, $industry) {
-    //if both are true, return both and add a | 
     if ($type && $industry) {
         return $type + ' Hire';
     } else {
@@ -17,6 +16,7 @@ function computeSubTitle($type, $industry) {
 }
 </script>
 <template>
+    123 123
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div v-for="story in stories" :key="story.title" class="transition hover:scale-[1.025]">
             <a :href="'/success-stories/' + story.slug" class="h-full">
