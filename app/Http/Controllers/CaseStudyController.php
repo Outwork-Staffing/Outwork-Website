@@ -35,6 +35,8 @@ class CaseStudyController extends Controller
                 'industry' => $post->getIndustry(),
             ];
         }
+        Meta::addMeta('title', 'Case Studies - Outwork Staffing');
+
         return Inertia('SuccessStories', ['stories' => $formattedPosts]);
     }
 
