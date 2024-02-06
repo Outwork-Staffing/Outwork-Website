@@ -3,9 +3,20 @@ const props = defineProps({
     stories: Array
 });
 
-
+function computeSubTitle($type, $industry) {
+    if ($type && $industry) {
+        return $type + ' Hire';
+    } else {
+        if ($type) {
+            return $type;
+        } else {
+            return $industry;
+        }
+    }
+}
 </script>
 <template>
+    123 123
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div v-for="story in stories" :key="story.title" class="transition hover:scale-[1.025]">
             <a :href="'/success-stories/' + story.slug" class="h-full">
@@ -16,6 +27,9 @@ const props = defineProps({
                         </div>
                         <div class="p-4 grid gap-1">
                             <h2 class="text-md font-bold">{{ story.title }}</h2>
+                            <span class="text-sm leading-6 rounded-xl text-primary font-bold"> {{
+                                computeSubTitle(story.type,
+                                    story.industry) }}</span>
                         </div>
                     </div>
                 </article>
