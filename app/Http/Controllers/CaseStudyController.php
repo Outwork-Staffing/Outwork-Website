@@ -35,7 +35,6 @@ class CaseStudyController extends Controller
                 'industry' => $post->getIndustry(),
             ];
         }
-        dd($formattedPosts);
         return Inertia('SuccessStories', ['stories' => $formattedPosts]);
     }
 

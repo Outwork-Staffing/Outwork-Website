@@ -4,6 +4,7 @@ const props = defineProps({
     stories: Array,
     logos: Array
 });
+console.log(props);
 </script>
 
 <template>
