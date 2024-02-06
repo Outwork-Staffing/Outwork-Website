@@ -6,7 +6,6 @@ const props = defineProps({
 
 </script>
 <template>
-    {{ props }}
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div v-for="story in stories" :key="story.title" class="transition hover:scale-[1.025]">
             <a :href="'/success-stories/' + story.slug" class="h-full">
