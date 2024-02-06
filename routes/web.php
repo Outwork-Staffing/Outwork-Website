@@ -1,10 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CaseStudyController;
 use Contentful\Delivery\Client as DeliveryClient;
 use Contentful\Delivery\Query;
 
 use App\Meta;
+use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,12 +45,7 @@ Route::get('/', function () {
 });
 
 Route::get('/why-outsource', function () {
-
-
-
     Meta::addMeta('title', 'Why Outsource? - Outwork Staffing');
-
-
     return Inertia('Why');
 });
 
@@ -116,3 +113,8 @@ Route::get('/404', function () {
 
     return Inertia('404');
 });
+
+
+// Case Studies
+Route::get('/success-stories', [CaseStudyController::class, 'index']);
+Route::get('/success-stories/{slug}', [CaseStudyController::class, 'show']);

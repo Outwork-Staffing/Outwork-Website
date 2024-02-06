@@ -11,6 +11,9 @@ class CaseStudyController extends Controller
 {
     public function index()
     {
+
+
+
         $client = new DeliveryClient(env('CONTENTFUL_DELIVERY_TOKEN'), env('CONTENTFUL_SPACE_ID'), env('CONTENTFUL_ENVIRONMENT_ID'));
         $query = new Query();
         $query->setContentType('caseStudies')
@@ -32,7 +35,6 @@ class CaseStudyController extends Controller
                 'industry' => $post->getIndustry(),
             ];
         }
-        dd($stories);
         return Inertia('SuccessStories', ['stories' => $formattedPosts]);
     }
 

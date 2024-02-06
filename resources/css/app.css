@@ -82,3 +82,7 @@
 .markdown-body a {
     text-decoration: none !important;
 }
+
+.prose p u {
+    @apply decoration-primary font-bold;
+}
