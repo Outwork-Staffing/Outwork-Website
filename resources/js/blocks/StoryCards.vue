@@ -6,7 +6,7 @@ const props = defineProps({
 function computeSubTitle($type, $industry) {
     //if both are true, return both and add a | 
     if ($type && $industry) {
-        return $type + ' for a  ' + $industry;
+        return $type + ' Hire';
     } else {
         if ($type) {
             return $type;
@@ -27,8 +27,9 @@ function computeSubTitle($type, $industry) {
                         </div>
                         <div class="p-4 grid gap-1">
                             <h2 class="text-md font-bold">{{ story.title }}</h2>
-                            <span class="text-sm leading-6 rounded-xl text-gray-700 "> {{ story.date
-                            }}</span>
+                            <span class="text-sm leading-6 rounded-xl text-primary font-bold"> {{
+                                computeSubTitle(story.type,
+                                    story.industry) }}</span>
                         </div>
                     </div>
                 </article>
