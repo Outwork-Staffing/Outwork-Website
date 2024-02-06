@@ -1,4 +1,5 @@
 <script setup>
+import SalaryChart from "../components/SalaryChart.vue";
 const props = defineProps({
     hiredSalary: Number,
     usSalary: Number,
