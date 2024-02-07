@@ -44,7 +44,7 @@ const props = defineProps({
                             <p class="text-gray-600">Founder, The Church Co</p>
                         </div>
                     </div>
-                    <Button>Open Full Case Study</Button>
+                    <Button link="https://outworkstaffing.com/success-stories/website-builder">Open Full Case Study</Button>
                 </template>
             </Fifty>
         </Row>
