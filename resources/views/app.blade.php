@@ -10,7 +10,6 @@
   <meta property="og:image" content="/social_share.png" />
   <meta name="twitter:image" content="/social_share.png">
   @inertiaHead
-  @vite('resources/js/app.js')
   @vite('resources/css/app.css')
   {!! \App\Meta::render() !!}
   <script>
@@ -178,6 +177,7 @@
   <!-- End Google Tag Manager (noscript) -->
   @inertia
 </body>
+@vite('resources/js/app.js')
 
 
 </html>
