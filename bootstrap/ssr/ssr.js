@@ -5,7 +5,8 @@ import { ssrRenderAttrs, ssrRenderAttr, ssrRenderClass, ssrRenderSlot, ssrRender
 import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
 import { CheckCircleIcon, PlusSmallIcon, MinusSmallIcon, CheckBadgeIcon, DocumentCheckIcon, CurrencyDollarIcon, HeartIcon } from "@heroicons/vue/24/solid";
 import RichTextRenderer from "contentful-rich-text-vue-renderer";
-import { MotionPlugin } from "@vueuse/motion";
+import createServer from "@inertiajs/vue3/server";
+import { renderToString } from "@vue/server-renderer";
 const _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
   for (const [key, val] of props) {
@@ -4917,13 +4918,18 @@ const __vite_glob_0_11 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.de
   __proto__: null,
   default: Why
 }, Symbol.toStringTag, { value: "Module" }));
-createInertiaApp({
-  resolve: (name) => {
-    const pages = /* @__PURE__ */ Object.assign({ "./pages/404.vue": __vite_glob_0_0, "./pages/About.vue": __vite_glob_0_1, "./pages/FormComplete.vue": __vite_glob_0_2, "./pages/Guide.vue": __vite_glob_0_3, "./pages/Guide2.vue": __vite_glob_0_4, "./pages/Home.vue": __vite_glob_0_5, "./pages/MeetingBooked.vue": __vite_glob_0_6, "./pages/Services.vue": __vite_glob_0_7, "./pages/StartHiring.vue": __vite_glob_0_8, "./pages/SuccessStories.vue": __vite_glob_0_9, "./pages/SuccessStory.vue": __vite_glob_0_10, "./pages/Why.vue": __vite_glob_0_11 });
-    return pages[`./pages/${name}.vue`];
-  },
-  setup({ el, App, props, plugin }) {
-    const app = createSSRApp({ render: () => h(App, props) }).use(plugin).use(MotionPlugin).mount(el);
-    return app;
-  }
-});
+createServer(
+  (page) => createInertiaApp({
+    page,
+    render: renderToString,
+    resolve: (name) => {
+      const pages = /* @__PURE__ */ Object.assign({ "./Pages/404.vue": __vite_glob_0_0, "./Pages/About.vue": __vite_glob_0_1, "./Pages/FormComplete.vue": __vite_glob_0_2, "./Pages/Guide.vue": __vite_glob_0_3, "./Pages/Guide2.vue": __vite_glob_0_4, "./Pages/Home.vue": __vite_glob_0_5, "./Pages/MeetingBooked.vue": __vite_glob_0_6, "./Pages/Services.vue": __vite_glob_0_7, "./Pages/StartHiring.vue": __vite_glob_0_8, "./Pages/SuccessStories.vue": __vite_glob_0_9, "./Pages/SuccessStory.vue": __vite_glob_0_10, "./Pages/Why.vue": __vite_glob_0_11 });
+      return pages[`./Pages/${name}.vue`];
+    },
+    setup({ App, props, plugin }) {
+      return createSSRApp({
+        render: () => h(App, props)
+      }).use(plugin);
+    }
+  })
+);

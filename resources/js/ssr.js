@@ -1,18 +1,20 @@
-import { createSSRApp, h } from 'vue'
 import { createInertiaApp } from '@inertiajs/vue3'
-import { MotionPlugin } from '@vueuse/motion'
+import createServer from '@inertiajs/vue3/server'
+import { renderToString } from '@vue/server-renderer'
+import { createSSRApp, h } from 'vue'
 
-createInertiaApp({
-    resolve: name => {
-        const pages = import.meta.glob('./pages/**/*.vue', { eager: true })
-        return pages[`./pages/${name}.vue`]
-    },
-    setup({ el, App, props, plugin }) {
-        const app = createSSRApp({ render: () => h(App, props) })
-            .use(plugin)
-            .use(MotionPlugin)
-            .mount(el);
-
-        return app;
-    },
-})
+createServer(page =>
+    createInertiaApp({
+        page,
+        render: renderToString,
+        resolve: name => {
+            const pages = import.meta.glob('./Pages/**/*.vue', { eager: true })
+            return pages[`./Pages/${name}.vue`]
+        },
+        setup({ App, props, plugin }) {
+            return createSSRApp({
+                render: () => h(App, props),
+            }).use(plugin)
+        },
+    }),
+)
