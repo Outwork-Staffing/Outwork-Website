@@ -9,7 +9,6 @@
 
 <script>
 import { ref } from 'vue'
-import { TransitionRoot } from '@headlessui/vue'
 
 const isShowing = ref(false);
 
