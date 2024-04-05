@@ -10,7 +10,7 @@ createServer(page =>
     createApp({
         page,
         render: renderToString,
-        resolve: (name) => resolvePageComponent(`./pages/${name}.vue`, import.meta.glob('./Pages/**/*.vue')),
+        resolve: (name) => resolvePageComponent(`/pages/${name}.vue`, import.meta.glob('./Pages/**/*.vue')),
         setup({ App, props, plugin }) {
             return createInertiaApp({
                 render: () => h(App, props),
