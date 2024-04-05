@@ -154,7 +154,7 @@ _sfc_main$A.setup = (props, ctx) => {
   return _sfc_setup$A ? _sfc_setup$A(props, ctx) : void 0;
 };
 const __unplugin_components_2 = /* @__PURE__ */ _export_sfc(_sfc_main$A, [["ssrRender", _sfc_ssrRender$a]]);
-const Row_vue_vue_type_style_index_0_scoped_e514f4fb_lang = "";
+const Row_vue_vue_type_style_index_0_scoped_77f78ef0_lang = "";
 ref(false);
 const _sfc_main$z = {
   props: {
@@ -188,7 +188,7 @@ const _sfc_main$z = {
   }
 };
 function _sfc_ssrRender$9(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  _push(`<div${ssrRenderAttrs(mergeProps({ class: $options.bgClass }, _attrs))} data-v-e514f4fb><div class="${ssrRenderClass({ "w-full  max-w-7xl mx-auto py-12 lg:py-24 px-6 lg:px-8": !$props.header, "w-full  max-w-7xl mx-auto pt-36 pb-12 sm:pt-36 px-6 lg:px-8": $props.header })}" data-v-e514f4fb>`);
+  _push(`<div${ssrRenderAttrs(mergeProps({ class: $options.bgClass }, _attrs))} data-v-77f78ef0><div class="${ssrRenderClass({ "w-full  max-w-7xl mx-auto py-12 lg:py-24 px-6 lg:px-8": !$props.header, "w-full  max-w-7xl mx-auto pt-36 pb-12 sm:pt-36 px-6 lg:px-8": $props.header })}" data-v-77f78ef0>`);
   ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
   _push(`</div></div>`);
 }
@@ -198,7 +198,7 @@ _sfc_main$z.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/Row.vue");
   return _sfc_setup$z ? _sfc_setup$z(props, ctx) : void 0;
 };
-const __unplugin_components_1 = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["ssrRender", _sfc_ssrRender$9], ["__scopeId", "data-v-e514f4fb"]]);
+const __unplugin_components_1 = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["ssrRender", _sfc_ssrRender$9], ["__scopeId", "data-v-77f78ef0"]]);
 const _sfc_main$y = {
   __name: "Header",
   __ssrInlineRender: true,
@@ -4923,6 +4923,7 @@ createInertiaApp({
     return pages[`./pages/${name}.vue`];
   },
   setup({ el, App, props, plugin }) {
-    createSSRApp({ render: () => h(App, props) }).use(plugin).use(MotionPlugin).mount(el);
+    const app = createSSRApp({ render: () => h(App, props) }).use(plugin).use(MotionPlugin).mount(el);
+    return app;
   }
 });

@@ -8,9 +8,11 @@ createInertiaApp({
         return pages[`./pages/${name}.vue`]
     },
     setup({ el, App, props, plugin }) {
-        createSSRApp({ render: () => h(App, props) })
+        const app = createSSRApp({ render: () => h(App, props) })
             .use(plugin)
             .use(MotionPlugin)
-            .mount(el)
+            .mount(el);
+
+        return app;
     },
 })
