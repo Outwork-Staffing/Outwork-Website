@@ -2,7 +2,6 @@ import createServer from '@inertiajs/vue3/server'
 import { renderToString } from '@vue/server-renderer'
 import { createSSRApp, h } from 'vue'
 import { createInertiaApp } from '@inertiajs/vue3';
-const appName = 'Outwork Staffing';
 
 createServer(page =>
     createInertiaApp({
@@ -13,11 +12,10 @@ createServer(page =>
             return pages[`./Pages/${name}.vue`]
         },
         setup({ App, props, plugin }) {
-            const app = createSSRApp({
+            return createSSRApp({
                 render: () => h(App, props),
             }).use(plugin)
 
-            return app
         },
     }),
 )
