@@ -1,7 +1,7 @@
 import { Link, createInertiaApp } from "@inertiajs/vue3";
 import { ChevronRightIcon, Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
-import { useSSRContext, resolveComponent, mergeProps, resolveDirective, createVNode, resolveDynamicComponent, withCtx, renderSlot, ref, createTextVNode, unref, toDisplayString, openBlock, createBlock, Fragment, renderList, computed, withDirectives, vShow, onMounted, defineComponent, createCommentVNode, createSSRApp, h } from "vue";
-import { ssrRenderAttrs, ssrRenderAttr, ssrRenderClass, ssrRenderSlot, ssrRenderComponent, ssrRenderVNode, ssrGetDirectiveProps, ssrRenderList, ssrInterpolate, ssrRenderStyle } from "vue/server-renderer";
+import { useSSRContext, resolveComponent, mergeProps, createVNode, resolveDynamicComponent, withCtx, renderSlot, ref, createTextVNode, unref, toDisplayString, openBlock, createBlock, Fragment, renderList, computed, withDirectives, vShow, onMounted, defineComponent, createCommentVNode, createSSRApp, h } from "vue";
+import { ssrRenderAttrs, ssrRenderAttr, ssrRenderClass, ssrRenderSlot, ssrRenderComponent, ssrRenderVNode, ssrRenderList, ssrInterpolate, ssrRenderStyle } from "vue/server-renderer";
 import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
 import { CheckCircleIcon, PlusSmallIcon, MinusSmallIcon, CheckBadgeIcon, DocumentCheckIcon, CurrencyDollarIcon, HeartIcon } from "@heroicons/vue/24/solid";
 import RichTextRenderer from "contentful-rich-text-vue-renderer";
@@ -111,15 +111,13 @@ const _sfc_main$A = {
   }
 };
 function _sfc_ssrRender$a(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  const _directive_motion = resolveDirective("motion");
   if ($props.tag === "h1") {
     ssrRenderVNode(_push, createVNode(resolveDynamicComponent($props.tag), mergeProps(_ctx.$attrs, {
       class: [$options.sizeClass] + " mb-6",
-      initial: { opacity: 0, y: 100 },
       enter: { opacity: 1, y: 0, scale: 1 },
       variants: { custom: { scale: 2 } },
       delay: 200
-    }, _attrs, ssrGetDirectiveProps(_ctx, _directive_motion)), {
+    }, _attrs), {
       default: withCtx((_, _push2, _parent2, _scopeId) => {
         if (_push2) {
           ssrRenderSlot(_ctx.$slots, "default", {}, null, _push2, _parent2, _scopeId);
@@ -134,7 +132,7 @@ function _sfc_ssrRender$a(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
   } else {
     ssrRenderVNode(_push, createVNode(resolveDynamicComponent($props.tag), mergeProps(_ctx.$attrs, {
       class: [$options.sizeClass] + " mb-6"
-    }, _attrs, ssrGetDirectiveProps(_ctx, _directive_motion)), {
+    }, _attrs), {
       default: withCtx((_, _push2, _parent2, _scopeId) => {
         if (_push2) {
           ssrRenderSlot(_ctx.$slots, "default", {}, null, _push2, _parent2, _scopeId);
@@ -155,7 +153,6 @@ _sfc_main$A.setup = (props, ctx) => {
   return _sfc_setup$A ? _sfc_setup$A(props, ctx) : void 0;
 };
 const __unplugin_components_2 = /* @__PURE__ */ _export_sfc(_sfc_main$A, [["ssrRender", _sfc_ssrRender$a]]);
-const Row_vue_vue_type_style_index_0_scoped_77f78ef0_lang = "";
 ref(false);
 const _sfc_main$z = {
   props: {
@@ -1492,7 +1489,6 @@ _sfc_main$n.setup = (props, ctx) => {
   return _sfc_setup$n ? _sfc_setup$n(props, ctx) : void 0;
 };
 const BeforeAfterChart = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["ssrRender", _sfc_ssrRender$4]]);
-const VAGuideContent_md_vue_type_style_index_0_scoped_afac4355_lang = "";
 const _sfc_main$m = {
   __name: "VAGuideContent",
   __ssrInlineRender: true,
@@ -1669,7 +1665,6 @@ const __vite_glob_0_3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.def
   __proto__: null,
   default: _sfc_main$k
 }, Symbol.toStringTag, { value: "Module" }));
-const VAGuideContentNewOrder_md_vue_type_style_index_0_scoped_58f8edcd_lang = "";
 const _sfc_main$j = {
   __name: "VAGuideContentNewOrder",
   __ssrInlineRender: true,
@@ -1835,7 +1830,6 @@ const __vite_glob_0_4 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.def
   __proto__: null,
   default: _sfc_main$i
 }, Symbol.toStringTag, { value: "Module" }));
-const PositionCarousel_vue_vue_type_style_index_0_scoped_57180383_lang = "";
 const __default__ = {
   props: {
     roles: Array,
@@ -2875,7 +2869,6 @@ _sfc_main$b.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/BentoCard.vue");
   return _sfc_setup$b ? _sfc_setup$b(props, ctx) : void 0;
 };
-const BentoGrid_vue_vue_type_style_index_0_scoped_5a3f50d7_lang = "";
 const _sfc_main$a = {
   __name: "BentoGrid",
   __ssrInlineRender: true,
@@ -3628,7 +3621,6 @@ const __vite_glob_0_8 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.def
   __proto__: null,
   default: _sfc_main$8
 }, Symbol.toStringTag, { value: "Module" }));
-const index_vue_vue_type_style_index_0_scoped_4df947ca_lang = "";
 const _sfc_main$7 = defineComponent({
   name: "InfiniteSlideBar",
   props: {
@@ -3682,7 +3674,6 @@ _sfc_main$7.setup = (props, ctx) => {
   return _sfc_setup$7 ? _sfc_setup$7(props, ctx) : void 0;
 };
 const InfiniteSlideBar = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["ssrRender", _sfc_ssrRender$1], ["__scopeId", "data-v-4df947ca"]]);
-const TestimonialLogoCloud_vue_vue_type_style_index_0_lang = "";
 const _sfc_main$6 = {
   __name: "TestimonialLogoCloud",
   __ssrInlineRender: true,
@@ -3729,7 +3720,6 @@ _sfc_main$6.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/blocks/TestimonialLogoCloud.vue");
   return _sfc_setup$6 ? _sfc_setup$6(props, ctx) : void 0;
 };
-const StoryCards_vue_vue_type_style_index_0_scoped_d5d3cee0_lang = "";
 const _sfc_main$5 = {
   __name: "StoryCards",
   __ssrInlineRender: true,
@@ -4073,7 +4063,6 @@ const __vite_glob_0_9 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.def
   __proto__: null,
   default: _sfc_main$4
 }, Symbol.toStringTag, { value: "Module" }));
-const SalaryChart_vue_vue_type_style_index_0_lang = "";
 const _sfc_main$3 = {
   __name: "SalaryChart",
   __ssrInlineRender: true,

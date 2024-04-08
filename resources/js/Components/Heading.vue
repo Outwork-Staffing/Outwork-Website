@@ -1,10 +1,10 @@
 <template>
-    <component :is="tag" v-bind="$attrs" :class="[sizeClass] + ' mb-6'" v-motion :initial="{ opacity: 0, y: 100 }"
+    <component :is="tag" v-bind="$attrs" :class="[sizeClass] + ' mb-6'"
         v-if="tag === 'h1'" :enter="{ opacity: 1, y: 0, scale: 1 }" :variants="{ custom: { scale: 2 } }" :delay="200">
         <slot />
     </component>
 
-    <component :is="tag" v-bind="$attrs" :class="[sizeClass] + ' mb-6'" v-motion v-else>
+    <component :is="tag" v-bind="$attrs" :class="[sizeClass] + ' mb-6'" v-else>
         <slot />
     </component>
 </template>
