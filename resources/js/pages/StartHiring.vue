@@ -12,36 +12,37 @@
                 call with our team and learn how we can help you hire the best talent. Our email is also below if you would
                 prefer that.</p>
             <Button type="text" link="mailto:operations@outworkstaffing.com">Email operations@outworkstaffing.com</Button>
-            <iframe class="min-h-[500px]"
-                data-tally-src="https://tally.so/embed/w72xp2?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-                loading="lazy" width="100%" height="1" frameborder="0" marginheight="0" marginwidth="0"
-                title="Get Started Hiring"></iframe>
-
-
+            <div id="booking-page" class="my-12 min-h-screen">
+                <!-- this is where we will inject the interface -->
+            </div>
         </Row>
     </Main>
 </template>
 <script setup>
-import { onMounted } from 'vue';
+import { onBeforeMount, ref } from 'vue';
 
-onMounted(() => {
-    const loadTallyEmbed = () => {
-        const embedScriptUrl = "https://tally.so/widgets/embed.js";
-        let script = document.querySelector(`script[src="${embedScriptUrl}"]`);
+const bookingPage = ref(null);
 
-        if (!script) {
-            script = document.createElement('script');
-            script.src = embedScriptUrl;
-            document.body.appendChild(script);
-        }
+onBeforeMount(() => {
+    loadSavvyCalScript();
+});
 
-        script.onload = () => {
-            if (typeof Tally !== 'undefined') {
-                Tally.loadEmbeds();
-            }
-        };
+function loadSavvyCalScript() {
+    const script = document.createElement('script');
+    script.src = 'https://embed.savvycal.com/v1/embed.js';
+    script.async = true;
+
+    document.body.appendChild(script);
+
+    script.onload = () => initializeSavvyCal();
+}
+
+function initializeSavvyCal() {
+    window.SavvyCal = window.SavvyCal || function () {
+        (window.SavvyCal.q = window.SavvyCal.q || []).push(arguments);
     };
 
-    loadTallyEmbed();
-});
+    SavvyCal('init');
+    SavvyCal('inline', { link: 'bryan-outwork-staffing/inquiry', selector: '#booking-page' });
+}
 </script>

@@ -101,13 +101,6 @@ Route::get('/meeting-booked', function () {
     return Inertia('MeetingBooked');
 });
 
-Route::get('/form-complete', function () {
-    Meta::addMeta('title', 'Form Complete - Outwork Staffing');
-
-    return Inertia('FormComplete');
-});
-
-
 
 Route::get('/virtual-assistant-guide', function () {
     Meta::addMeta('title', 'Virtual Assistant Guide - Outwork Staffing');
