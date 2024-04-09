@@ -12,37 +12,36 @@
                 call with our team and learn how we can help you hire the best talent. Our email is also below if you would
                 prefer that.</p>
             <Button type="text" link="mailto:operations@outworkstaffing.com">Email operations@outworkstaffing.com</Button>
-            <div id="booking-page" class="my-12 min-h-screen">
-                <!-- this is where we will inject the interface -->
-            </div>
+            <iframe class="min-h-[500px]"
+                data-tally-src="https://tally.so/embed/w72xp2?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                loading="lazy" width="100%" height="1" frameborder="0" marginheight="0" marginwidth="0"
+                title="Get Started Hiring"></iframe>
+
+
         </Row>
     </Main>
 </template>
 <script setup>
-import { onBeforeMount, ref } from 'vue';
+import { onMounted } from 'vue';
 
-const bookingPage = ref(null);
+onMounted(() => {
+    const loadTallyEmbed = () => {
+        const embedScriptUrl = "https://tally.so/widgets/embed.js";
+        let script = document.querySelector(`script[src="${embedScriptUrl}"]`);
 
-onBeforeMount(() => {
-    loadSavvyCalScript();
-});
+        if (!script) {
+            script = document.createElement('script');
+            script.src = embedScriptUrl;
+            document.body.appendChild(script);
+        }
 
-function loadSavvyCalScript() {
-    const script = document.createElement('script');
-    script.src = 'https://embed.savvycal.com/v1/embed.js';
-    script.async = true;
-
-    document.body.appendChild(script);
-
-    script.onload = () => initializeSavvyCal();
-}
-
-function initializeSavvyCal() {
-    window.SavvyCal = window.SavvyCal || function () {
-        (window.SavvyCal.q = window.SavvyCal.q || []).push(arguments);
+        script.onload = () => {
+            if (typeof Tally !== 'undefined') {
+                Tally.loadEmbeds();
+            }
+        };
     };
 
-    SavvyCal('init');
-    SavvyCal('inline', { link: 'bryan-outwork-staffing/inquiry', selector: '#booking-page' });
-}
+    loadTallyEmbed();
+});
 </script>
