@@ -98,5 +98,3 @@ Route::get('/404', function () {
 
 
 // Case Studies
-Route::get('/success-stories', [CaseStudyController::class, 'index']);
-Route::get('/success-stories/{slug}', [CaseStudyController::class, 'show']);
