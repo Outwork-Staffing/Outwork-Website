@@ -12,13 +12,10 @@ export default defineConfig({
         deep: true,
         dirs: ['resources/js/Blocks', 'resources/js/Components', 'resources/js/Layouts'],
     }), Vue({
-        include: [/\.vue$/, /\.md$/], // <-- allows Vue to compile Markdown files
+        include: [/\.vue$/], // <-- allows Vue to compile Markdown files
     }), laravel({
         input: ['resources/css/app.css', 'resources/js/app.js'],
         refresh: true,
         ssr: 'resources/js/ssr.js',
-    }), Markdown({ /* options */ }), sentryVitePlugin({
-        org: "outwork-staffing",
-        project: "javascript-vue"
-    })],
+    }), 
 });
