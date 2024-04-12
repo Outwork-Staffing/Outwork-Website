@@ -44,7 +44,38 @@ Route::get('/', function () {
     return Inertia('Home', ['roles' => $formattedPosts]);
 });
 
+Route::get('/why-outsource', function () {
+    Meta::addMeta('title', 'Why Outsource? - Outwork Staffing');
+    return Inertia('Why');
+});
 
+Route::get('/services', function () {
+    Meta::addMeta('title', 'Services - Outwork Staffing');
+
+    $client = new DeliveryClient(env('CONTENTFUL_DELIVERY_TOKEN'), env('CONTENTFUL_SPACE_ID'), env('CONTENTFUL_ENVIRONMENT_ID'));
+    $query = new Query();
+    $query->setContentType('examplePositions')
+        ->orderBy('fields.title', true);
+    $posts = $client->getEntries($query);
+
+    $formattedPosts = [];
+    foreach ($posts as $post) {
+        $formattedPosts[] = [
+            'title' => $post->getTitle(),
+            'img' => $post->image->getFile()->getUrl(),
+        ];
+    }
+
+
+    return Inertia('Services', ['roles' => $formattedPosts]);
+});
+
+Route::get('/about', function () {
+    Meta::addMeta('title', 'About Us - Outwork Staffing');
+
+
+    return Inertia('About');
+});
 
 Route::get('/start-hiring', function () {
     Meta::addMeta('title', 'Start Hiring - Outwork Staffing');
@@ -95,8 +126,3 @@ Route::get('/404', function () {
 
     return Inertia('404');
 });
-
-
-// Case Studies
-Route::get('/success-stories', [CaseStudyController::class, 'index']);
-Route::get('/success-stories/{slug}', [CaseStudyController::class, 'show']);
