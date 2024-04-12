@@ -17,8 +17,5 @@ export default defineConfig({
         input: ['resources/css/app.css', 'resources/js/app.js'],
         refresh: true,
         ssr: 'resources/js/ssr.js',
-    }), Markdown({ /* options */ }), sentryVitePlugin({
-        org: "outwork-staffing",
-        project: "javascript-vue"
-    })],
+    }), Markdown({ /* options */ }),],
 });
