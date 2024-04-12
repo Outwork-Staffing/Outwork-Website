@@ -1,8 +1,7 @@
 import createServer from '@inertiajs/vue3/server'
-import { renderToString } from '@vue/server-renderer'
+import { renderToString } from 'vue/server-renderer'
 import { createSSRApp, h } from 'vue'
 import { createInertiaApp } from '@inertiajs/vue3';
-import * as Sentry from "@sentry/vue";
 
 createServer(page =>
     createInertiaApp({

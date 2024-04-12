@@ -21,8 +21,4 @@ export default defineConfig({
         org: "outwork-staffing",
         project: "javascript-vue"
     })],
-
-    build: {
-        sourcemap: true
-    }
 });
