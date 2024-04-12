@@ -58,9 +58,7 @@ export default {
             default: null
         }
     },
-    components: {
-        FiftyImage
-    }
+
 }
 
 </script>

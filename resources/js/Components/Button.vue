@@ -1,4 +1,3 @@
-
 <template>
     <div v-if="InertiaLink">
         <a :href="InertiaLink" :target="newTab ? '_blank' : ''" :class="`btn btn-${type}`">
@@ -41,9 +40,5 @@ export default {
             default: false,
         },
     },
-    components: {
-        Link,
-        ChevronRightIcon,
-    }
 };
 </script>

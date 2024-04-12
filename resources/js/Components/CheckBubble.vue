@@ -18,9 +18,7 @@ export default {
             default: ['123', '123', 'Drink']
         }
     },
-    components: {
-        CheckCircleIcon
-    }
+
 }
 </script>
 
