@@ -27,8 +27,8 @@ function computeSubTitle($type, $industry) {
                         <div class="p-4 grid gap-1">
                             <h2 class="text-md font-bold">{{ story.title }}</h2>
                             <span class="text-sm leading-6 rounded-xl text-primary font-bold"> {{
-            computeSubTitle(story.type,
-                story.industry) }}</span>
+                                computeSubTitle(story.type,
+                                    story.industry) }}</span>
                         </div>
                     </div>
                 </article>
@@ -36,3 +36,11 @@ function computeSubTitle($type, $industry) {
         </div>
     </div>
 </template>
+
+
+<style scoped>
+.image-part {
+    height: 200px;
+    /* Top half */
+}
+</style>
