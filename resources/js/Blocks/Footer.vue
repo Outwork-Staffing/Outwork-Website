@@ -4,11 +4,11 @@
             <div v-for="item in navigation.main" :key="item.name" class="pb-6">
                 <a :href="item.href"
                     class="text-md font-semibold leading-6 text-white hover:underline hover:decoration-solid decoration-primary transition-custom decoration-2">{{
-                        item.name }}</a>
+                item.name }}</a>
             </div>
         </nav>
         <p class="text-md font-semibold leading-6 text-white text-left md:text-center mt-10">&copy; {{ new
-            Date().getFullYear() }}
+                Date().getFullYear() }}
             Outwork Staffing. <br>All rights
 
             reserved.
@@ -18,7 +18,6 @@
 
 <script setup>
 import { defineComponent, h } from 'vue'
-import Row from '../Components/Row.vue';
 
 const navigation = {
     main: [

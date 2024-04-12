@@ -1,8 +1,3 @@
-<script setup>
-import Heading from '../Components/Heading.vue';
-import Row from '../Components/Row.vue';
-import Button from '../Components/Button.vue';
-</script>
 <template>
     <Row header="true">
         <div class="max-w-4xl mx-auto text-center">

@@ -1,5 +1,4 @@
 <script setup>
-import Heading from '../Components/Heading.vue';
 const steps = {
     '1': {
         'title': 'Kickoff',

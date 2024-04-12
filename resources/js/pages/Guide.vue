@@ -1,7 +1,3 @@
-<script setup>
-import VAGuideContent from '../../md/VAGuideContent.md';
-import BryanAuthor from '../blocks/BryanAuthor.vue';
-</script>
 <template>
     <Main>
         <Row header="true">

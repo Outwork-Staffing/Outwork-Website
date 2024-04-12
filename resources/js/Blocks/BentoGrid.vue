@@ -1,5 +1,4 @@
 <script setup>
-import BentoCard from '../Components/BentoCard.vue';
 import { CurrencyDollarIcon, CheckBadgeIcon, DocumentCheckIcon, HeartIcon } from '@heroicons/vue/24/solid';
 </script>
 
@@ -12,9 +11,11 @@ import { CurrencyDollarIcon, CheckBadgeIcon, DocumentCheckIcon, HeartIcon } from
                 <CheckBadgeIcon class="h-8 w-8 text-primary" />
             </template>
             <template #body>
-                Our team has a global network of top-tier candidates, so you can find the skilled talent you need to take
+                Our team has a global network of top-tier candidates, so you can find the skilled talent you need to
+                take
                 your
-                business to the next level. We use a combination of interviews, skills assessments, and background checks to
+                business to the next level. We use a combination of interviews, skills assessments, and background
+                checks to
                 verify each candidate's credentials and capabilities.
                 <br><br>
                 By partnering with us, you can trust that we'll provide you with a pool of carefully vetted and highly
@@ -27,7 +28,8 @@ import { CurrencyDollarIcon, CheckBadgeIcon, DocumentCheckIcon, HeartIcon } from
                 <DocumentCheckIcon class="h-8 w-8 text-primary" />
             </template>
             <template #body>
-                With our fast and efficient hiring process, you can trust that we'll help you save time and resources while
+                With our fast and efficient hiring process, you can trust that we'll help you save time and resources
+                while
                 finding the top talent you need to drive your business forward.
             </template>
         </BentoCard>
@@ -46,8 +48,10 @@ import { CurrencyDollarIcon, CheckBadgeIcon, DocumentCheckIcon, HeartIcon } from
                 <HeartIcon class="h-8 w-8 text-primary" />
             </template>
             <template #body>
-                Our team doesn’t step in to manage this employee on your behalf, but instead they are joining your team. We
-                believe this is the most effective way to help your new hire thrive in their role and deeply understand the
+                Our team doesn’t step in to manage this employee on your behalf, but instead they are joining your team.
+                We
+                believe this is the most effective way to help your new hire thrive in their role and deeply understand
+                the
                 work and culture.
             </template>
         </BentoCard>

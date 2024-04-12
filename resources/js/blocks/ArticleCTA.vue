@@ -1,6 +1,5 @@
 <script setup>
 import { computed } from 'vue';
-import Button from '../Components/Button.vue';
 
 const props = defineProps({
     variant: {

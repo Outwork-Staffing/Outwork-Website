@@ -1,9 +1,3 @@
-<script setup>
-import Row from '../Components/Row.vue';
-import Fifty from './Fifty.vue';
-import Heading from '../Components/Heading.vue';
-import Button from '../Components/Button.vue';
-</script>
 <template>
     <Row background="green">
         <Fifty imageLocation="right" :imageMobile="false"
