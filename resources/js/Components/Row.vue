@@ -45,9 +45,3 @@ export default {
     },
 }
 </script>
-
-<style scoped>
-.gradient {
-    @apply bg-gradient-to-t from-secondary to-white;
-}
-</style>

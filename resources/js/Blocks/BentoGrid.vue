@@ -57,22 +57,3 @@ import { CurrencyDollarIcon, CheckBadgeIcon, DocumentCheckIcon, HeartIcon } from
         </BentoCard>
     </div>
 </template>
-
-<style scoped>
-.bento-grid {
-    display: grid;
-    flex: 0 0 auto;
-    gap: 20px;
-    grid-auto-rows: min-content;
-    grid-template-rows: repeat(2, min-content);
-    height: min-content;
-    justify-content: center;
-}
-
-
-
-.card {
-    gap: 15px;
-    padding: 25px;
-}
-</style>
