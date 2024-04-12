@@ -9,10 +9,11 @@ const props = defineProps({
 
 <template>
     <Main>
-        <Row background="white" header="false">
+        <Row header="false">
             <div class="max-w-4xl mx-auto text-center">
                 <Heading size="xl" class="text-center text-heading">Global Recruitment Success Stories</Heading>
-                <p class="text-xl max-w-2xl mx-auto text-center mx-12 text-body mb-6">Discover how companies are leveraging
+                <p class="text-xl max-w-2xl mx-auto text-center mx-12 text-body mb-6">Discover how companies are
+                    leveraging
                     global talent in major ways</p>
             </div>
         </Row>
@@ -21,15 +22,17 @@ const props = defineProps({
         </div>
 
         <Row>
-            <Fifty imageLocation="left" imageMobile="false"
+            <Fifty imageLocation="left" :imageMobile="false"
                 imageUrl="https://images.unsplash.com/photo-1545112969-bdd91ef544c7?q=80&w=4471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 altText="Men sitting around computer">
                 <template #right>
                     <p class="text-xl text-left text-body mb-6 leading-8">"Outsourcing has been a
-                        game-changer for web SaaS, significantly boosting our profit margins and project speed remarkably.
+                        game-changer for web SaaS, significantly boosting our profit margins and project speed
+                        remarkably.
                         The
                         exceptional talent
-                        and efficiency provided by Outwork Staffing have enabled us to deliver superior quality websites at
+                        and efficiency provided by Outwork Staffing have enabled us to deliver superior quality websites
+                        at
                         an
                         unprecedented pace, truly exceeding our clients' expectations."
                     </p>
@@ -44,7 +47,8 @@ const props = defineProps({
                             <p class="text-gray-600">Founder, The Church Co</p>
                         </div>
                     </div>
-                    <Button link="https://outworkstaffing.com/success-stories/website-builder">Open Full Case Study</Button>
+                    <Button link="https://outworkstaffing.com/success-stories/website-builder">Open Full Case
+                        Study</Button>
                 </template>
             </Fifty>
         </Row>

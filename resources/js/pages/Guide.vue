@@ -4,7 +4,7 @@ import BryanAuthor from '../blocks/BryanAuthor.vue';
 </script>
 <template>
     <Main>
-        <Row background="white" header="true">
+        <Row header="true">
             <div class="mx-auto grid justify-center">
                 <Heading size="2xl" class="text-center text-heading">The Ultimate Guide to Virtual Assistants</Heading>
                 <Heading size="span" class="mx-auto text-center max-w-md md:max-w-7xl"
@@ -24,4 +24,3 @@ import BryanAuthor from '../blocks/BryanAuthor.vue';
         <CTA />
     </Main>
 </template>
-

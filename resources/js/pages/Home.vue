@@ -8,8 +8,9 @@ const props = defineProps({
     <Main>
         <Hero />
         <Row name="relate" background="light">
-            <Fifty imageMobile="true" imageUrl="https://ik.imagekit.io/outwork/handsinface.webp?updatedAt=1701878781199"
-                :lazyLoad="false" altText="Man upset with his job">
+            <Fifty :imageMobile="true"
+                imageUrl="https://ik.imagekit.io/outwork/handsinface.webp?updatedAt=1701878781199" :lazyLoad="false"
+                altText="Man upset with his job">
                 <template #right>
                     <Heading size="span" tag="h6">
                         Get the help you Know you need
@@ -29,7 +30,7 @@ const props = defineProps({
             </Fifty>
         </Row>
         <Row name="quality" background="light">
-            <Fifty imageLocation="right" imageMobile="false"
+            <Fifty imageLocation="right" :imageMobile="false"
                 imageUrl="https://ik.imagekit.io/outwork/office.webp?updatedAt=1701878778749&tr=w-1200%2Ch-675%2Cfo-auto"
                 altText="Team working">
                 <template #left>
@@ -40,7 +41,8 @@ const props = defineProps({
                         Find quality full-time help for $900-$1500.
                     </Heading>
                     <p class="body-paragraph">Most companies think they need to spend between $4,000-$6,000 a month on a
-                        quality full time team. That isn't true. We help businesses build an awesome team of global workers
+                        quality full time team. That isn't true. We help businesses build an awesome team of global
+                        workers
                         to help them save time, money, and ultimately grow their business.
                     </p>
                 </template>
@@ -54,7 +56,8 @@ const props = defineProps({
             <Heading size="2xl" tag="h2" class="text-center">
                 Recruit skilled people for any task.
             </Heading>
-            <p class="body-paragraph max-w-xl text-center mx-auto ">Save time and money by growing your team outside of the
+            <p class="body-paragraph max-w-xl text-center mx-auto ">Save time and money by growing your team outside of
+                the
                 United
                 States and find skilled professionals for any project or business.</p>
             <PositionCarousel :roles="roles" />
@@ -73,8 +76,10 @@ const props = defineProps({
                     <Heading size="xl" tag="h3">
                         Our Recruitment Guarantee
                     </Heading>
-                    <p class="body-paragraph">Finding the right staff for your business can be a challenging task, but we
-                        are here to help. Our company offers a 90-day recruitment guarantee. If the first candidate we place
+                    <p class="body-paragraph">Finding the right staff for your business can be a challenging task, but
+                        we
+                        are here to help. Our company offers a 90-day recruitment guarantee. If the first candidate we
+                        place
                         with you doesn't work out, we will replace them free of charge within the first 90 days of their
                         employment.
                         <br><br>
@@ -92,7 +97,8 @@ const props = defineProps({
                         Quality team members ready to work hard.
                     </Heading>
                     <p class="body-paragraph">
-                        In the 21st century, global outsourcing looks like hiring amazing full-time employees with quality
+                        In the 21st century, global outsourcing looks like hiring amazing full-time employees with
+                        quality
                         english and a deep culture fit for between $8,500 and $15,000 a year.
                     </p>
                 </template>
@@ -105,5 +111,3 @@ const props = defineProps({
         <CTA />
     </Main>
 </template>
-
-  

@@ -6,10 +6,10 @@ import CheckBubble from '../Components/CheckBubble.vue';
 import Fifty from '../Blocks/Fifty.vue';
 import Button from '../Components/Button.vue';
 import CTA from '../Blocks/CTA.vue';
-</script>   
+</script>
 <template>
     <Main>
-        <Row background="white" header="true">
+        <Row header="true">
             <div class="max-w-4xl mx-auto text-center">
                 <Heading size="2xl" class="text-center text-heading">About Us</Heading>
                 <p class="text-xl max-w-2xl mx-auto text-center mx-12 text-body mb-6">Expertise, efficiency, and
@@ -54,8 +54,10 @@ import CTA from '../Blocks/CTA.vue';
                     <p class="body-paragraph">
                         If you are passionate about helping companies hire internationally, we want to hear from you!
                         <br><br>
-                        Please send us a message telling us why you would be a great fit for our team. We are always looking
-                        for talented and motivated individuals who are committed to helping companies succeed in a global
+                        Please send us a message telling us why you would be a great fit for our team. We are always
+                        looking
+                        for talented and motivated individuals who are committed to helping companies succeed in a
+                        global
                         market.
                     </p>
                     <Button type="text" link="mailto:operations@outworkstaffing.com">Contact Us</Button>

@@ -1,6 +1,6 @@
 <template>
     <Main>
-        <Row background="white" header="true">
+        <Row header="true">
             <div class="max-w-4xl mx-auto text-center">
                 <Heading size="2xl" class="text-center text-heading">Why Outsource?
                 </Heading>
@@ -13,7 +13,7 @@
         </Row>
 
         <Row background="light">
-            <Fifty imageLocation="left" imageMobile="true"
+            <Fifty imageLocation="left" :imageMobile="true"
                 imageUrl="https://ik.imagekit.io/outwork/office.webp?updatedAt=1701878778749&tr=w-1200%2Ch-675%2Cfo-auto"
                 altText="Team working">
                 <template #right>
@@ -22,7 +22,8 @@
                     </Heading>
                     <Heading size="xl" tag="h2">
                         Save 70-80% on salaries. </Heading>
-                    <p class="body-paragraph">Your team needs quality staff. No way around it. Hire globally and let your
+                    <p class="body-paragraph">Your team needs quality staff. No way around it. Hire globally and let
+                        your
                         dollar go further. There is a reason 92% of the top companies use outsourcing.
                     </p>
                     <Button type="text" link="/services">Learn More</Button>
@@ -37,7 +38,8 @@
                         Quality team members ready to work hard.
                     </Heading>
                     <p class="body-paragraph">
-                        In the 21st century, global outsourcing looks like hiring amazing full-time employees with quality
+                        In the 21st century, global outsourcing looks like hiring amazing full-time employees with
+                        quality
                         english and a deep culture fit for between $8,500 and $15,000 a year.
                     </p>
                 </template>
