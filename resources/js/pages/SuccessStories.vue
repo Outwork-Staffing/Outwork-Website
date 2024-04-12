@@ -1,6 +1,4 @@
 <script setup>
-import TestimonialLogoCloud from "../blocks/TestimonialLogoCloud.vue";
-import StoryCards from "../blocks/StoryCards.vue";
 const props = defineProps({
     stories: Array,
     logos: Array
