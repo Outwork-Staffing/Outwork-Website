@@ -70,7 +70,7 @@ function _sfc_ssrRender$b(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
 const _sfc_setup$B = _sfc_main$B.setup;
 _sfc_main$B.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/Button.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Component/Button.vue");
   return _sfc_setup$B ? _sfc_setup$B(props, ctx) : void 0;
 };
 const __unplugin_components_3$1 = /* @__PURE__ */ _export_sfc(_sfc_main$B, [["ssrRender", _sfc_ssrRender$b]]);
@@ -149,7 +149,7 @@ function _sfc_ssrRender$a(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
 const _sfc_setup$A = _sfc_main$A.setup;
 _sfc_main$A.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/Heading.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Component/Heading.vue");
   return _sfc_setup$A ? _sfc_setup$A(props, ctx) : void 0;
 };
 const __unplugin_components_2 = /* @__PURE__ */ _export_sfc(_sfc_main$A, [["ssrRender", _sfc_ssrRender$a]]);
@@ -193,7 +193,7 @@ function _sfc_ssrRender$9(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
 const _sfc_setup$z = _sfc_main$z.setup;
 _sfc_main$z.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/Row.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Component/Row.vue");
   return _sfc_setup$z ? _sfc_setup$z(props, ctx) : void 0;
 };
 const __unplugin_components_1 = /* @__PURE__ */ _export_sfc(_sfc_main$z, [["ssrRender", _sfc_ssrRender$9], ["__scopeId", "data-v-77f78ef0"]]);
@@ -680,7 +680,7 @@ function _sfc_ssrRender$7(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
 const _sfc_setup$u = _sfc_main$u.setup;
 _sfc_main$u.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/CheckBubble.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Component/CheckBubble.vue");
   return _sfc_setup$u ? _sfc_setup$u(props, ctx) : void 0;
 };
 const __unplugin_components_5$1 = /* @__PURE__ */ _export_sfc(_sfc_main$u, [["ssrRender", _sfc_ssrRender$7]]);
@@ -704,7 +704,7 @@ const _sfc_main$t = {
 const _sfc_setup$t = _sfc_main$t.setup;
 _sfc_main$t.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/FiftyImage.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Component/FiftyImage.vue");
   return _sfc_setup$t ? _sfc_setup$t(props, ctx) : void 0;
 };
 const _sfc_main$s = {
@@ -2866,7 +2866,7 @@ const _sfc_main$b = {
 const _sfc_setup$b = _sfc_main$b.setup;
 _sfc_main$b.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/BentoCard.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Component/BentoCard.vue");
   return _sfc_setup$b ? _sfc_setup$b(props, ctx) : void 0;
 };
 const _sfc_main$a = {
@@ -4084,7 +4084,7 @@ const _sfc_main$3 = {
 const _sfc_setup$3 = _sfc_main$3.setup;
 _sfc_main$3.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/SalaryChart.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Component/SalaryChart.vue");
   return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
 const _sfc_main$2 = {
