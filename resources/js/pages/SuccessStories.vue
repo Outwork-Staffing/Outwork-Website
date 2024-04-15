@@ -1,6 +1,4 @@
 <script setup>
-import TestimonialLogoCloud from "../blocks/TestimonialLogoCloud.vue";
-import StoryCards from "../blocks/StoryCards.vue";
 const props = defineProps({
     stories: Array,
     logos: Array
@@ -12,7 +10,8 @@ const props = defineProps({
         <Row background="white" header="false">
             <div class="max-w-4xl mx-auto text-center">
                 <Heading size="xl" class="text-center text-heading">Global Recruitment Success Stories</Heading>
-                <p class="text-xl max-w-2xl mx-auto text-center mx-12 text-body mb-6">Discover how companies are leveraging
+                <p class="text-xl max-w-2xl mx-auto text-center mx-12 text-body mb-6">Discover how companies are
+                    leveraging
                     global talent in major ways</p>
             </div>
         </Row>
@@ -26,10 +25,12 @@ const props = defineProps({
                 altText="Men sitting around computer">
                 <template #right>
                     <p class="text-xl text-left text-body mb-6 leading-8">"Outsourcing has been a
-                        game-changer for web SaaS, significantly boosting our profit margins and project speed remarkably.
+                        game-changer for web SaaS, significantly boosting our profit margins and project speed
+                        remarkably.
                         The
                         exceptional talent
-                        and efficiency provided by Outwork Staffing have enabled us to deliver superior quality websites at
+                        and efficiency provided by Outwork Staffing have enabled us to deliver superior quality websites
+                        at
                         an
                         unprecedented pace, truly exceeding our clients' expectations."
                     </p>
@@ -44,7 +45,8 @@ const props = defineProps({
                             <p class="text-gray-600">Founder, The Church Co</p>
                         </div>
                     </div>
-                    <Button link="https://outworkstaffing.com/success-stories/website-builder">Open Full Case Study</Button>
+                    <Button link="https://outworkstaffing.com/success-stories/website-builder">Open Full Case
+                        Study</Button>
                 </template>
             </Fifty>
         </Row>

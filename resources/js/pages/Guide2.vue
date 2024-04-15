@@ -1,7 +1,3 @@
-<script setup>
-import VAGuideContent from '../../md/VAGuideContentNewOrder.md';
-import BryanAuthor from '../blocks/BryanAuthor.vue';
-</script>
 <template>
     <Main>
         <Row background="white" header="true">
@@ -24,4 +20,3 @@ import BryanAuthor from '../blocks/BryanAuthor.vue';
         <CTA />
     </Main>
 </template>
-

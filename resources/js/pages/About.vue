@@ -1,12 +1,3 @@
-<script setup>
-import Main from '../Layouts/Main.vue';
-import Row from '../Components/Row.vue';
-import Heading from '../Components/Heading.vue';
-import CheckBubble from '../Components/CheckBubble.vue';
-import Fifty from '../Blocks/Fifty.vue';
-import Button from '../Components/Button.vue';
-import CTA from '../Blocks/CTA.vue';
-</script>   
 <template>
     <Main>
         <Row background="white" header="true">
@@ -54,8 +45,10 @@ import CTA from '../Blocks/CTA.vue';
                     <p class="body-paragraph">
                         If you are passionate about helping companies hire internationally, we want to hear from you!
                         <br><br>
-                        Please send us a message telling us why you would be a great fit for our team. We are always looking
-                        for talented and motivated individuals who are committed to helping companies succeed in a global
+                        Please send us a message telling us why you would be a great fit for our team. We are always
+                        looking
+                        for talented and motivated individuals who are committed to helping companies succeed in a
+                        global
                         market.
                     </p>
                     <Button type="text" link="mailto:operations@outworkstaffing.com">Contact Us</Button>
