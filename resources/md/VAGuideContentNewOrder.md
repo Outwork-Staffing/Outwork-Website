@@ -1,5 +1,5 @@
 <script setup>
-import Button from '../js/Components/Button.vue';
+import Button from '../js/Component/Button.vue';
 import ArticleCTA from '../js/Bricks/ArticleCTA.vue';
 import BeforeAfterChart from '../js/Bricks/BeforeAfterChart.vue';
 </script>

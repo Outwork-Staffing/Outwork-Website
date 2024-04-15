@@ -1,14 +1,15 @@
 <script setup>
-import Heading from '../Components/Heading.vue';
-import Row from '../Components/Row.vue';
-import Button from '../Components/Button.vue';
+import Heading from '../Component/Heading.vue';
+import Row from '../Component/Row.vue';
+import Button from '../Component/Button.vue';
 </script>
 <template>
     <Row background="white" header="true">
         <div class="max-w-4xl mx-auto text-center">
             <Heading size="2xl" class="text-center text-heading">Hire Elite Talent at a Fraction of the Cost of US
                 Counterparts</Heading>
-            <p class="text-xl max-w-2xl mx-auto text-center mx-12 text-body mb-6">We are a recruiting firm built to help US
+            <p class="text-xl max-w-2xl mx-auto text-center mx-12 text-body mb-6">We are a recruiting firm built to help
+                US
                 companies hire
                 quality
                 talent in
@@ -23,4 +24,3 @@ import Button from '../Components/Button.vue';
         </div>
     </Row>
 </template>
-

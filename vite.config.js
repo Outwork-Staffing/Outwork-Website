@@ -10,7 +10,7 @@ export default defineConfig({
     plugins: [
         Components({
             deep: true,
-            dirs: ['resources/js/Bricks', 'resources/js/Components', 'resources/js/Layouts'],
+            dirs: ['resources/js/Bricks', 'resources/js/Component', 'resources/js/Layouts'],
         }),
         Vue({
             include: [/\.vue$/, /\.md$/], // <-- allows Vue to compile Markdown files

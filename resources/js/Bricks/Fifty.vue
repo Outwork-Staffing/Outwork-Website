@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import FiftyImage from '../Components/FiftyImage.vue';
+import FiftyImage from '../Component/FiftyImage.vue';
 export default {
     props: {
         imageUrl: String,

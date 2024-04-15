@@ -10,7 +10,8 @@
             <div class="flex lg:hidden">
                 <Button link="/start-hiring" class="text-md font-semibold leading-6 mr-6">Start Hiring</Button>
 
-                <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                <button type="button"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
                     @click="mobileMenuOpen = true">
                     <span class="sr-only">Open main menu</span>
                     <Bars3Icon class="h-6 w-6" aria-hidden="true" />
@@ -20,8 +21,8 @@
                 <Link v-for="item in navigation" :key="item.name" :href="item.href"
                     class="text-md font-semibold leading-6 text-heading hover:underline hover:decoration-solid decoration-primary transition-custom decoration-2">
                 {{
-                    item.name
-                }}</Link>
+                        item.name
+                    }}</Link>
 
                 <Button link="/start-hiring" class="text-md font-semibold leading-6">Start Hiring</Button>
 
@@ -49,7 +50,7 @@
                             <Link v-for="item in navigation" :key="item.name" :href="item.href"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                             {{
-                                item.name }}</Link>
+                        item.name }}</Link>
                         </div>
                         <div class="py-6">
                             <Button link="/start-hiring" class="text-md font-semibold leading-6">Start
@@ -61,12 +62,12 @@
         </Dialog>
     </header>
 </template>
-  
+
 <script setup>
 import { ref } from 'vue'
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
-import Button from '../Components/Button.vue';
+import Button from '../Component/Button.vue';
 import { Link } from '@inertiajs/vue3'
 
 const navigation = [
