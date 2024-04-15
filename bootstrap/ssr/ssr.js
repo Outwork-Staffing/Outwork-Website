@@ -19,7 +19,7 @@ const _sfc_main$B = {
     type: {
       type: String,
       default: "primary",
-      validator: function(value) {
+      validator: function (value) {
         return ["primary", "secondary", "text", "white"].indexOf(value) !== -1;
       }
     },
@@ -79,20 +79,20 @@ const _sfc_main$A = {
     size: {
       type: String,
       default: "m",
-      validator: function(value) {
+      validator: function (value) {
         return ["s", "m", "lg", "xl"].includes(value);
       }
     },
     tag: {
       type: String,
       default: "h1",
-      validator: function(value) {
+      validator: function (value) {
         return ["h1", "h2", "h3", "h4", "h5", "h6"].includes(value);
       }
     }
   },
   computed: {
-    sizeClass: function() {
+    sizeClass: function () {
       switch (this.size) {
         case "span":
           return "text-lg font-bold uppercase text-primary";
@@ -159,7 +159,7 @@ const _sfc_main$z = {
     background: {
       type: String,
       default: "default",
-      validator: function(value) {
+      validator: function (value) {
         return ["default", "green", "light", "dark", "gradient"].includes(value);
       }
     },
@@ -169,7 +169,7 @@ const _sfc_main$z = {
     }
   },
   computed: {
-    bgClass: function() {
+    bgClass: function () {
       switch (this.background) {
         case "green":
           return "bg-primary";
@@ -452,7 +452,7 @@ const _sfc_main$y = {
 const _sfc_setup$y = _sfc_main$y.setup;
 _sfc_main$y.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/blocks/Header.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Bricks/Header.vue");
   return _sfc_setup$y ? _sfc_setup$y(props, ctx) : void 0;
 };
 const _sfc_main$x = {
@@ -512,7 +512,7 @@ const _sfc_main$x = {
 const _sfc_setup$x = _sfc_main$x.setup;
 _sfc_main$x.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/blocks/Footer.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Bricks/Footer.vue");
   return _sfc_setup$x ? _sfc_setup$x(props, ctx) : void 0;
 };
 const _sfc_main$w = {
@@ -713,7 +713,7 @@ const _sfc_main$s = {
     imageLocation: {
       type: String,
       default: "left",
-      validator: function(value) {
+      validator: function (value) {
         return ["right", "left"].includes(value);
       }
     },
@@ -723,7 +723,7 @@ const _sfc_main$s = {
     },
     mobileImageStack: {
       type: String,
-      validator: function(value) {
+      validator: function (value) {
         return ["top", "bottom"].includes(value);
       }
     },
@@ -779,7 +779,7 @@ function _sfc_ssrRender$6(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
 const _sfc_setup$s = _sfc_main$s.setup;
 _sfc_main$s.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/blocks/Fifty.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Bricks/Fifty.vue");
   return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
 };
 const __unplugin_components_4 = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["ssrRender", _sfc_ssrRender$6]]);
@@ -911,7 +911,7 @@ const _sfc_main$r = {
 const _sfc_setup$r = _sfc_main$r.setup;
 _sfc_main$r.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/blocks/CTA.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Bricks/CTA.vue");
   return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
 };
 const _sfc_main$q = {
@@ -1475,7 +1475,7 @@ const _sfc_main$o = {
 const _sfc_setup$o = _sfc_main$o.setup;
 _sfc_main$o.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/blocks/ArticleCTA.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Bricks/ArticleCTA.vue");
   return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
 };
 const _sfc_main$n = {};
@@ -1485,7 +1485,7 @@ function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs) {
 const _sfc_setup$n = _sfc_main$n.setup;
 _sfc_main$n.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/blocks/BeforeAfterChart.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Bricks/BeforeAfterChart.vue");
   return _sfc_setup$n ? _sfc_setup$n(props, ctx) : void 0;
 };
 const BeforeAfterChart = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["ssrRender", _sfc_ssrRender$4]]);
@@ -1520,7 +1520,7 @@ function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs) {
 const _sfc_setup$l = _sfc_main$l.setup;
 _sfc_main$l.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/blocks/BryanAuthor.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Bricks/BryanAuthor.vue");
   return _sfc_setup$l ? _sfc_setup$l(props, ctx) : void 0;
 };
 const BryanAuthor = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["ssrRender", _sfc_ssrRender$3]]);
@@ -1862,7 +1862,7 @@ const _sfc_main$h = /* @__PURE__ */ Object.assign(__default__, {
 const _sfc_setup$h = _sfc_main$h.setup;
 _sfc_main$h.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/blocks/PositionCarousel.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Bricks/PositionCarousel.vue");
   return _sfc_setup$h ? _sfc_setup$h(props, ctx) : void 0;
 };
 const __unplugin_components_5 = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["__scopeId", "data-v-57180383"]]);
@@ -1933,7 +1933,7 @@ const _sfc_main$g = {
 const _sfc_setup$g = _sfc_main$g.setup;
 _sfc_main$g.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/blocks/Process.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Bricks/Process.vue");
   return _sfc_setup$g ? _sfc_setup$g(props, ctx) : void 0;
 };
 const _sfc_main$f = {
@@ -2016,7 +2016,7 @@ const _sfc_main$f = {
 const _sfc_setup$f = _sfc_main$f.setup;
 _sfc_main$f.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/blocks/Hero.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Bricks/Hero.vue");
   return _sfc_setup$f ? _sfc_setup$f(props, ctx) : void 0;
 };
 const _sfc_main$e = {
@@ -2844,7 +2844,7 @@ const _sfc_main$c = {
 const _sfc_setup$c = _sfc_main$c.setup;
 _sfc_main$c.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/blocks/FAQ.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Bricks/FAQ.vue");
   return _sfc_setup$c ? _sfc_setup$c(props, ctx) : void 0;
 };
 const _sfc_main$b = {
@@ -2981,7 +2981,7 @@ const _sfc_main$a = {
 const _sfc_setup$a = _sfc_main$a.setup;
 _sfc_main$a.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/blocks/BentoGrid.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Bricks/BentoGrid.vue");
   return _sfc_setup$a ? _sfc_setup$a(props, ctx) : void 0;
 };
 const __unplugin_components_3 = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-5a3f50d7"]]);
@@ -3717,7 +3717,7 @@ const _sfc_main$6 = {
 const _sfc_setup$6 = _sfc_main$6.setup;
 _sfc_main$6.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/blocks/TestimonialLogoCloud.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Bricks/TestimonialLogoCloud.vue");
   return _sfc_setup$6 ? _sfc_setup$6(props, ctx) : void 0;
 };
 const _sfc_main$5 = {
@@ -3753,7 +3753,7 @@ const _sfc_main$5 = {
 const _sfc_setup$5 = _sfc_main$5.setup;
 _sfc_main$5.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/blocks/StoryCards.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Bricks/StoryCards.vue");
   return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
 };
 const StoryCards = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-d5d3cee0"]]);
@@ -4207,7 +4207,7 @@ const _sfc_main$2 = {
 const _sfc_setup$2 = _sfc_main$2.setup;
 _sfc_main$2.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/blocks/SavingsRow.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Bricks/SavingsRow.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
 const _sfc_main$1 = {
