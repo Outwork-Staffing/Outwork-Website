@@ -1,3 +1,6 @@
+<script setup>
+import VAGuideContent from '../../md/VAGuideContentNewOrder.md';
+</script>
 <template>
     <Main>
         <Row background="white" header="true">
