@@ -13,9 +13,12 @@
 
                 <button type="button"
                     class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-                    @click="toggleMobileMenu()">
+                    @click="toggleMobileMenu()"
+                >
                     <span class="sr-only">Open main menu</span>
-                    <Bars3Icon class="h-6 w-6" aria-hidden="true" />
+                    <Bars3Icon class="h-6 w-6" aria-hidden="true" v-if="mobileMenuOpen == false"/>
+                    <XMarkIcon class="h-6 w-6" aria-hidden="true" v-else/>
+
                 </button>
             </div>
             <div class="hidden lg:flex lg:gap-x-12 items-center">
