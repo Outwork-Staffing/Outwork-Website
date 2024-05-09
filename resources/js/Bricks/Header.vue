@@ -1,12 +1,12 @@
 <template>
     <header class="w-full bg-white fixed z-[120]">
         <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 w-full" aria-label="Global">
-            <a href="/" class="-m-1.5 p-1.5">
+            <Link href="/" class="-m-1.5 p-1.5">
                 <span class="sr-only">Outwork Staffing</span>
                 <img class="h-8 md:h-12 w-auto"
                     src="https://images.ctfassets.net/g7bwetg052e6/5qzjrlo1XTICWYpB1LXbQ5/4f90461cf694cb017b30e15be5a8f287/logo.svg"
                     alt="" />
-            </a>
+            </Link>
             <div class="flex lg:hidden">
                 <Button link="/start-hiring" class="text-md font-semibold leading-6 mr-6">Start Hiring</Button>
 
@@ -24,7 +24,7 @@
                         item.name
                     }}</Link>
 
-                <Button link="/start-hiring" class="text-md font-semibold leading-6">Start Hiring</Button>
+                <Button InertiaLink="/start-hiring" link="/start-hiring" class="text-md font-semibold leading-6">Start Hiring</Button>
 
             </div>
         </nav>
@@ -32,12 +32,12 @@
             <div class="fixed inset-0 z-[99]" />
             <DialogPanel class="fixed inset-y-0 right-0 z-[99] w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm ">
                 <div class=" flex items-center justify-between">
-                    <a href="#" class="-m-1.5 p-1.5">
+                    <Link href="#" class="-m-1.5 p-1.5">
                         <span class="sr-only">Outwork Staffing</span>
                         <img class="h-8 w-auto"
                             src="https://images.ctfassets.net/g7bwetg052e6/5qzjrlo1XTICWYpB1LXbQ5/4f90461cf694cb017b30e15be5a8f287/logo.svg"
                             alt="" />
-                    </a>
+                    </Link>
 
                     <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = false">
                         <span class="sr-only">Close menu</span>
@@ -53,7 +53,7 @@
                         item.name }}</Link>
                         </div>
                         <div class="py-6">
-                            <Button link="/start-hiring" class="text-md font-semibold leading-6">Start
+                            <Button InertiaLink="/start-hiring" link="/start-hiring" class="text-md font-semibold leading-6">Start
                                 Hiring</Button>
                         </div>
                     </div>

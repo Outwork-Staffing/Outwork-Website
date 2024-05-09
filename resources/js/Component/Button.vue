@@ -1,11 +1,11 @@
 
 <template>
     <div v-if="InertiaLink">
-        <a :href="InertiaLink" :target="newTab ? '_blank' : ''" :class="`btn btn-${type}`">
+        <Link :href="InertiaLink" :target="newTab ? '_blank' : ''" :class="`btn btn-${type}`">
             <slot></slot>
             <ChevronRightIcon class="text-link-arrow" v-if="type === 'text'" />
 
-        </a>
+        </Link>
     </div>
 
     <template v-else>
