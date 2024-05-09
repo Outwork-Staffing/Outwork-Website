@@ -37,6 +37,7 @@ const faqs = [
 ];
 </script>
 <template>
+    <Main>
         <Row class="pt-12 ">
             <Heading size="span" tag="h6" class="text-center">
                 FAQs
@@ -71,4 +72,5 @@ const faqs = [
             </div>
         </Row>
         <CTA/>
+    </Main>
 </template>

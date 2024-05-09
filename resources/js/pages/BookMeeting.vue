@@ -20,6 +20,7 @@ function initializeSavvyCal() {
 }
 </script>
 <template>
+    <Main>
         <Row class="pt-12 ">
             <Heading size="span" tag="h6">
                 contact us
@@ -39,4 +40,5 @@ function initializeSavvyCal() {
 
 
         </Row>
+    </Main>
 </template>

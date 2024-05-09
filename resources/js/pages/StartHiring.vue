@@ -1,4 +1,5 @@
 <template>
+    <Main>
         <Row class="pt-12 ">
             <Heading size="span" tag="h6">
                 contact us
@@ -17,6 +18,7 @@
 
 
         </Row>
+    </Main>
 </template>
 <script setup>
 import { onBeforeMount, ref } from 'vue';

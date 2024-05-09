@@ -9,6 +9,7 @@ let story = props.story[0];
 </script>
 
 <template>
+    <Main>
         <Row background="light" header="false" class="py-12">
             <Fifty imageLocation="right" :imageUrl="story.image">
                 <template #left>
@@ -36,4 +37,5 @@ let story = props.story[0];
             </div>
         </Row>
         <CTA />
+    </Main>
 </template>

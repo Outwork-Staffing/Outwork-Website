@@ -2,6 +2,7 @@
 import VAGuideContent from '../../md/VAGuideContentNewOrder.md';
 </script>
 <template>
+    <Main>
         <Row background="white" header="true">
             <div class="mx-auto grid justify-center">
                 <Heading size="2xl" class="text-center text-heading">The Ultimate Guide to Virtual Assistants</Heading>
@@ -20,4 +21,5 @@ import VAGuideContent from '../../md/VAGuideContentNewOrder.md';
             </div>
         </Row>
         <CTA />
+    </Main>
 </template>
