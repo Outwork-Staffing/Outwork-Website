@@ -16,13 +16,15 @@
     <meta property="og:image" content="https://outworkstaffing.com/social_share.png">
 
     <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="outworkstaffing.com">
-    <meta property="twitter:url" content="https://outworkstaffing.com/">
     <meta name="twitter:title" content="Outwork Staffing - Hire Elite Global Talent">
     <meta name="twitter:description"
           content="Hire Elite Talent at a Fraction of the Cost of US Counterparts. We are a recruiting firm built to help US companies hire quality talent globally for between $900-$1500 a month!">
     <meta name="twitter:image" content="https://outworkstaffing.com/social_share.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta property="twitter:domain" content="outworkstaffing.com">
+    <meta property="twitter:url" content="https://outworkstaffing.com/">
+
 
     @vite('resources/js/app.js')
     @vite('resources/css/app.css')
