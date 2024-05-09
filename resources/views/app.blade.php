@@ -5,10 +5,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:type" content="website" />
-  <link rel="icon" type="image/svg+xml" href="/fav.svg">
+  <link rel="icon" type="image/svg+xml" href="https://outworkstaffing.com/fav.svg">
 
-  <meta property="og:image" content="/social_share.png" />
-  <meta name="twitter:image" content="/social_share.png">
+  <meta property="og:image" content="https://outworkstaffing.com/social_share.png" />
+  <meta name="twitter:image" content="https://outworkstaffing.com/social_share.png">
   @vite('resources/js/app.js')
   @vite('resources/css/app.css')
   @inertiaHead
