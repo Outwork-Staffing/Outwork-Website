@@ -5,7 +5,6 @@ const props = defineProps({
 </script>
 
 <template>
-    <Main>
         <Hero />
         <Row name="relate" background="light">
             <Fifty imageMobile="true" imageUrl="https://ik.imagekit.io/outwork/handsinface.webp?updatedAt=1701878781199"
@@ -103,7 +102,6 @@ const props = defineProps({
             </Fifty>
         </Row>
         <CTA />
-    </Main>
 </template>
 
 
