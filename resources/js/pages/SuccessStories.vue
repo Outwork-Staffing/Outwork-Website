@@ -6,7 +6,6 @@ const props = defineProps({
 </script>
 
 <template>
-    <Main>
         <Row background="white" header="false">
             <div class="max-w-4xl mx-auto text-center">
                 <Heading size="xl" class="text-center text-heading">Global Recruitment Success Stories</Heading>
@@ -60,5 +59,4 @@ const props = defineProps({
         </Row>
         <CTA />
 
-    </Main>
 </template>

@@ -1,5 +1,4 @@
 <template>
-    <Main>
         <Row class="pt-40 text-center min-h-screen">
             <div class="grid gap-8">
                 <h1 class="text-9xl text-primary font-black">Woo hoo!</h1>
@@ -10,5 +9,4 @@
                     on your email for more information.</p>
             </div>
         </Row>
-    </Main>
 </template>

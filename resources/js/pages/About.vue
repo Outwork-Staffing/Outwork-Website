@@ -1,5 +1,4 @@
 <template>
-    <Main>
         <Row background="white" header="true">
             <div class="max-w-4xl mx-auto text-center">
                 <Heading size="2xl" class="text-center text-heading">About Us</Heading>
@@ -58,5 +57,4 @@
             </Fifty>
         </Row>
         <CTA />
-    </Main>
 </template>

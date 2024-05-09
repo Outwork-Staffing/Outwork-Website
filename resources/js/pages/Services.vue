@@ -2,9 +2,8 @@
 const props = defineProps({
     roles: Array
 });
-</script>   
+</script>
 <template>
-    <Main>
         <Row background="gradient" header="true">
             <div class="max-w-4xl mx-auto">
                 <Heading size="span" tag="h6" class="text-center">
@@ -68,5 +67,4 @@ const props = defineProps({
             <FAQ />
         </Row>
         <CTA />
-    </Main>
 </template>
