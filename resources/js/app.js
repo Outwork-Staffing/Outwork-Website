@@ -7,7 +7,12 @@ createInertiaApp({
         return pages[`./pages/${name}.vue`]
     },
     setup({ el, App, props, plugin }) {
-        createSSRApp({ render: () => h(App, props) })
+        createSSRApp({progress: {
+                delay: 50,
+                color: '#50B780',
+                includeCSS: true,
+                showSpinner: false,
+            }, render: () => h(App, props) })
             .use(plugin)
             .mount(el)
     },

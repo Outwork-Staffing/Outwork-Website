@@ -13,6 +13,12 @@ createServer(page =>
         },
         setup({ App, props, plugin }) {
             return createSSRApp({
+                progress: {
+                    delay: 50,
+                    color: '#50B780',
+                    includeCSS: true,
+                    showSpinner: false,
+                },
                 render: () => h(App, props),
             }).use(plugin)
 
