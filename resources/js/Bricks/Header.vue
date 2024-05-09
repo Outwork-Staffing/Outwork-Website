@@ -74,7 +74,8 @@ const navigation = [
     { name: 'Why Outsource?', href: '/why-outsource' },
     { name: 'Services', href: '/services' },
     { name: 'About Us', href: '/about' },
-    { name: 'Success Stories', href: '/success-stories' },
+
+    { name: 'FAQs', href: '/frequently-asked-questions' },
 
 ]
 

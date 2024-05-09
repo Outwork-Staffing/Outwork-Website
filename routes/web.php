@@ -115,10 +115,16 @@ Route::get('/virtual-assistant-guide', function () {
 });
 
 Route::get('/virtual-assistant-resource', function () {
-    //This is part of a split test. 
+    //This is part of a split test.
     //This variant includes the same resource; but it includes 1) my (Bryan) face 2) different order of data
     Meta::addMeta('title', 'Virtual Assistant Guide - Outwork Staffing');
     return Inertia('Guide2');
+});
+
+Route::get('/frequently-asked-questions', function ()   {
+    Meta::addMeta('title', 'Frequently Asked Questions - Outwork Staffing');
+
+    return Inertia('FAQPage');
 });
 
 Route::get('/404', function () {

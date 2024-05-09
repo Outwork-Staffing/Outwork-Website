@@ -15,7 +15,7 @@ const faqs = [
     {
         question: "How much do you charge?",
         answer:
-            "We charge a $500 deposit to get started recruiting and then when we place a candidate we will bill our recruitment fee. It depends on the frequency you are hiring, but it is typically 35% of the annual salary. Your $500 deposit goes towards that 35%.",
+            "We charge a $500 deposit to get started recruiting and then when we place a candidate we will bill our recruitment fee. It depends on the frequency you are hiring, but it is typically 30% of the annual salary. Your $500 deposit goes towards that 30%.",
     },
     {
         question: "Do you have a placement guarantee?",
