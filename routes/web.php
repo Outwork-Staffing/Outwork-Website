@@ -108,7 +108,6 @@ Route::get('/form-complete', function () {
 });
 
 
-
 Route::get('/virtual-assistant-guide', function () {
     Meta::addMeta('title', 'Virtual Assistant Guide - Outwork Staffing');
     return Inertia('Guide');
@@ -121,7 +120,7 @@ Route::get('/virtual-assistant-resource', function () {
     return Inertia('Guide2');
 });
 
-Route::get('/frequently-asked-questions', function ()   {
+Route::get('/frequently-asked-questions', function () {
     Meta::addMeta('title', 'Frequently Asked Questions - Outwork Staffing');
 
     return Inertia('FAQPage');
@@ -137,3 +136,5 @@ Route::get('/404', function () {
 // Case Studies
 Route::get('/success-stories', [CaseStudyController::class, 'index']);
 Route::get('/success-stories/{slug}', [CaseStudyController::class, 'show']);
+
+require __DIR__ . '/landing_pages.php';
