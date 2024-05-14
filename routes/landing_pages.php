@@ -7,3 +7,9 @@ use Contentful\Delivery\Query;
 
 use App\Meta;
 use Inertia\Inertia;
+
+Route::get('/lp/support-agents', function () {
+    Meta::addMeta('title', 'Hire Customer Support Agents - Outwork Staffing');
+
+    return Inertia::render('LandingPages/SupportAgents');
+});
