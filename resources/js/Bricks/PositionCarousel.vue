@@ -1,5 +1,5 @@
 <script setup>
-import Heading from "../Component/Heading.vue";
+import Heading from "../Components/Heading.vue";
 </script>
 <template>
     <div class="positions pt-8" :class="{ 'white-fade': fadeToWhite }">

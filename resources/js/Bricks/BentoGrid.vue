@@ -1,5 +1,5 @@
 <script setup>
-import BentoCard from '../Component/BentoCard.vue';
+import BentoCard from '../Components/BentoCard.vue';
 import { CurrencyDollarIcon, CheckBadgeIcon, DocumentCheckIcon, HeartIcon } from '@heroicons/vue/24/solid';
 </script>
 

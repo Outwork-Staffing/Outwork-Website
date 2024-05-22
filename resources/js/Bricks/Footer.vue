@@ -18,7 +18,7 @@
 
 <script setup>
 import { defineComponent, h } from 'vue'
-import Row from '../Component/Row.vue';
+import Row from '../Components/Row.vue';
 
 const navigation = {
     main: [

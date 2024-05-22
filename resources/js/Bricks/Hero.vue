@@ -1,7 +1,7 @@
 <script setup>
-import Heading from '../Component/Heading.vue';
-import Row from '../Component/Row.vue';
-import Button from '../Component/Button.vue';
+import Heading from '../Components/Heading.vue';
+import Row from '../Components/Row.vue';
+import Button from '../Components/Button.vue';
 </script>
 <template>
     <Row background="white" header="true">
