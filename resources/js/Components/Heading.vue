@@ -1,6 +1,6 @@
 <template>
-    <component :is="tag" v-bind="$attrs" :class="[sizeClass] + ' mb-6'"
-        v-if="tag === 'h1'" :enter="{ opacity: 1, y: 0, scale: 1 }" :variants="{ custom: { scale: 2 } }" :delay="200">
+    <component :is="tag" v-bind="$attrs" :class="[sizeClass] + ' mb-6'" v-if="tag === 'h1'"
+        :enter="{ opacity: 1, y: 0, scale: 1 }" :variants="{ custom: { scale: 2 } }" :delay="200">
         <slot />
     </component>
 
@@ -34,9 +34,9 @@ export default {
                 case 'm':
                     return 'text-xl text-heading font-bold'
                 case 'lg':
-                    return 'text-2xl text-heading font-bold';
+                    return 'text-2xl text-heading font-bold ';
                 case 'xl':
-                    return 'text-3xl md:text-5xl text-heading font-bold';
+                    return 'text-3xl md:text-5xl text-heading font-semibold';
                 case '2xl':
                     return 'text-4xl text-heading md:text-6xl font-bold'
                 default:

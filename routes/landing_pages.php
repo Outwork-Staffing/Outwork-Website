@@ -10,6 +10,12 @@ use Inertia\Inertia;
 
 Route::get('/lp/support-agents', function () {
     Meta::addMeta('title', 'Hire Customer Support Agents - Outwork Staffing');
-
     return Inertia::render('LandingPages/SupportAgents');
+});
+
+Route::get('/lp/staging', function () {
+    if (env('APP_ENV') != 'local') {
+        return redirect('/');
+    }
+    return Inertia::render('LP/Staging');
 });
