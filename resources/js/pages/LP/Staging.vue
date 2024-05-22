@@ -84,7 +84,7 @@ const menu = [
                 <div class="bg-white rounded border p-4">Sample Testimonial</div>
                 <div class="bg-white rounded border p-4">Sample Testimonial</div>
             </div>
-            <Heading size="lg" class="pt-24 pb-12 text-center">Curious about the quality? View Sample Resumes</Heading>
+            <Heading size="md" class="pt-24 pb-2 text-center">Curious about the quality? View Sample Resumes</Heading>
 
             <SampleResumes />
         </Row>
