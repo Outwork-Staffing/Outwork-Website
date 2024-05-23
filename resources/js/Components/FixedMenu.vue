@@ -42,7 +42,7 @@ onUnmounted(() => {
             </span>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Button type="primary">Book a meeting</Button>
+            <Button type="primary">Book a free consultation</Button>
         </div>
     </div>
 </template>

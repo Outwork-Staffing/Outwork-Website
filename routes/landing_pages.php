@@ -6,6 +6,7 @@ use Contentful\Delivery\Client as DeliveryClient;
 use Contentful\Delivery\Query;
 
 use App\Meta;
+use App\Services\MarkdownService;
 use Inertia\Inertia;
 
 Route::get('/lp/support-agents', function () {
@@ -17,5 +18,13 @@ Route::get('/lp/staging', function () {
     if (env('APP_ENV') != 'local') {
         return redirect('/');
     }
+    $resumes = [
+        'Operations' => MarkdownService::parse('resumes/operations.md'),
+        'Marketing' => MarkdownService::parse('resumes/marketer.md'),
+        'Support' => MarkdownService::parse('resumes/support.md'),
+
+
+    ];
+    //dd($resumes);
     return Inertia::render('LP/Staging');
 });

@@ -16,7 +16,7 @@ const props = defineProps({
         <div class="top-overlay "></div>
 
         <div class="absolute inset-0 flex flex-col justify-between px-8 py-6 z-10">
-            <span class="text-dark text-center mx-auto font-semibold text-4xl"> {{ title }}</span>
+            <span class="text-white text-center mx-auto font-semibold text-4xl"> {{ title }}</span>
             <span class="text-white text-center mx-auto "> {{ desc }}</span>
 
         </div>
@@ -25,7 +25,7 @@ const props = defineProps({
 
 <style scoped>
 .top-overlay {
-    @apply bg-gradient-to-b from-secondary to-transparent blur-md;
+    background: linear-gradient(0deg, rgba(21, 42, 41, 0) 0%, rgba(21, 42, 41, 100) 100%);
     position: absolute;
     z-index: 1;
     bottom: auto;
@@ -36,7 +36,7 @@ const props = defineProps({
 .bottom-overlay {
     position: absolute;
     z-index: 1;
-    @apply bg-gradient-to-t from-dark to-transparent;
+    background: linear-gradient(-180deg, rgba(21, 42, 41, 0) 0%, rgba(21, 42, 41, 50) 100%);
     width: 100%;
     height: 50%;
     position: absolute;

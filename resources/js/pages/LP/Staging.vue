@@ -56,11 +56,11 @@ const menu = [
                     title="We will write a job description."
                     desc="Office Handset Call Center Apprentice Young Executive Young Professional Apprentership United Kingdom " />
                 <ImageCard
-                    image="https://images.unsplash.com/photo-1560264418-c4445382edbc?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    image="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     title="Run 200+ Interviews For You"
                     desc="Office Handset Call Center Apprentice Young Executive Young Professional Apprentership United Kingdom " />
                 <ImageCard
-                    image="https://images.unsplash.com/photo-1560264418-c4445382edbc?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    image="https://images.unsplash.com/photo-1598257006756-51088d8c1126?q=80&w=4470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     title="Quality Account Managmenet"
                     desc="Office Handset Call Center Apprentice Young Executive Young Professional Apprentership United Kingdom " />
             </div>
@@ -69,10 +69,10 @@ const menu = [
         <Row background="gray" class="">
             <Heading size="xl" class="text-heading pb-12">The Outwork Staffing Process</Heading>
             <div class="grid grid-cols-2 gap-8">
-                <div class="bg-white rounded border p-4">asdf</div>
-                <div class="bg-white rounded border p-4">asdf</div>
-                <div class="bg-white rounded border p-4">asdf</div>
-                <div class="bg-white rounded border p-4">asdf</div>
+                <div class="bg-white rounded border p-4">1. Share your staffing needs</div>
+                <div class="bg-white rounded border p-4">2. We write a job description</div>
+                <div class="bg-white rounded border p-4">3. Our team runs hundreds of interviews. </div>
+                <div class="bg-white rounded border p-4">4. Our team presents the top 3 candidates</div>
 
             </div>
         </Row>
