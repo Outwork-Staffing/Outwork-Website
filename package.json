@@ -23,6 +23,7 @@
         "@vitejs/plugin-vue": "^5.0.4",
         "@volar/vue-typescript": "^1.0.22",
         "@vue/server-renderer": "^3.4.21",
+        "@vueuse/core": "^10.9.0",
         "@vueuse/motion": "^2.1.0",
         "autoprefixer": "^10.4.19",
         "axios": "^1.6.8",

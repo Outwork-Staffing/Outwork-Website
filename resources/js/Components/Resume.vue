@@ -3,13 +3,13 @@ const props = defineProps({
     name: String,
     subtitle: String,
     desc: String,
+    img: String
 })
 </script>
 <template>
     <div class="text-left flex flex-col overflow-hidden">
         <div class="flex gap-4">
-            <img class="rounded-full h-10"
-                src="https://pbs.twimg.com/profile_images/1391946980960743425/xi3nDA3k_400x400.jpg" />
+            <img class="rounded-full h-10" :src="img" v-if="img" />
             <div class="grid">
                 <span class="text-md mb-0 font-semibold">
                     {{ name }}

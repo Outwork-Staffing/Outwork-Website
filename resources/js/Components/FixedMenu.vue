@@ -36,7 +36,7 @@ onUnmounted(() => {
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
             <span v-for=" item  in  menu "
-                :class="['font-semibold text-lg opacity-50 hover:opacity-100 transition cursor-pointer hover:text-primary', dark ? 'text-heading' : 'text-white']">
+                :class="['font-semibold text-lg opacity-50 hover:opacity-100 transition cursor-pointer hover:text-primary', dark ? 'text-heading' : 'text-white', item.active ? 'opacity-100' : '']">
                 {{ item.name }}
 
             </span>

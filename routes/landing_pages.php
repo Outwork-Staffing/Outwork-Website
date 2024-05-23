@@ -19,12 +19,14 @@ Route::get('/lp/staging', function () {
         return redirect('/');
     }
     $resumes = [
-        'Operations' => MarkdownService::parse('resumes/operations.md'),
-        'Marketing' => MarkdownService::parse('resumes/marketer.md'),
-        'Support' => MarkdownService::parse('resumes/support.md'),
+        'operations' => MarkdownService::parse('resumes/operations.md'),
+        'marketing' => MarkdownService::parse('resumes/marketer.md'),
+        'support' => MarkdownService::parse('resumes/support.md'),
 
 
     ];
     //dd($resumes);
-    return Inertia::render('LP/Staging');
+    return Inertia::render('LP/Staging', [
+        'resumes' => $resumes,
+    ]);
 });

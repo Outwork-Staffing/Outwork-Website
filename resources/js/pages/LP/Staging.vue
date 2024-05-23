@@ -1,31 +1,68 @@
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+import { useIntersectionObserver } from '@vueuse/core';
 import Fifty from '../../Bricks/Fifty.vue';
 import SampleResumes from '../../Bricks/SampleResumes.vue';
 import FounderLetter from '../../Components/FounderLetter.vue';
 
+const props = defineProps({
+    resumes: Object,
+})
+
 const menu = [
     {
         name: 'Overview',
-        id: 'overview'
+        id: 'overview',
+        active: true
     },
     {
         name: 'Process',
-        id: 'process'
+        id: 'process',
+        active: false
+
     },
     {
         name: 'Case Studies',
-        id: 'case-studies'
+        id: 'case-studies',
+        active: false
     },
     {
         name: 'FAQs',
-        id: 'FAQs'
+        id: 'FAQs',
+        active: false
     },
 ];
+
+const useIntersection = (rowName) => {
+    const target = ref(null);
+    const targetIsVisible = ref(false);
+
+    const { stop } = useIntersectionObserver(
+        target,
+        ([{ isIntersecting }], observerElement) => {
+            if (isIntersecting) {
+                console.log(`${rowName} is in view`);
+                targetIsVisible.value = true;
+            } else {
+                targetIsVisible.value = false;
+            }
+        },
+    );
+
+    return { target, targetIsVisible };
+};
+
+const overview = useIntersection('Overview');
+const process = useIntersection('Process');
+const caseStudies = useIntersection('Case Studies');
+const faqs = useIntersection('FAQs');
+const cta = useIntersection('CTA');
+
 </script>
 <template>
     <Landing>
         <FixedMenu :menu="menu" :dark="false" class="z-[200]" />
-        <Row background="dark">
+        <Row background="dark" ref="overview.target">
             <Fifty>
                 <template #left>
                     <div class="grid gap-8">
@@ -66,7 +103,7 @@ const menu = [
             </div>
             <div class="overhang bg-gray-50"></div>
         </Row>
-        <Row background="gray" class="">
+        <Row background="gray" class="" ref="process.target">
             <Heading size="xl" class="text-heading pb-12">The Outwork Staffing Process</Heading>
             <div class="grid grid-cols-2 gap-8">
                 <div class="bg-white rounded border p-4">1. Share your staffing needs</div>
@@ -76,7 +113,7 @@ const menu = [
 
             </div>
         </Row>
-        <Row class="relative overflow-hidden">
+        <Row class="relative overflow-hidden" ref="caseStudies.target">
             <Heading size="xl" class="pb-12">Don't just take our word for it.</Heading>
             <div class="grid grid-cols-2 gap-8">
                 <div class="bg-white rounded border p-4">Sample Testimonial</div>
@@ -86,20 +123,25 @@ const menu = [
             </div>
             <Heading size="md" class="pt-24 pb-2 text-center">Curious about the quality? View Sample Resumes</Heading>
 
-            <SampleResumes />
+            <SampleResumes :resumes="resumes" />
         </Row>
 
         <Row background="dark">
+
+            {{ resumes }}
             More Testimonials
         </Row>
         <Row>
             Gurantee
         </Row>
-        <Row>
+        <Row ref="cta.target">
             Call to Action
         </Row>
         <Row background="gray">
             <FounderLetter />
+        </Row>
+        <Row background="gray" ref="faqs.target">
+            FAQs
         </Row>
         <Row>
             Footer

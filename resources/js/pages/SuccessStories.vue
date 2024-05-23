@@ -15,8 +15,11 @@ const props = defineProps({
                     global talent in major ways</p>
             </div>
         </Row>
-        <div class="max-w-7xl mx-auto text-center">
-            <TestimonialLogoCloud :logos="logos" class="white-fade" />
+        <div>
+            <div class="max-w-7xl mx-auto text-center bg-white">
+                <TestimonialLogoCloud :logos="logos" class="white-fade" />
+            </div>
+
         </div>
 
         <Row>
@@ -62,3 +65,15 @@ const props = defineProps({
 
     </Main>
 </template>
+
+<style>
+.white-fade:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255, 50)) !important;
+}
+
+.white-fade:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255, 50)) !important;
+}
+</style>
