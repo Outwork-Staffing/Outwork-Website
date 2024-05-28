@@ -1,7 +1,7 @@
 ---
-name: "Marketing Expert"
-subtitle: "Beta 123"
-profile_pic: "https://pbs.twimg.com/profile_images/1269380808046854144/UJ6sF-W2_400x400.jpg"
+name: "Maria Clara Santos"
+subtitle: "Digital Marketing"
+profile_pic: "https://images.generated.photos/Vt39ZoDjingsyX3pkVP06vqMRaw7mBHCP_sobyq-UIM/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MTA1NTIyLmpwZw.jpg"
 ---
 
-123 123 drink
+Proven track record of increasing brand awareness, driving sales growth, and fostering customer loyalty. Adept at managing digital campaigns, social media marketing, and market research.

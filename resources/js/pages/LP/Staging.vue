@@ -113,11 +113,34 @@ function computeSubTitle($type, $industry) {
         <Row>
             <Fifty class="mb-24">
                 <template #right>
-                    {{ resumes }}
+                    <Heading size="span" tag="h6" class="text-center">
+                        Sample Resumes
+                    </Heading>
+                    <div class="grid gap-3">
+                        <div v-for="resume in resumes" class="border rounded-xl p-4">
+                            <div class="grid grid-cols-6 gap-5 items-top">
+                                <div class="col-span-1">
+                                    <div class="h-16 w-16 rounded-full bg-cover bg-center"
+                                        :style="{ backgroundImage: `url(${resume.meta.profile_pic})` }"
+                                        v-if="resume.meta.profile_pic"></div>
+
+                                </div>
+                                <div class="flex flex-col gap-1 col-span-5">
+                                    <p class="text-xl text-heading"> <strong>{{ resume.meta.name }} </strong> - {{
+            resume.meta.subtitle }}</p>
+
+                                    <div v-html="resume.content" class="text-sm text-gray-500">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
                 </template>
                 <template #left class="">
-                    <Heading size="xl" class="text-left text-balance !leading-tight">Finally, you can hire quality
+                    <Heading size="xl" class="text-left text-balance !leading-tight">Finally, you too can hire quality
                         talent overseas.
                     </Heading>
                     <p class="mb-6">You are overwhelmed and know you need to expand your team to support your growing
@@ -129,7 +152,7 @@ function computeSubTitle($type, $industry) {
             </Fifty>
             <div class="bg-white ">
                 <div class="max-w-7xl mx-auto text-center bg-white">
-                    <p class="text-sm text-gray-500 mb-8">Trusted by solo founders, 2000 person enterprises, and
+                    <p class="text-sm text-gray-500 mb-8">Trusted by solo founders, thousand person enterprises, and
                         everyone in
                         between.
                     </p>
