@@ -19,6 +19,6 @@ function initializeSavvyCal() {
 }
 </script>
 <template>
-    <div id="booking-page" class=" max-w-4xl mx-auto">
+    <div id="booking-page" class="">
     </div>
 </template>

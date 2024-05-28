@@ -111,7 +111,32 @@ function computeSubTitle($type, $industry) {
             </Fifty>
         </Row>
         <Row>
-            Customer ID Row
+            <Fifty class="mb-24">
+                <template #right>
+                    {{ resumes }}
+
+                </template>
+                <template #left class="">
+                    <Heading size="xl" class="text-left text-balance !leading-tight">Finally, you can hire quality
+                        talent overseas.
+                    </Heading>
+                    <p class="mb-6">You are overwhelmed and know you need to expand your team to support your growing
+                        business, but
+                        you don’t think you have the budget to hire full-time employees.</p>
+                    <p>With our recruiting solutions, you can hire highly skilled and experienced talent overseas for a
+                        fraction of the cost, freeing up your time and resources.</p>
+                </template>
+            </Fifty>
+            <div class="bg-white ">
+                <div class="max-w-7xl mx-auto text-center bg-white">
+                    <p class="text-sm text-gray-500 mb-8">Trusted by solo founders, 2000 person enterprises, and
+                        everyone in
+                        between.
+                    </p>
+                    <TestimonialLogoCloud :logos="logos" class="white-fade" />
+                </div>
+
+            </div>
         </Row>
         <Row class="relative" background="dark">
             <Heading size="xl" class="text-white text-center pb-12">Outcome Driven International Recruiting</Heading>
@@ -198,7 +223,6 @@ function computeSubTitle($type, $industry) {
                 </div>
             </div>
 
-            <SampleResumes :resumes="resumes" class="mt-36" />
         </Row>
 
         <Row background="light">
@@ -229,8 +253,24 @@ function computeSubTitle($type, $industry) {
             Guarantee
         </Row>
         <Row :ref="cta.target" id="cta" class="scroll-mt-[10vh]">
-            <Heading size="2xl" tag="h1">Book a free call with us</Heading>
-            <SavvyCal class="" />
+            <div class="mb-12 w-full">
+                <Heading size="span" tag="h6" class=" text-left !mb-2">
+                    Learn more
+                </Heading>
+                <Heading size="xl" tag="h1" class="text-text-left">Book a free consultation call with our team!
+                </Heading>
+                <p class="max-w-3xl  text-left">Say goodbye to the stress of hiring global talent.
+                    Use the
+                    form below
+                    to schedule a call with our
+                    recruitment team
+                    and learn how we can help you hire the best talent.
+
+                </p>
+
+            </div>
+
+            <SavvyCal class="w-full" />
         </Row>
         <Row background="gray">
             <FounderLetter />
