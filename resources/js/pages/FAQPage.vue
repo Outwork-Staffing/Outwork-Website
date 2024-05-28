@@ -22,7 +22,7 @@ const faqs = [
     {
         question: "Do you have a placement guarantee?",
         answer:
-            "If you aren’t satisfied with the candidate that you hire or they quit in the first 90 days, we will find you someone else free of charge. We want to make sure that you find somebody who can work well with you and your time - that is our top priority.",
+            "If you aren’t satisfied with the candidate that you hire or they quit in the first 6 months, we will find you someone else free of charge. We want to make sure that you find somebody who can work well with you and your time - that is our top priority.",
     },
     {
         question: "Do hires join my company?",
@@ -48,16 +48,16 @@ const faqs = [
 
             <dl class="mt-12 space-y-6 max-w-6xl mx-auto">
                 <Disclosure as="div" v-for="faq in faqs" :key="faq.question" v-slot="{ open }"
-                            class="bg-secondary border rounded-xl p-6 hover:scale-[101%] hover:border-primary transition">
+                    class="bg-secondary border rounded-xl p-6 hover:scale-[101%] hover:border-primary transition">
                     <div class="transition-all">
                         <DisclosureButton class="w-full items-start justify-between text-left text-gray-900">
                             <div class="w-full flex justify-between">
                                 <span class="text-headings font-bold text-xl">{{ faq.question }}</span>
                                 <span class="ml-6 flex h-7 items-center">
-                            <PlusSmallIcon v-if="!open" class="h-6 w-6 group-hover:scale-125 transition-all"
-                                           aria-hidden="true" />
-                            <MinusSmallIcon v-else class="h-6 w-6" aria-hidden="true" />
-                        </span>
+                                    <PlusSmallIcon v-if="!open" class="h-6 w-6 group-hover:scale-125 transition-all"
+                                        aria-hidden="true" />
+                                    <MinusSmallIcon v-else class="h-6 w-6" aria-hidden="true" />
+                                </span>
                             </div>
 
                             <DisclosurePanel as="dd" class="mt-6 w-full bg-secondary" v-show="open">
@@ -68,9 +68,10 @@ const faqs = [
                 </Disclosure>
             </dl>
             <div class="flex items-center w-full justify-center">
-            <Button class="text-center my-12" type="text" link="mailto:operations@outworkstaffing.com">Have specific questions? Email us: operations@outworkstaffing.com</Button>
+                <Button class="text-center my-12" type="text" link="mailto:operations@outworkstaffing.com">Have specific
+                    questions? Email us: operations@outworkstaffing.com</Button>
             </div>
         </Row>
-        <CTA/>
+        <CTA />
     </Main>
 </template>

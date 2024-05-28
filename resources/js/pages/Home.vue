@@ -40,7 +40,8 @@ const props = defineProps({
                         Find quality full-time help for $900-$1500.
                     </Heading>
                     <p class="body-paragraph">Most companies think they need to spend between $4,000-$6,000 a month on a
-                        quality full time team. That isn't true. We help businesses build an awesome team of global workers
+                        quality full time team. That isn't true. We help businesses build an awesome team of global
+                        workers
                         to help them save time, money, and ultimately grow their business.
                     </p>
                 </template>
@@ -54,7 +55,8 @@ const props = defineProps({
             <Heading size="2xl" tag="h2" class="text-center">
                 Recruit skilled people for any task.
             </Heading>
-            <p class="body-paragraph max-w-xl text-center mx-auto ">Save time and money by growing your team outside of the
+            <p class="body-paragraph max-w-xl text-center mx-auto ">Save time and money by growing your team outside of
+                the
                 United
                 States and find skilled professionals for any project or business.</p>
             <PositionCarousel :roles="roles" />
@@ -65,7 +67,7 @@ const props = defineProps({
                     <div class="block flex justify-center">
                         <img class="h-64"
                             src="https://images.ctfassets.net/g7bwetg052e6/3jfEQv5IouKC9WpjXtrrLA/5ac466efc1475348c1917e98a455adad/shield.webp"
-                            alt="Shield showing Outwork Gurantee">
+                            alt="Shield showing Outwork Guarantee">
                     </div>
 
                 </div>
@@ -73,9 +75,12 @@ const props = defineProps({
                     <Heading size="xl" tag="h3">
                         Our Recruitment Guarantee
                     </Heading>
-                    <p class="body-paragraph">Finding the right staff for your business can be a challenging task, but we
-                        are here to help. Our company offers a 90-day recruitment guarantee. If the first candidate we place
-                        with you doesn't work out, we will replace them free of charge within the first 90 days of their
+                    <p class="body-paragraph">Finding the right staff for your business can be a challenging task, but
+                        we
+                        are here to help. Our company offers a 90-day recruitment guarantee. If the first candidate we
+                        place
+                        with you doesn't work out, we will replace them free of charge within the first 6 months of
+                        their
                         employment.
                         <br><br>
                         Trust us to find the right fit for your company.
@@ -92,7 +97,8 @@ const props = defineProps({
                         Quality team members ready to work hard.
                     </Heading>
                     <p class="body-paragraph">
-                        In the 21st century, global outsourcing looks like hiring amazing full-time employees with quality
+                        In the 21st century, global outsourcing looks like hiring amazing full-time employees with
+                        quality
                         english and a deep culture fit for between $8,500 and $15,000 a year.
                     </p>
                 </template>
@@ -105,5 +111,3 @@ const props = defineProps({
         <CTA />
     </Main>
 </template>
-
-

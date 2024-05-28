@@ -20,7 +20,7 @@ const faqs = [
     {
         question: "Do you have a placement guarantee?",
         answer:
-            "If you aren’t satisfied with the candidate that you hire or they quit in the first 90 days, we will find you someone else free of charge. We want to make sure that you find somebody who can work well with you and your time - that is our top priority.",
+            "If you aren’t satisfied with the candidate that you hire or they quit in the first 6 months, we will find you someone else free of charge. We want to make sure that you find somebody who can work well with you and your time - that is our top priority.",
     },
 ];
 

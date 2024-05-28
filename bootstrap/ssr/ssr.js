@@ -2327,7 +2327,7 @@ const _sfc_main$e = {
                     }),
                     _: 1
                   }, _parent3, _scopeId2));
-                  _push3(`<p class="body-paragraph"${_scopeId2}>Finding the right staff for your business can be a challenging task, but we are here to help. Our company offers a 90-day recruitment guarantee. If the first candidate we place with you doesn&#39;t work out, we will replace them free of charge within the first 90 days of their employment. <br${_scopeId2}><br${_scopeId2}> Trust us to find the right fit for your company. </p></div></div>`);
+                  _push3(`<p class="body-paragraph"${_scopeId2}>Finding the right staff for your business can be a challenging task, but we are here to help. Our company offers a 90-day recruitment guarantee. If the first candidate we place with you doesn&#39;t work out, we will replace them free of charge within the first 6 months of their employment. <br${_scopeId2}><br${_scopeId2}> Trust us to find the right fit for your company. </p></div></div>`);
                 } else {
                   return [
                     createVNode("div", { class: "grid grid-cols-1 lg:gap-x-16 gap-y-6 md:gap-y-12 lg:grid-cols-2 lg:items-center" }, [
@@ -2351,7 +2351,7 @@ const _sfc_main$e = {
                           _: 1
                         }),
                         createVNode("p", { class: "body-paragraph" }, [
-                          createTextVNode("Finding the right staff for your business can be a challenging task, but we are here to help. Our company offers a 90-day recruitment guarantee. If the first candidate we place with you doesn't work out, we will replace them free of charge within the first 90 days of their employment. "),
+                          createTextVNode("Finding the right staff for your business can be a challenging task, but we are here to help. Our company offers a 90-day recruitment guarantee. If the first candidate we place with you doesn't work out, we will replace them free of charge within the first 6 months of their employment. "),
                           createVNode("br"),
                           createVNode("br"),
                           createTextVNode(" Trust us to find the right fit for your company. ")
@@ -2561,7 +2561,7 @@ const _sfc_main$e = {
                         _: 1
                       }),
                       createVNode("p", { class: "body-paragraph" }, [
-                        createTextVNode("Finding the right staff for your business can be a challenging task, but we are here to help. Our company offers a 90-day recruitment guarantee. If the first candidate we place with you doesn't work out, we will replace them free of charge within the first 90 days of their employment. "),
+                        createTextVNode("Finding the right staff for your business can be a challenging task, but we are here to help. Our company offers a 90-day recruitment guarantee. If the first candidate we place with you doesn't work out, we will replace them free of charge within the first 6 months of their employment. "),
                         createVNode("br"),
                         createVNode("br"),
                         createTextVNode(" Trust us to find the right fit for your company. ")
@@ -2717,7 +2717,7 @@ const _sfc_main$c = {
       },
       {
         question: "Do you have a placement guarantee?",
-        answer: "If you aren’t satisfied with the candidate that you hire or they quit in the first 90 days, we will find you someone else free of charge. We want to make sure that you find somebody who can work well with you and your time - that is our top priority."
+        answer: "If you aren’t satisfied with the candidate that you hire or they quit in the first 6 months, we will find you someone else free of charge. We want to make sure that you find somebody who can work well with you and your time - that is our top priority."
       }
       // More questions...
     ];

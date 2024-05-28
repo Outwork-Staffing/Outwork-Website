@@ -46,13 +46,14 @@ Route::get('/lp/staging', function () {
             'title' => $post->getTitle(),
             'name' => $post->name(),
             'img' => 'https:' . $img,
+            'action_line' => $post->actionLine,
         ];
     }
 
     $client = new DeliveryClient(env('CONTENTFUL_DELIVERY_TOKEN'), env('CONTENTFUL_SPACE_ID'), env('CONTENTFUL_ENVIRONMENT_ID'));
     $query = new Query();
     $query->setContentType('caseStudies')
-        ->orderBy('fields.date', true)->setLimit(6);
+        ->orderBy('fields.date', true)->setLimit(4);
     $posts = $client->getEntries($query);
 
     $formattedPosts = [];
@@ -63,6 +64,7 @@ Route::get('/lp/staging', function () {
         $formattedPosts[] = [
             'title' => $post->getTitle(),
             'img' => $resizedImageUrl,
+            'desc' => $post->getminiBlurb(),
             'slug' => $post->getSlug(),
             'type' => $post->getjobType(),
             'date' =>
