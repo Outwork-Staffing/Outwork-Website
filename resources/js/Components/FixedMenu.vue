@@ -62,8 +62,9 @@ onUnmounted(() => {
 
             </span>
         </div>
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Button type="primary" @click="scrollToID('cta')">Book a free consultation</Button>
+        <div class=" lg:flex lg:flex-1 lg:justify-end">
+            <Button class="!text-sm lg:text-lg" type="primary" @click="scrollToID('cta')">Book a free
+                consultation</Button>
         </div>
     </div>
 </template>

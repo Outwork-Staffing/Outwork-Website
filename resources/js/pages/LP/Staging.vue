@@ -118,7 +118,7 @@ function computeSubTitle($type, $industry) {
                     </Heading>
                     <div class="grid gap-3">
                         <div v-for="resume in resumes" class="border rounded-xl p-4">
-                            <div class="grid grid-cols-6 gap-5 items-top">
+                            <div class="grid grid-cols-4 lg:grid-cols-6 gap-5 items-top">
                                 <div class="col-span-1">
                                     <div class="h-16 w-16 rounded-full bg-cover bg-center"
                                         :style="{ backgroundImage: `url(${resume.meta.profile_pic})` }"
