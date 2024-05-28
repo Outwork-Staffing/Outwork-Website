@@ -146,18 +146,19 @@ function computeSubTitle($type, $industry) {
         </Row>
         <Row>
             <Fifty class="mb-24">
-                <template #right>
+                <template #right class="">
+                    <div>
 
-                    <Heading size="span" class="text-center !leading-tight !capitalize">Popular Roles
-                    </Heading>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="rounded border p-4 grid gap-1 bg-gray-50" v-for="role in roles">
-                            <span class="font-bold text-lg text-heading"> {{ role.title }}</span>
-                            <span class="text-sm"> Starting at {{ role.salary }}/month</span>
+                        <Heading size="span" class="text-center !leading-tight !capitalize">Popular Roles
+                        </Heading>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="rounded border p-4 grid gap-1 bg-gray-50" v-for="role in roles">
+                                <span class="font-bold text-lg text-heading"> {{ role.title }}</span>
+                                <span class="text-sm"> Starting at {{ role.salary }}/month</span>
+                            </div>
                         </div>
+
                     </div>
-
-
                 </template>
                 <template #left class="">
                     <Heading size="xl" class="text-left text-balance !leading-tight">Finally, you too can hire quality

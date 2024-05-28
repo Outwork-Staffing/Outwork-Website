@@ -31,7 +31,7 @@
 
 
             <div class="flex items-center gap-2">
-                <div class="flex hidden lg:visible">
+                <div class="hidden md:flex">
                     <img class="h-12" src="/public/img/founders.png" />
 
                 </div>
