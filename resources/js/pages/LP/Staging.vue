@@ -34,6 +34,40 @@ const menu = [
     },
 ];
 
+const roles = [
+    {
+        title: 'Virtual Assistant',
+        salary: '$1200'
+    },
+    {
+        title: 'Customer Support Agent',
+        salary: '$1500'
+
+
+    },
+    {
+        title: 'Sales Representative',
+        salary: '$1500'
+
+    },
+    {
+        title: 'Marketing Assistant',
+        salary: '$1700'
+
+    },
+    {
+        title: 'Operations Coordinator',
+        salary: '$1500'
+
+    },
+    {
+        title: 'Graphic/Video Designer',
+        salary: '$1700'
+
+    },
+];
+
+
 const active_item = ref('overview');
 const useIntersection = (rowName) => {
     const target = ref(null);
@@ -113,27 +147,13 @@ function computeSubTitle($type, $industry) {
         <Row>
             <Fifty class="mb-24">
                 <template #right>
-                    <Heading size="span" tag="h6" class="text-center">
-                        Sample Resumes
+
+                    <Heading size="span" class="text-center !leading-tight !capitalize">Popular Roles
                     </Heading>
-                    <div class="grid gap-3">
-                        <div v-for="resume in resumes" class="border rounded-xl p-4">
-                            <div class="grid grid-cols-4 lg:grid-cols-6 gap-5 items-top">
-                                <div class="col-span-1">
-                                    <div class="h-16 w-16 rounded-full bg-cover bg-center"
-                                        :style="{ backgroundImage: `url(${resume.meta.profile_pic})` }"
-                                        v-if="resume.meta.profile_pic"></div>
-
-                                </div>
-                                <div class="flex flex-col gap-1 col-span-5">
-                                    <p class="text-xl text-heading"> <strong>{{ resume.meta.name }} </strong> - {{
-            resume.meta.subtitle }}</p>
-
-                                    <div v-html="resume.content" class="text-sm text-gray-500">
-
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="rounded border p-4 grid gap-1 bg-gray-50" v-for="role in roles">
+                            <span class="font-bold text-lg text-heading"> {{ role.title }}</span>
+                            <span class="text-sm"> Starting at {{ role.salary }}/month</span>
                         </div>
                     </div>
 
@@ -141,7 +161,7 @@ function computeSubTitle($type, $industry) {
                 </template>
                 <template #left class="">
                     <Heading size="xl" class="text-left text-balance !leading-tight">Finally, you too can hire quality
-                        talent overseas.
+                        <span class="brand-underline"> talent overseas.</span>
                     </Heading>
                     <p class="mb-6">You are overwhelmed and know you need to expand your team to support your growing
                         business, but
@@ -218,8 +238,7 @@ function computeSubTitle($type, $industry) {
                 <Heading size="span" tag="h6" class=" text-center !mb-2">
                     Testimonials
                 </Heading>
-                <Heading size="xl" class=" text-center mb-6 !mt-0">Don't just take our word for it.</Heading>
-                <p class=" text-gray-900 text-md">Relationships are the core driver of Outwork Staffing.</p>
+                <Heading size="xl" class=" text-center !mt-0">Don't just take our word for it.</Heading>
             </div>
 
             <div class="grid grid-cols-1  lg:grid-cols-2 gap-8">
@@ -252,7 +271,7 @@ function computeSubTitle($type, $industry) {
             <Heading size="xl" class="text-center pb-6">Recent Case Studies</Heading>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <a v-for="story in success_stories" :key="story.title"
-                    class="transition hover:scale-[1.025] bg-white rounded grid grid-cols-3 border  hover:border-primary overflow-hidden"
+                    class="transition hover:scale-[1.025] bg-white rounded-xl grid grid-cols-3 border  hover:border-primary overflow-hidden"
                     :href="'/success-stories/' + story.slug" target="_blank">
                     <div class="image-part bg-cover bg-center  hidden md:block h-full w-half"
                         :style="{ backgroundImage: 'url(' + story.img + ')' }">
@@ -272,9 +291,7 @@ function computeSubTitle($type, $industry) {
                 </a>
             </div>
         </Row>
-        <Row background="">
-            Guarantee
-        </Row>
+
         <Row :ref="cta.target" id="cta" class="scroll-mt-[10vh]">
             <div class="mb-12 w-full">
                 <Heading size="span" tag="h6" class=" text-left !mb-2">

@@ -32,6 +32,7 @@ declare module 'vue' {
     Process: typeof import('./resources/js/Bricks/Process.vue')['default']
     ProcessCard: typeof import('./resources/js/Bricks/ProcessCard.vue')['default']
     Resume: typeof import('./resources/js/Components/Resume.vue')['default']
+    ResumeSlider: typeof import('./resources/js/Bricks/ResumeSlider.vue')['default']
     Row: typeof import('./resources/js/Components/Row.vue')['default']
     SalaryChart: typeof import('./resources/js/Components/SalaryChart.vue')['default']
     SampleResumes: typeof import('./resources/js/Bricks/SampleResumes.vue')['default']

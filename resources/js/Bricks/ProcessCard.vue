@@ -11,7 +11,7 @@ const props = defineProps({
             <h6 class="font-bold text-heading text-3xl">{{ title }}</h6>
 
         </div>
-        <hr class="my-4">
+        <hr class="my-4 text-primary border-primary border-2 w-[40%]">
         <div class="text-gray-700">
             <slot />
         </div>
