@@ -2,6 +2,7 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const props = defineProps({
+    active_item: String,
     menu: Array,
     dark: {
         type: Boolean,
@@ -19,6 +20,26 @@ const handleScroll = () => {
     }
 };
 
+const scrollToID = (id) => {
+
+    const element = document.getElementById(id);
+    if (id === 'cta') {
+        element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest'
+        });
+    } else {
+        element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center',
+            inline: 'nearest'
+        });
+    }
+
+
+};
+
 onMounted(() => {
     window.addEventListener('scroll', handleScroll);
 });
@@ -30,19 +51,19 @@ onUnmounted(() => {
 <template>
 
     <div
-        :class="['sticky top-0 z-50 flex items-center justify-between py-8 lg:py-5 px-6 lg:px-8', dark ? 'bg-secondary' : 'bg-dark']">
+        :class="['sticky top-0 z-[500] flex items-center justify-between py-8 lg:py-5 px-6 lg:px-8', dark ? 'bg-secondary' : 'bg-dark']">
         <div class="flex lg:flex-1">
-            <Logo class="h-12" :dark="dark" />
+            <Logo class="h-12 cursor-pointer" :dark="dark" @click="scrollToID('overview')" />
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-            <span v-for=" item  in  menu "
-                :class="['font-semibold text-lg opacity-50 hover:opacity-100 transition cursor-pointer hover:text-primary', dark ? 'text-heading' : 'text-white', item.active ? 'opacity-100' : '']">
+            <span v-for=" item  in  menu " @click="scrollToID(item.id)"
+                :class="['font-semibold text-lg opacity-50 hover:opacity-100 transition cursor-pointer hover:text-primary', dark ? 'text-heading' : 'text-white', active_item === item.name ? '!opacity-100' : '']">
                 {{ item.name }}
 
             </span>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Button type="primary">Book a free consultation</Button>
+            <Button type="primary" @click="scrollToID('cta')">Book a free consultation</Button>
         </div>
     </div>
 </template>

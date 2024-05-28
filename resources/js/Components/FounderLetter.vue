@@ -1,38 +1,34 @@
 <script setup></script>
 <template>
-    <div class="max-w-xl mx-auto group">
+    <div class="max-w-2xl mx-auto group bg-white px-12 pt-12 pb-8 border shadow ">
         <div class="prose">
-            <span class="text-xl font-bold text-heading">A love letter to our customers <span
+            <span class="text-xl font-bold text-heading">A love letter to our prospective customers. <span
                     class="transition duration-500 opacity-0 group-hover:opacity-100">❤️</span></span>
-            <p>Potential is equally distributed; opportunity is not. A complex set of health, educational, and financial
-                circumstances can limit opportunity for children and families living in urban poverty. Families
-                struggling
-                to make ends meet often cannot think beyond the next day, let alone plan for the future. To achieve the
-                future they want, they first need a stable foundation.</p>
+            <p>Something has changed when it comes to building a team within your company. You used to post a job,
+                invite
+                people to an office to apply, and work closely with them daily.</p>
 
-            <p>That’s why we work relentlessly to ensure more children and families have the support and resources they
-                need — when they need them — to lead healthy and prosperous lives. We know that when families can meet
-                their
-                basic needs, they can overcome the barriers that lock them into cycles of poverty.</p>
+            <p>Today, you can hire anyone and work with people from around the world. Why would you limit yourself and
+                your
+                company to talent in the United States? </p>
 
-            <p>True progress and transformative, sustainable change are the products of time, hard work, and a
-                willingness
-                to stand shoulder to shoulder with those who live and breathe the challenges we aim to overcome. We
-                partner
-                with nonprofits and social enterprises to find data-driven solutions that combine bold thinking with
-                real-world understanding, focusing on communities in India, South Africa, and the United States.</p>
+            <p>Over the last 5 years, we have scaled our SaaS companies using international talent. They are driven,
+                college education, professionals who speak English fluently. It has changed the way we operate and hire
+                –
+                introducing a complete mindset shift. 
+            </p>
+            <p> In 2021, we started Outwork Staffing to help bring this mindset shift to companies in the United States.
+                You
+                shouldn’t have to play by the rules of the last decade. We believe that companies should have the
+                freedom to
+                access qualified talent globally, without being confined to outdated practices. Whether it's customer
+                support, administrative assistants, or developers, we can help you find the talent you need.</p>
+            <p>Our recruiters are dedidcated to help you break free from old practices and holding your hand into this
+                new
+                unlock of global talent. Book a call with our team to learn more — no oligations.</p>
 
-            <p>Finally, you leave the customer with a story that makes you easy to sum up.
+            Talk soon,
 
-                1/ Put yourself in their shoes
-
-                2/ Explain their problem
-
-                3/ Take ownership of it
-
-                4/ Show the happy ending
-
-                You're walking them down a path they'll want to walk themselves. Oh, and people buy from people.</p>
 
             <div class="flex items-center gap-2">
                 <div class="flex">

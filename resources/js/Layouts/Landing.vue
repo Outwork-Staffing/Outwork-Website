@@ -2,4 +2,5 @@
 </script>
 <template>
     <slot />
+    <Footer />
 </template>
