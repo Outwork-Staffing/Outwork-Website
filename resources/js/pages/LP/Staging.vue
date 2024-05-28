@@ -92,13 +92,15 @@ function computeSubTitle($type, $industry) {
             <Fifty>
                 <template #left>
                     <div class="grid gap-8">
-                        <Heading tag="h1" size="xl" class="text-white !leading-tight !mb-0">This is super high-quality
-                            hero
-                            text.
+                        <Heading tag="h1" size="xl" class="text-white !leading-tight !mb-0 text-balance">It's how
+                            companies find
+                            elite talent overseas.
                         </Heading>
-                        <p class="text-secondary text-lg leading-9">Sub text - also extremely important.</p>
+                        <p class="text-secondary text-lg leading-9 text-balance">Outwork Staffing helps you find and
+                            hire quality
+                            international talent. Save 80% on salaries and revolutionize your workforce.</p>
                         <div>
-                            <Button @click="scrollToID('cta')">Book a free call</Button>
+                            <Button @click="scrollToID('cta')">Book a free consultation</Button>
                         </div>
 
                     </div>
@@ -200,8 +202,7 @@ function computeSubTitle($type, $industry) {
         </Row>
 
         <Row background="light">
-            <Heading size="xl" class="text-center">Case Studies</Heading>
-
+            <Heading size="xl" class="text-center pb-6">Recent Case Studies</Heading>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <a v-for="story in success_stories" :key="story.title"
                     class="transition hover:scale-[1.025] bg-white rounded grid grid-cols-3 border  hover:border-primary overflow-hidden"
@@ -224,7 +225,7 @@ function computeSubTitle($type, $industry) {
                 </a>
             </div>
         </Row>
-        <Row>
+        <Row background="">
             Guarantee
         </Row>
         <Row :ref="cta.target" id="cta" class="scroll-mt-[10vh]">
