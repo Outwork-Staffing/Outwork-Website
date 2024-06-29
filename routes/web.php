@@ -138,3 +138,8 @@ Route::get('/success-stories', [CaseStudyController::class, 'index']);
 Route::get('/success-stories/{slug}', [CaseStudyController::class, 'show']);
 
 require __DIR__ . '/landing_pages.php';
+
+//redirects
+
+// /startups to route('startups-for-the-rest-of-us')
+Route::redirect('/startups', '/lp/startups-for-the-rest-of-us');

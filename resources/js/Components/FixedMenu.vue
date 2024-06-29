@@ -23,19 +23,12 @@ const handleScroll = () => {
 const scrollToID = (id) => {
 
     const element = document.getElementById(id);
-    if (id === 'cta') {
-        element.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-            inline: 'nearest'
-        });
-    } else {
-        element.scrollIntoView({
-            behavior: 'smooth',
-            block: 'center',
-            inline: 'nearest'
-        });
-    }
+    element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+    });
+
 
 
 };
