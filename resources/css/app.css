@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .transition-custom {
-    transition: all 0.2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .body-paragraph {
@@ -14,15 +14,14 @@
 
 .btn {
     @apply px-4 py-2 font-semibold rounded-lg text-lg border;
-    transition: all 0.2s ease-in-out;
+    transition: all .2s ease-in-out;
     cursor: pointer;
 }
 
-.btn:hover {
-}
+.btn:hover {}
 
 .btn-primary {
-    @apply bg-primary text-heading border-primary;
+    @apply bg-primary text-white border-primary;
 }
 
 .btn-primary:hover {
@@ -58,7 +57,7 @@
 }
 
 .btn-text svg {
-    transition: all 0.2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .btn-text:hover svg {
@@ -90,20 +89,12 @@
 
 .white-fade:before {
     left: 0;
-    background: linear-gradient(
-        to left,
-        rgba(255, 255, 255, 0),
-        rgb(255, 255, 255, 50)
-    ) !important;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255, 50)) !important;
 }
 
 .white-fade:after {
     right: 0;
-    background: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0),
-        rgb(255, 255, 255, 50)
-    ) !important;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255, 50)) !important;
 }
 
 .brand-underline {

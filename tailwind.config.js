@@ -8,13 +8,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#b0e6b3',
+        primary: '#50B780',
         primaryHover: '#38805a',
         secondary: '#EEF8F2',
-        heading: '#284646',
+        heading: '#1E3C3A',
         body: '#1E3C3A',
         white: '#fff',
-        dark: '#132220'
+        dark: '#152a29'
       },
     },
     fontFamily: {
