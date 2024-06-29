@@ -34,9 +34,9 @@ export default {
                 case 'm':
                     return 'text-xl text-heading font-bold'
                 case 'lg':
-                    return 'text-2xl text-heading font-bold';
+                    return 'text-2xl text-heading font-bold ';
                 case 'xl':
-                    return 'text-3xl md:text-5xl text-heading font-bold';
+                    return 'text-3xl md:text-5xl text-heading font-semibold';
                 case '2xl':
                     return 'text-4xl text-heading md:text-6xl font-bold'
                 default:

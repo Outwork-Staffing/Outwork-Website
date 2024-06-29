@@ -108,17 +108,22 @@ Route::get('/form-complete', function () {
 });
 
 
-
 Route::get('/virtual-assistant-guide', function () {
     Meta::addMeta('title', 'Virtual Assistant Guide - Outwork Staffing');
     return Inertia('Guide');
 });
 
 Route::get('/virtual-assistant-resource', function () {
-    //This is part of a split test. 
+    //This is part of a split test.
     //This variant includes the same resource; but it includes 1) my (Bryan) face 2) different order of data
     Meta::addMeta('title', 'Virtual Assistant Guide - Outwork Staffing');
     return Inertia('Guide2');
+});
+
+Route::get('/frequently-asked-questions', function () {
+    Meta::addMeta('title', 'Frequently Asked Questions - Outwork Staffing');
+
+    return Inertia('FAQPage');
 });
 
 Route::get('/404', function () {
@@ -126,3 +131,15 @@ Route::get('/404', function () {
 
     return Inertia('404');
 });
+
+
+// Case Studies
+Route::get('/success-stories', [CaseStudyController::class, 'index']);
+Route::get('/success-stories/{slug}', [CaseStudyController::class, 'show']);
+
+require __DIR__ . '/landing_pages.php';
+
+//redirects
+
+// /startups to route('startups-for-the-rest-of-us')
+Route::redirect('/startups', '/lp/startups-for-the-rest-of-us');

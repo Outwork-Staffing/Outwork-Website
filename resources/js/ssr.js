@@ -8,15 +8,21 @@ createServer(page =>
         page,
         render: renderToString,
         resolve: name => {
-            const pages = import.meta.glob('./Pages/**/*.vue', { eager: true })
-            return pages[`./Pages/${name}.vue`]
+            const pages = import.meta.glob('./pages/**/*.vue', { eager: true })
+            return pages[`./pages/${name}.vue`]
         },
         setup({ App, props, plugin }) {
-             createSSRApp({
+            return createSSRApp({
+                progress: {
+                    delay: 50,
+                    color: '#50B780',
+                    includeCSS: true,
+                    showSpinner: false,
+                },
                 render: () => h(App, props),
             }).use(plugin)
 
-           
+
 
         },
     }),

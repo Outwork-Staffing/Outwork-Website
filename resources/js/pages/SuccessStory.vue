@@ -1,4 +1,5 @@
 <script setup>
+import RichTextRenderer from 'contentful-rich-text-vue-renderer';
 const props = defineProps({
     story: Array,
     salary: Array,

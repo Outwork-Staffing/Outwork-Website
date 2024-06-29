@@ -19,7 +19,7 @@ export default {
             type: String,
             default: 'default',
             validator: function (value) {
-                return ['default', 'green', 'light', 'dark', 'gradient'].includes(value);
+                return ['default', 'green', 'light', 'dark', 'gradient', 'gray'].includes(value);
             },
         },
         header: {
@@ -38,6 +38,8 @@ export default {
                     return 'bg-dark'
                 case 'gradient':
                     return 'gradient'
+                case 'gray':
+                    return 'bg-gray-50'
                 default:
                     return 'bg-white';
             }

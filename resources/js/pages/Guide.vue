@@ -1,3 +1,6 @@
+<script setup>
+import VAGuideContent from '../../md/VAGuideContent.md';
+</script>
 <template>
     <Main>
         <Row header="true">

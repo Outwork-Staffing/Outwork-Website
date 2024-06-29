@@ -43,6 +43,8 @@ const props = defineProps({
                     <p class="body-paragraph">Most companies think they need to spend between $4,000-$6,000 a month on a
                         quality full time team. That isn't true. We help businesses build an awesome team of global
                         workers
+                        quality full time team. That isn't true. We help businesses build an awesome team of global
+                        workers
                         to help them save time, money, and ultimately grow their business.
                     </p>
                 </template>
@@ -68,7 +70,7 @@ const props = defineProps({
                     <div class="block flex justify-center">
                         <img class="h-64"
                             src="https://images.ctfassets.net/g7bwetg052e6/3jfEQv5IouKC9WpjXtrrLA/5ac466efc1475348c1917e98a455adad/shield.webp"
-                            alt="Shield showing Outwork Gurantee">
+                            alt="Shield showing Outwork Guarantee">
                     </div>
 
                 </div>
