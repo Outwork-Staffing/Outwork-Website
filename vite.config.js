@@ -1,4 +1,3 @@
-import { sentryVitePlugin } from "@sentry/vite-plugin";
 import { defineConfig } from 'vite';
 import Vue from "@vitejs/plugin-vue"; //add this line
 import laravel from 'laravel-vite-plugin';
