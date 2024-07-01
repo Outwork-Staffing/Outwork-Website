@@ -119,27 +119,34 @@ function computeSubTitle($type, $industry) {
 <template>
     <Landing>
         <FixedMenu :menu="menu" :dark="false" class="z-[200]" :active_item="active_item" />
-        <Row background="dark" :ref="overview.target" id="overview">
-            <Fifty>
-                <template #left>
-                    <div class="grid gap-8">
-                        <Heading tag="h1" size="xl" class="text-white !leading-tight !mb-0 text-balance">It's how
-                            companies find
-                            elite talent overseas.
-                        </Heading>
-                        <p class="text-secondary text-lg leading-9 text-balance">Outwork Staffing helps you find and
-                            hire quality
-                            international talent. Save 80% on salaries and revolutionize your workforce.</p>
-                        <div>
-                            <Button @click="scrollToID('cta')">Book a free consultation</Button>
-                        </div>
-
+        <Row background="dark" :ref="overview.target" id="overview" header="true">
+            <div class="grid gap-8 max-w-4xl mx-auto text-center">
+                <div>
+                    <div
+                        class="bg-secondary/20 w-fit mx-auto py-2 px-4 rounded-xl text-white border border-secondary/20 transition hover:border-primary border-2">
+                        Save $500 thanks
+                        for
+                        Startups for
+                        the Rest of
+                        Us
                     </div>
-                </template>
-                <template #right>
-                    Righties
-                </template>
-            </Fifty>
+                </div>
+                <Heading tag="h1" size="xl"
+                    class="text-white !leading-tight !mb-0 text-balance !text-6xl flex items-center flex-wrap text-center justify-center gap-4">
+                    It's
+                    how
+                    startups recruit
+                    <span class="text-primary">elite talent </span>
+                    <PeopleIcons />overseas.
+                </Heading>
+                <p class="text-secondary text-lg leading-9 text-balance">Outwork Staffing helps you find and
+                    hire quality
+                    international talent. Save 80% on salaries and revolutionize your workforce.</p>
+                <div>
+                    <Button @click="scrollToID('cta')">Book a free consultation</Button>
+                </div>
+
+            </div>
         </Row>
         <Row>
             <Fifty class="mb-24">
