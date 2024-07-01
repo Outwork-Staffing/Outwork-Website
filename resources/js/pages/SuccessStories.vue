@@ -7,8 +7,8 @@ const props = defineProps({
 
 <template>
     <Main>
-        <Row header="false">
-            <div class="max-w-4xl mx-auto text-center">
+        <Row>
+            <div class="max-w-4xl mx-auto text-center mt-12">
                 <Heading size="xl" class="text-center text-heading">Global Recruitment Success Stories</Heading>
                 <p class="text-xl max-w-2xl mx-auto text-center mx-12 text-body mb-6">Discover how companies are
                     leveraging
