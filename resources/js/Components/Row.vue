@@ -1,7 +1,7 @@
 <template>
     <div :class="bgClass">
         <div
-            :class="{ 'w-full  max-w-7xl mx-auto py-12 lg:py-24 px-6 lg:px-8': !header, 'w-full  max-w-7xl mx-auto py-12 lg:pb-24 pt-8 px-6 lg:px-8': header }">
+            :class="{ 'w-full  max-w-7xl mx-auto py-12 lg:py-24 px-6 lg:px-8': !header, 'w-full  max-w-7xl mx-auto pt-36 pb-12 sm:pt-36  px-6 lg:px-8': header }">
             <slot />
         </div>
     </div>
