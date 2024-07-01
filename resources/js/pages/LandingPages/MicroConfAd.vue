@@ -122,13 +122,14 @@ function computeSubTitle($type, $industry) {
         <Row background="dark" :ref="overview.target" id="overview" header="true">
             <div class="grid gap-8 max-w-4xl mx-auto text-center">
                 <div>
-                    <div
-                        class="bg-secondary/20 w-fit mx-auto py-2 px-4 rounded-xl text-white border border-secondary/20 transition hover:border-primary border-2">
-                        Save $500 thanks
-                        for
-                        Startups for
-                        the Rest of
-                        Us
+                    <div class="w-fit mx-auto !text-sm text-white  ">
+                        <span class="bg-primary rounded-l-xl p-3">Save $500 now</span>
+                        <span class=" bg-secondary/20 p-3 rounded-r-xl">
+                            Thanks
+                            to
+                            Startups for
+                            the Rest of
+                            Us!</span>
                     </div>
                 </div>
                 <Heading tag="h1" size="xl"
@@ -137,7 +138,7 @@ function computeSubTitle($type, $industry) {
                     how
                     startups recruit
                     <span class="text-primary">elite talent </span>
-                    <PeopleIcons />overseas.
+                    <PeopleIcons /> overseas.
                 </Heading>
                 <p class="text-secondary text-lg leading-9 text-balance">Outwork Staffing helps you find and
                     hire quality

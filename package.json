@@ -39,6 +39,7 @@
         "vite": "^5.2.8",
         "vue": "^3.4.21",
         "vue3-carousel": "^0.3.3",
-        "vue3-infinite-slide-bar": "^1.0.4"
+        "vue3-infinite-slide-bar": "^1.0.4",
+        "vue3-popper": "^1.5.0"
     }
 }
