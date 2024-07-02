@@ -8,15 +8,12 @@ const props = defineProps({
 <template>
     <Main>
         <Row>
-            <div class="max-w-4xl mx-auto text-center mt-12">
+            <div class="max-w-4xl mx-auto text-center my-12">
                 <Heading size="xl" class="text-center text-heading">Global Recruitment Success Stories</Heading>
                 <p class="text-xl max-w-2xl mx-auto text-center mx-12 text-body mb-6">Discover how companies are
                     leveraging
                     global talent in major ways</p>
             </div>
-            <TestimonialLogoCloud :logos="logos" class="" />
-        </Row>
-        <Row class="hidden">
             <Fifty imageLocation="left" :imageMobile="false"
                 imageUrl="https://images.unsplash.com/photo-1545112969-bdd91ef544c7?q=80&w=4471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 altText="Men sitting around computer">
