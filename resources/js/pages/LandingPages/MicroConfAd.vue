@@ -1,10 +1,29 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, onMounted, onUnmounted, onBeforeMount } from 'vue';
+
 import { useIntersectionObserver } from '@vueuse/core';
 import Fifty from '../../Bricks/Fifty.vue';
 import SampleResumes from '../../Bricks/SampleResumes.vue';
 import FounderLetter from '../../Components/FounderLetter.vue';
 import ProcessCard from '../../Bricks/ProcessCard.vue';
+
+onBeforeMount(() => {
+    loadSavvyCalScript();
+});
+function loadSavvyCalScript() {
+    const script = document.createElement('script');
+    script.src = 'https://embed.savvycal.com/v1/embed.js';
+    script.async = true;
+    document.body.appendChild(script);
+    script.onload = () => initializeSavvyCal();
+}
+function initializeSavvyCal() {
+    window.SavvyCal = window.SavvyCal || function () {
+        (window.SavvyCal.q = window.SavvyCal.q || []).push(arguments);
+    };
+    SavvyCal('init');
+    SavvyCal('inline', { link: 'bryan-outwork-staffing/startups-for-the-rest-of-us', selector: '#booking-page', hideAvatar: true, hideBanner: true });
+}
 const props = defineProps({
     resumes: Object,
     testimonials: Object,
@@ -414,7 +433,8 @@ function computeSubTitle($type, $industry) {
 
             </div>
 
-            <SavvyCal class="w-full" />
+            <div id="booking-page" class="w-full">
+            </div>
         </Row>
         <!-- Founder Letter-->
         <Row background="gray">

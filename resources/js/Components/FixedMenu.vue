@@ -58,8 +58,11 @@ onUnmounted(() => {
             </span>
         </div>
         <div class=" lg:flex lg:flex-1 lg:justify-end">
-            <Button class="!text-sm lg:text-lg" type="primary" @click="scrollToID('cta')">Book a free
-                consultation</Button>
+            <a data-savvycal-embed href="https://savvycal.com/bryan-outwork-staffing/startups-for-the-rest-of-us">
+
+                <Button class="!text-sm lg:text-lg" type="primary">Book a free
+                    consultation</Button>
+            </a>
         </div>
     </div>
 </template>
