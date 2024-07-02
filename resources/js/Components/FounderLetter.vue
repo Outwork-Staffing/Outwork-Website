@@ -23,9 +23,9 @@
                 freedom to
                 access qualified talent globally, without being confined to outdated practices. Whether it's customer
                 support, administrative assistants, or developers, we can help you find the talent you need.</p>
-            <p>Our recruiters are dedidcated to help you break free from old practices and holding your hand into this
+            <p>Our recruiters are dedicated to helping you break free from old practices and holding your hand into this
                 new
-                unlock of global talent. Book a call with our team to learn more — no oligations.</p>
+                unlock of global talent. Book a call with our team to learn more — no obligations.</p>
 
             Talk soon,
 

@@ -53,17 +53,17 @@ const roles = [
     {
         title: 'Experienced Virtual Assistants',
         salary: '$1200',
-        img: 'https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?q=80&w=3166&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        img: 'https://images.unsplash.com/photo-1616588181775-138dc8ba4197?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
         title: 'Fluent and Helpful Customer Support Agents',
         salary: '$1500',
-        img: 'https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?q=80&w=3166&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        img: 'https://images.unsplash.com/photo-1588346985272-e31baa849baa?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
         title: 'Backend Engineer',
         salary: '$3000',
-        img: 'https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?q=80&w=3166&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        img: 'https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?q=80&w=2989&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 
     },
 
