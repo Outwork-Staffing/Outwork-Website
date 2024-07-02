@@ -21,14 +21,6 @@ export const faqs = [
         answer:
             "If you aren’t satisfied with the candidate that you hire or they quit in the first 6 months, we will find you someone else free of charge. We want to make sure that you find somebody who can work well with you and your time - that is our top priority.",
     },
-    {
-        question: "Do hires join my company?",
-        answer:
-            "Global contractors will join your team directly. Outwork will properly equip you to pay them compliantly and minimize your risk/exposure. Outwork Staffing does not offer staff augmentation.",
-    },
-    {
-        question: "How do I pay my overseas contractors?",
-        answer: "Outwork Staffing is partnered with Deel.com to help our clients pay their contractors compliantly. At the end of the recruitment process, Outwork will connect you with a team member at Deel and they will help you through your first few payroll cycles.",
-    },
+
     // More questions...
 ];
