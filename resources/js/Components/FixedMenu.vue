@@ -47,7 +47,7 @@ onUnmounted(() => {
         :class="['sticky top-0 z-[500] flex items-center justify-between py-8 lg:py-5 px-6 lg:px-8', dark ? 'bg-secondary' : 'bg-dark']">
         <div class="flex lg:flex-1">
             <a href="/">
-                <Logo class="h-12 cursor-pointer" :dark="dark" @click="scrollToID('overview')" />
+                <Logo class="h-8 md:h-12 cursor-pointer" :dark="dark" @click="scrollToID('overview')" />
             </a>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">

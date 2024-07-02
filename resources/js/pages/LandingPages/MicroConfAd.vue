@@ -128,7 +128,11 @@ function computeSubTitle($type, $industry) {
 
                 <div class="grid gap-8 max-w-4xl mx-auto text-center z-10">
                     <div class="z-10">
-                        <div class="w-fit mx-auto !text-sm text-white  z-10">
+                        <div class="block md:hidden text-sm bg-secondary/20 p-3 rounded-xl text-white text-balance">
+                            Save $500 now
+                            Thanks to Startups for the Rest of Us!
+                        </div>
+                        <div class="hidden md:flex w-fit mx-auto !text-sm text-white  z-10">
                             <span class="bg-primary rounded-l-xl p-3 z-10">Save $500 now</span>
                             <span class=" bg-secondary/20 p-3 rounded-r-xl z-10">
                                 Thanks
@@ -139,12 +143,20 @@ function computeSubTitle($type, $industry) {
                         </div>
                     </div>
                     <Heading tag="h1" size="xl"
-                        class="text-white line-height-[1] !mb-0 text-balance !text-6xl flex items-center flex-wrap text-center justify-center gap-4 z-10">
+                        class="block md:hidden text-white !leading-9 md:line-height-[1] !mb-0 text-balance !text-4xl md:!text-6xl  items-center flex-wrap text-center justify-center gap-4 z-10">
+                        It's
+                        how
+                        startups recruit
+                        <span class="text-primary z-10">elite talent </span>overseas.
+
+                    </Heading>
+                    <Heading tag="h1" size="xl"
+                        class="hidden md:flex text-white !leading-9 md:line-height-[1] !mb-0 text-balance !text-3xl md:!text-6xl  items-center flex-wrap text-center justify-center gap-4 z-10">
                         It's
                         how
                         startups recruit
                         <span class="text-primary z-10">elite talent </span>
-                        <PeopleIcons /> overseas.
+                        <PeopleIcons />overseas.
                     </Heading>
                     <p class="text-secondary text-lg text-balance z-10">Outwork Staffing recruits top talent from
                         around the world on behalf of your startup. Save 80% on salaries and revolutionize your
@@ -155,7 +167,7 @@ function computeSubTitle($type, $industry) {
                     </div>
 
                 </div>
-                <div class="flex justify-between w-full max-w-4xl mx-auto z-10 ">
+                <div class="flex flex-col md:flex-row gap-4 md:gap-1 justify-between w-full max-w-4xl mx-auto z-10 ">
                     <div class="flex flex-row gap-2 items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-8 text-primary">
@@ -268,7 +280,7 @@ function computeSubTitle($type, $industry) {
                     <div class="grid grid-cols-1 gap-4">
                         <div class="rounded-lg border p-4 flex items-center gap-4" v-for="role in roles">
 
-                            <div class="h-16 w-16 rounded-full !bg-center !bg-cover -rotate-0 border-2 shadow border-white"
+                            <div class="h-16 w-16  aspect-square rounded-full !bg-center !bg-cover -rotate-0 border-2 shadow border-white"
                                 :style="{ backgroundImage: `url(${role.img})` }">
                             </div>
                             <div class="grid gap-1">

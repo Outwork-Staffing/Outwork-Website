@@ -31,7 +31,7 @@ const hideTooltip = () => {
 <template>
     <div class="photos inline-flex items-center gap-2">
         <div v-for="person in people" :key="person.name" class="relative">
-            <div class="h-12 w-12 rounded-full !bg-center !bg-cover -rotate-0 border-2 shadow border-white"
+            <div class="size-8 md:size-12 rounded-full !bg-center !bg-cover -rotate-0 border-2 shadow border-white"
                 :style="{ backgroundImage: `url(${person.photo})` }" @mouseenter="showTooltip(person)"
                 @mouseleave="hideTooltip">
             </div>
