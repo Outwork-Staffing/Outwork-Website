@@ -14,14 +14,8 @@ const props = defineProps({
                     leveraging
                     global talent in major ways</p>
             </div>
+            <TestimonialLogoCloud :logos="logos" class="white-fade" />
         </Row>
-        <div class="bg-white">
-            <div class="max-w-7xl mx-auto text-center bg-white">
-
-                <TestimonialLogoCloud :logos="logos" class="white-fade" />
-            </div>
-
-        </div>
 
 
         <Row>
