@@ -15,12 +15,8 @@ const props = defineProps({
                     global talent in major ways</p>
             </div>
         </Row>
-        <div class="bg-white">
-            <div class="max-w-7xl mx-auto text-center bg-white">
-                <TestimonialLogoCloud :logos="logos" class="white-fade" />
-            </div>
+        <TestimonialLogoCloud :logos="logos" class="white-fade" />
 
-        </div>
 
         <Row>
             <Fifty imageLocation="left" :imageMobile="false"
