@@ -16,9 +16,7 @@ const props = defineProps({
             </div>
             <TestimonialLogoCloud :logos="logos" class="white-fade" />
         </Row>
-
-
-        <Row>
+        <Row class="hidden">
             <Fifty imageLocation="left" :imageMobile="false"
                 imageUrl="https://images.unsplash.com/photo-1545112969-bdd91ef544c7?q=80&w=4471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 altText="Men sitting around computer">
