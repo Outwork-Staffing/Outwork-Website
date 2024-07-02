@@ -4,7 +4,7 @@ import InfiniteSlideBar from 'vue3-infinite-slide-bar';
 let logos = ['avanti.svg', 'primepay.png', 'swivl.svg', 'attune.svg', 'truesafe.webp', 'sparx.png', 'tcc.png', 'eight.svg', 'encore.png', 'insight.png', 'wil.webp'];
 </script>
 <template>
-    <infinite-slide-bar :barStyle="{ padding: '5px 0' }" duration="60s" class=" logos white-fade !bg-white">
+    <infinite-slide-bar :barStyle="{ padding: '5px 0' }" duration="60s" class=" logos white-fade">
         <div v-for="logo in logos" :key="logo" class="inline-block mr-8 mb-4 rounded-3xl logo-parent">
             <img :src="'/logos/' + logo" alt="Logo" class="logo">
         </div>
