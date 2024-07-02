@@ -154,11 +154,11 @@ function computeSubTitle($type, $industry) {
                 <div class="grid gap-8 max-w-4xl mx-auto text-center z-10">
                     <div class="z-10">
                         <div class="block md:hidden text-sm bg-secondary/20 p-3 rounded-xl text-white text-balance">
-                            Save $500 now
-                            Thanks to Startups for the Rest of Us!
+                            Save $500
+                            thanks to Startups for the Rest of Us!
                         </div>
                         <div class="hidden md:flex w-fit mx-auto !text-sm text-white  z-10">
-                            <span class="bg-primary rounded-l-xl p-3 z-10">Save $500 now</span>
+                            <span class="bg-primary rounded-l-xl p-3 z-10">Save $500</span>
                             <span class=" bg-secondary/20 p-3 rounded-r-xl z-10">
                                 Thanks
                                 to
