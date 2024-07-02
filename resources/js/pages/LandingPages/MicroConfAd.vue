@@ -251,11 +251,16 @@ function computeSubTitle($type, $industry) {
 
 
                         </Heading>
+                        <div class="grid gap-2">
 
-                        <p class="mb-6 text-gray-500">Everybody deserves to build a reliable team around them. Outwork
-                            Staffing can
-                            help you do that internationally. Tell us about the role you are looking to fill and our
-                            recruiters will start interviewing, veting, and running background checks. </p>
+                            <p class=" text-gray-500">Whether you are looking for an operations assistant or
+                                developer,
+                                Outwork can help. Tell us about the role you need filled and our recruiters will get to
+                                work. Fast forward a few weeks are you are meeting the top 1% of international talent
+                                hand-selected for your specific job opening.</p>
+                            <p class=" text-gray-500">We will place them with you - and our team provides a 180 day
+                                guarantee! If you aren't happy, we will find you someone else for free!</p>
+                        </div>
                     </div>
                 </template>
                 <template #right>
