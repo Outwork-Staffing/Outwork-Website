@@ -14,7 +14,7 @@ const props = defineProps({
                     leveraging
                     global talent in major ways</p>
             </div>
-            <TestimonialLogoCloud :logos="logos" class="white-fade" />
+            <TestimonialLogoCloud :logos="logos" class="" />
         </Row>
         <Row class="hidden">
             <Fifty imageLocation="left" :imageMobile="false"
