@@ -47,6 +47,10 @@ const menu = [
         name: 'FAQs',
         id: 'FAQs',
     },
+    {
+        name: 'Letter to Customers',
+        id: 'letter',
+    },
 ];
 
 const roles = [
@@ -98,6 +102,8 @@ const process = useIntersection('Process');
 const caseStudies = useIntersection('Case Studies');
 const faqs = useIntersection('FAQs');
 const cta = useIntersection('CTA');
+const letter = useIntersection('Letter');
+
 
 const scrollToID = (id) => {
     const element = document.getElementById(id);
@@ -437,7 +443,7 @@ function computeSubTitle($type, $industry) {
             </div>
         </Row>
         <!-- Founder Letter-->
-        <Row background="gray">
+        <Row background="gray" :ref="letter.target" id="letter">
             <FounderLetter />
         </Row>
         <!-- CTA-->

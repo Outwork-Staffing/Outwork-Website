@@ -27,6 +27,8 @@
                 new
                 unlock of global talent. Book a call with our team to learn more — no obligations.</p>
 
+            <p>We are just real people looking to serve real people.</p>
+
             Talk soon,
 
 
